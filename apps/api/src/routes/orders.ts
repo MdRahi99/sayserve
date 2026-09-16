@@ -6,7 +6,7 @@ import { attachUser, requireAuth, requireRole } from "../middleware/auth.js";
 import { validate } from "../middleware/validate.js";
 import { loadMenuLookup } from "../lib/menuService.js";
 import {
-  canTransition, customerTimeline, isTerminal, nextStatuses,
+  canTransition, customerCanCancel, customerTimeline, isTerminal, nextStatuses,
   type Actor, type OrderStatus,
 } from "../lib/orderState.js";
 import { deliveryTotal, priceCart, type CartLineInput } from "../lib/pricing.js";
@@ -171,6 +171,22 @@ router.post("/:id/cancel", attachUser, asyncRoute(async (req, res) => {
   const isOwner = req.user && String(order.user) === req.user.id;
   const isGuest = order.guestToken && req.body?.token === order.guestToken;
   if (!isOwner && !isGuest) throw new HttpError(403, "That order is not yours.");
+
+  // Answer the customer's actual question — "can I still cancel?" — before the
+  // state machine answers a different one. Once the kitchen has accepted, an
+  // admin can still cancel, so the raw machine would say "wrong actor"; what
+  // the customer needs to hear is that it is too late.
+  const status = order.status as OrderStatus;
+  if (isTerminal(status)) {
+    throw new HttpError(409, `This order is already ${status.replace(/_/g, " ")}.`, "terminal");
+  }
+  if (!customerCanCancel(status)) {
+    throw new HttpError(
+      409,
+      "The kitchen has already started this order, so it can no longer be cancelled. Please call the shop.",
+      "not_allowed"
+    );
+  }
 
   await move(order, "cancelled", "customer", req.user?.id ?? null, "Cancelled by the customer");
   res.json({ order: shape(order.toObject()) });

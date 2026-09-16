@@ -143,7 +143,9 @@ describe("the whole order lifecycle", () => {
 
     expect(res.body.order.status).toBe("placed");
     expect(res.body.order.total).toBe(17.87);
-    expect(res.body.order.orderNumber).toBeGreaterThan(1000);
+    // The very first order must be 1001, not 1: an upsert with $inc writes the
+    // field itself, so a schema default on that field would never apply.
+    expect(res.body.order.orderNumber).toBe(1001);
     expect(res.body.order.statusHistory).toHaveLength(1);
   });
 
@@ -228,6 +230,25 @@ describe("cancelling", () => {
     const res = await request(app).post(`/api/orders/${id}/cancel`)
       .send({ token: guestToken }).expect(409);
     expect(res.body.code).toBe("not_allowed");
+    expect(res.body.error).toMatch(/already started/i);
+  });
+
+  it("says plainly when an order was already cancelled", async () => {
+    const created = await request(app).post("/api/orders")
+      .send(checkout("key-cancel-3")).expect(201);
+    const { id, guestToken } = created.body.order;
+
+    await request(app).post(`/api/orders/${id}/cancel`)
+      .send({ token: guestToken }).expect(200);
+    const again = await request(app).post(`/api/orders/${id}/cancel`)
+      .send({ token: guestToken }).expect(409);
+    expect(again.body.code).toBe("terminal");
+  });
+
+  it("gives every order its own number", async () => {
+    const a = await request(app).post("/api/orders").send(checkout("key-num-a")).expect(201);
+    const b = await request(app).post("/api/orders").send(checkout("key-num-b")).expect(201);
+    expect(b.body.order.orderNumber).toBe(a.body.order.orderNumber + 1);
   });
 });
 

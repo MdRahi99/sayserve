@@ -120,15 +120,26 @@ export const Order = mongoose.model("Order", OrderSchema);
  */
 const CounterSchema = new mongoose.Schema({
   key: { type: String, required: true, unique: true },
-  value: { type: Number, default: 1000 },
+  seq: { type: Number, default: 0 },
 });
 const Counter = mongoose.model("Counter", CounterSchema);
+
+/**
+ * Order numbers start at 1001 rather than 1, because "#3" on a kitchen ticket
+ * looks like a mistake.
+ *
+ * The offset is added here rather than being a schema default: on an upsert,
+ * `$inc` writes the field itself, so a default on the same field never applies
+ * and the first order would come out as 1. Keeping the counter a plain sequence
+ * from 0 and adding the base afterwards has no such trap.
+ */
+export const ORDER_NUMBER_BASE = 1000;
 
 export async function nextOrderNumber(): Promise<number> {
   const doc = await Counter.findOneAndUpdate(
     { key: "orderNumber" },
-    { $inc: { value: 1 } },
+    { $inc: { seq: 1 } },
     { new: true, upsert: true }
   );
-  return doc!.value;
+  return ORDER_NUMBER_BASE + doc!.seq;
 }
