@@ -1,0 +1,1218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3120" height="8300" viewBox="0 0 3120 8300" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmYjVkOTE5Zi0yY2I0LTQ4ZmItOTZkYS1jNjk0ODAyYmZiYWQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaITm7UB9a2nUhYGd2FjzCWgAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyM2Y4NTA0Mi0wNTczLTRiMTktOGUyNS03Mzk1Y2UwMjQ3ZTNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoFoMEox4M6VPnFfbY/0Ec8wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggH1o8i9IDO35/hzYw0ZKDytZseVuzrk5SfBZyZDD4YD2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaLw7Qy/WlvKjHoiXKqqRTDAAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAAniAvN5VEghVJSfPG5N8fzSs+qaoKWbog7iPvrJUSs2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiaZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmZiNWQ5MTlmLTJjYjQtNDhmYi05NmRhLWM2OTQ4MDJiZmJhZC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjllMWUwY2RhLThhNmItNDhhOS1hYzQ4LTE0MmYzNDliMzRiNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAfWjyL0gM7fn+HNjDRkoPK1mx5W7OuTlJ8FnJkMPhgPaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggNlwTmVIDMyNk9rvBqtKwsOy0oay1LpInAC2W6eyRUMOiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggCSXtPQMbHyXXuW8zZD6hAFtg0AzzeGav4ygX2okjAE50Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQCSwcIgEtBxwgm2j+799/fqAopEbJpgsajY8ru67whVaiEEY3eWaOnQ33D+fezKixruqi92WittVmzvTtJJ4Ijg=</c2pa:manifest></metadata>
+<rect width="3120" height="8300" fill="#EFEEE9"/>
+<text x="80" y="90" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#1F1E1C" text-anchor="start">Customer · mobile (390 × 844)</text>
+<text x="80" y="146" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">1 · Home</text>
+<rect x="80" y="160" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="100" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="450" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="100" y="238" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<rect x="100" y="252" width="241.76000000000002" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="220.88" y="265.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00 · collection 15 min</text>
+<rect x="100" y="288" width="350" height="150" rx="12" fill="#F6F5F1"/>
+<line x1="100" y1="288" x2="450" y2="438" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="450" y1="288" x2="100" y2="438" stroke="#E1DFD8" stroke-width="1"/>
+<text x="116" y="370" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1F1E1C" text-anchor="start">Say it. We serve it.</text>
+<rect x="100" y="456" width="350" height="52" rx="8" fill="#1F1E1C"/>
+<text x="275.0" y="486.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Just tell us what you want</text>
+<text x="275.0" y="528" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="middle">or browse the menu</text>
+<text x="100" y="572" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Popular right now</text>
+<rect x="100" y="590" width="68" height="68" rx="8" fill="#F6F5F1"/>
+<line x1="100" y1="590" x2="168" y2="658" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="168" y1="590" x2="100" y2="658" stroke="#E1DFD8" stroke-width="1"/>
+<text x="180" y="616" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger</text>
+<text x="180" y="638" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">£4.49</text>
+<rect x="414" y="610" width="30" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="429" y="630" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<rect x="100" y="676" width="68" height="68" rx="8" fill="#F6F5F1"/>
+<line x1="100" y1="676" x2="168" y2="744" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="168" y1="676" x2="100" y2="744" stroke="#E1DFD8" stroke-width="1"/>
+<text x="180" y="702" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Loaded Fries</text>
+<text x="180" y="724" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">£4.29</text>
+<rect x="414" y="696" width="30" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="429" y="716" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<rect x="100" y="762" width="68" height="68" rx="8" fill="#F6F5F1"/>
+<line x1="100" y1="762" x2="168" y2="830" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="168" y1="762" x2="100" y2="830" stroke="#E1DFD8" stroke-width="1"/>
+<text x="180" y="788" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Milkshake</text>
+<text x="180" y="810" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">£3.29</text>
+<rect x="414" y="782" width="30" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="429" y="802" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<line x1="80" y1="938" x2="470" y2="938" stroke="#E1DFD8" stroke-width="1"/>
+<text x="129" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#1F1E1C" text-anchor="middle">Menu</text>
+<text x="226" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Chat</text>
+<text x="323" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Orders</text>
+<text x="420" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Account</text>
+<text x="540" y="146" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">2 · Menu</text>
+<rect x="540" y="160" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="560" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="910" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="558" y="229" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<text x="912" y="228" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">Open · 15 min</text>
+<line x1="540" y1="248" x2="930" y2="248" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="264" width="354" height="38" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="570" y="287.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Search "chips", "nuggs", "fizzy"…</text>
+<rect x="558" y="316" width="72.72" height="28" rx="14.0" fill="#1F1E1C"/>
+<text x="594.36" y="334.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">Popular</text>
+<rect x="638.72" y="316" width="72.72" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="675.08" y="334.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Burgers</text>
+<rect x="719.44" y="316" width="58.8" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="748.84" y="334.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Meals</text>
+<rect x="786.24" y="316" width="58.8" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="815.64" y="334.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Sides</text>
+<rect x="853.04" y="316" width="65.75999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="885.92" y="334.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Drinks</text>
+<line x1="540" y1="364" x2="930" y2="364" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="378" width="64" height="64" rx="8" fill="#F6F5F1"/>
+<text x="636" y="398" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger</text>
+<text x="636" y="418" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Beef patty, cheddar, lettuce, tomato</text>
+<text x="636" y="440" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">£4.49</text>
+<rect x="680" y="426" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="705.4" y="439.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<text x="898" y="416" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<line x1="540" y1="456" x2="930" y2="456" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="470" width="64" height="64" rx="8" fill="#F6F5F1"/>
+<text x="636" y="490" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Double Smash Burger</text>
+<text x="636" y="510" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Two patties, double cheddar, onions</text>
+<text x="636" y="532" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">£6.49</text>
+<rect x="680" y="518" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="705.4" y="531.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<text x="898" y="508" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<line x1="540" y1="548" x2="930" y2="548" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="562" width="64" height="64" rx="8" fill="#F6F5F1"/>
+<text x="636" y="582" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Loaded Fries</text>
+<text x="636" y="602" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Cheese sauce, crispy onions, BBQ</text>
+<text x="636" y="624" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">£4.29</text>
+<rect x="680" y="610" width="56.96" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="708.48" y="623.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Veggie</text>
+<text x="898" y="600" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<line x1="540" y1="640" x2="930" y2="640" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="654" width="64" height="64" rx="8" fill="#F6F5F1" opacity="0.45"/>
+<text x="636" y="674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start" opacity="0.45">Chicken Wings</text>
+<text x="636" y="694" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start" opacity="0.45">Sold out today</text>
+<line x1="540" y1="732" x2="930" y2="732" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="746" width="64" height="64" rx="8" fill="#F6F5F1"/>
+<text x="636" y="766" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger Meal</text>
+<text x="636" y="786" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Burger, a side and a drink</text>
+<text x="636" y="808" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">£7.29</text>
+<rect x="680" y="794" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="705.4" y="807.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<text x="898" y="784" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#1F1E1C" text-anchor="middle">+</text>
+<rect x="554" y="930" width="300" height="46" rx="10" fill="#1F1E1C"/>
+<text x="572" y="959" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="start">View cart · 2 items</text>
+<text x="832" y="959" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="end">£8.78</text>
+<rect x="862" y="930" width="54" height="46" rx="10" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<circle cx="889" cy="951" r="7" fill="none" stroke="#1F1E1C" stroke-width="1"/>
+<text x="889" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6A65" text-anchor="middle">mic</text>
+<text x="1000" y="146" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">3 · Item customiser</text>
+<rect x="1000" y="160" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1020" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="1370" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="1018" y="228" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6B6A65" text-anchor="start">←</text>
+<text x="1040" y="229" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger Meal</text>
+<line x1="1000" y1="248" x2="1390" y2="248" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1000" y="248" width="390" height="150" rx="0" fill="#F6F5F1"/>
+<line x1="1000" y1="248" x2="1390" y2="398" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="1390" y1="248" x2="1000" y2="398" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1018" y="424" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Burger, a side and a drink.</text>
+<text x="1018" y="446" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Contains gluten, milk, sesame, egg</text>
+<line x1="1000" y1="462" x2="1390" y2="462" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1018" y="488" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Choose a side</text>
+<rect x="1300" y="474" width="69.28" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="1334.64" y="487.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Required</text>
+<circle cx="1026" cy="510" r="7" fill="#1F1E1C" stroke="#C9C7BF" stroke-width="1"/>
+<circle cx="1026" cy="510" r="3" fill="#FFFFFF"/>
+<text x="1044" y="515" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Regular fries</text>
+<circle cx="1026" cy="540" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1044" y="545" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Curly fries</text>
+<text x="1372" y="545" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">+£0.60</text>
+<circle cx="1026" cy="570" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1044" y="575" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Onion rings</text>
+<text x="1372" y="575" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">+£0.60</text>
+<text x="1044" y="588" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">3 more options</text>
+<line x1="1000" y1="606" x2="1390" y2="606" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1018" y="632" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Choose a drink</text>
+<rect x="1300" y="618" width="69.28" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="1334.64" y="631.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Required</text>
+<circle cx="1026" cy="654" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1044" y="659" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Not chosen yet</text>
+<circle cx="1026" cy="684" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1044" y="689" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Cola</text>
+<circle cx="1026" cy="714" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1044" y="719" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Milkshake</text>
+<text x="1372" y="719" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">+£1.60</text>
+<text x="1044" y="732" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">3 more options</text>
+<line x1="1000" y1="750" x2="1390" y2="750" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1018" y="776" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Remove anything?</text>
+<text x="1150" y="776" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">optional</text>
+<rect x="1018" y="792" width="86.63999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1061.32" y="810.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">No onions</text>
+<rect x="1112.6399999999999" y="792" width="93.6" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1159.4399999999998" y="810.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">No pickles</text>
+<rect x="1214.2399999999998" y="792" width="86.63999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1257.5599999999997" y="810.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">No cheese</text>
+<line x1="1000" y1="846" x2="1390" y2="846" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1018" y="872" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Add extras</text>
+<rect x="1018" y="888" width="156.23999999999998" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1096.12" y="906.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Extra cheese +£0.60</text>
+<rect x="1182.24" y="888" width="135.35999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1249.92" y="906.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Fried egg +£0.70</text>
+<line x1="1000" y1="928" x2="1390" y2="928" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1018" y="942" width="96" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1036" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="start">−</text>
+<text x="1066" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="middle">1</text>
+<text x="1096" y="970" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="start">+</text>
+<rect x="1126" y="942" width="246" height="44" rx="8" fill="#1F1E1C"/>
+<text x="1249.0" y="968.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Add · £7.29</text>
+<text x="1460" y="146" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">4 · Cart</text>
+<rect x="1460" y="160" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1480" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="1830" y="186" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="1478" y="228" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6B6A65" text-anchor="start">←</text>
+<text x="1500" y="229" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Your cart</text>
+<line x1="1460" y1="248" x2="1850" y2="248" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="1460" y1="266" x2="1850" y2="266" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="296" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">2 × Cheeseburger</text>
+<text x="1478" y="318" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">No onions</text>
+<text x="1478" y="342" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">Edit</text>
+<text x="1832" y="296" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#1F1E1C" text-anchor="end">£8.98</text>
+<line x1="1460" y1="362" x2="1850" y2="362" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="392" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cola</text>
+<text x="1478" y="414" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Large</text>
+<text x="1478" y="438" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">Edit</text>
+<text x="1832" y="392" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#1F1E1C" text-anchor="end">£2.19</text>
+<line x1="1460" y1="458" x2="1850" y2="458" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="488" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cheeseburger Meal</text>
+<text x="1478" y="510" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Regular fries</text>
+<rect x="1478" y="520" width="100.08000000000001" height="20" rx="10.0" fill="#FAEEDA"/>
+<text x="1528.04" y="533.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#854F0B" text-anchor="middle">Needs a drink</text>
+<text x="1832" y="488" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#9D9B95" text-anchor="end">—</text>
+<line x1="1460" y1="560" x2="1850" y2="560" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="588" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Add something else</text>
+<rect x="1478" y="604" width="58.8" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1507.4" y="622.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Fries</text>
+<rect x="1544.8" y="604" width="72.72" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1581.1599999999999" y="622.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Cookies</text>
+<rect x="1625.52" y="604" width="65.75999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1658.4" y="622.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Coffee</text>
+<line x1="1460" y1="832" x2="1850" y2="832" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="862" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Subtotal</text>
+<text x="1832" y="862" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£11.17</text>
+<text x="1478" y="886" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Collection</text>
+<text x="1832" y="886" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">Free</text>
+<text x="1478" y="922" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Total</text>
+<text x="1832" y="922" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="end">£11.17</text>
+<rect x="1478" y="942" width="354" height="46" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1655.0" y="969.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#9D9B95" text-anchor="middle">Checkout · finish the meal first</text>
+<text x="80" y="1120" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">5 · Chat and voice</text>
+<rect x="80" y="1134" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="100" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="450" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="98" y="1203" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Just tell us</text>
+<text x="452" y="1202" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">✕</text>
+<line x1="80" y1="1222" x2="470" y2="1222" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="202" y="1242" width="250" height="40" rx="12" fill="#1F1E1C"/>
+<text x="440" y="1267" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="end">two cheeseburgers, no onions</text>
+<rect x="302" y="1290" width="150" height="40" rx="12" fill="#1F1E1C"/>
+<text x="440" y="1315" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="end">and a large coke</text>
+<rect x="98" y="1338" width="190" height="40" rx="12" fill="#F6F5F1"/>
+<text x="110" y="1363" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1F1E1C" text-anchor="start">Added. Anything else?</text>
+<text x="102" y="1396" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="start">Matched directly · 22 ms · no model call</text>
+<rect x="262" y="1414" width="190" height="40" rx="12" fill="#1F1E1C"/>
+<text x="440" y="1439" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="end">and a cheeseburger meal</text>
+<rect x="98" y="1462" width="210" height="40" rx="12" fill="#F6F5F1"/>
+<text x="110" y="1487" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1F1E1C" text-anchor="start">Which drink with the meal?</text>
+<rect x="98" y="1512" width="51.839999999999996" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="123.92" y="1530.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Cola</text>
+<rect x="157.84" y="1512" width="79.67999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="197.68" y="1530.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Lemonade</text>
+<rect x="245.51999999999998" y="1512" width="58.8" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="274.91999999999996" y="1530.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Water</text>
+<rect x="312.32" y="1512" width="135.35999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="380.0" y="1530.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Milkshake +£1.60</text>
+<line x1="80" y1="1568" x2="470" y2="1568" stroke="#E1DFD8" stroke-width="1"/>
+<text x="98" y="1594" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Cart so far</text>
+<text x="98" y="1620" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">2 × Cheeseburger · no onions</text>
+<text x="452" y="1620" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">£8.98</text>
+<text x="98" y="1654" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × Cola · large</text>
+<text x="452" y="1654" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">£2.19</text>
+<text x="98" y="1688" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × Cheeseburger Meal</text>
+<text x="452" y="1688" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#854F0B" text-anchor="end">needs drink</text>
+<rect x="98" y="1730" width="354" height="96" rx="12" fill="#F6F5F1"/>
+<circle cx="275.0" cy="1770" r="22" fill="#1F1E1C"/>
+<text x="275.0" y="1776" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="middle">hold</text>
+<text x="275.0" y="1810" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Hold to speak your order</text>
+<line x1="80" y1="1902" x2="470" y2="1902" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="98" y="1916" width="308" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="110" y="1942.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Type your order</text>
+<rect x="412" y="1916" width="40" height="44" rx="8" fill="#1F1E1C"/>
+<text x="432" y="1944" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#FFFFFF" text-anchor="middle">↑</text>
+<text x="540" y="1120" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">6 · Checkout</text>
+<rect x="540" y="1134" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="560" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="910" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="558" y="1202" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6B6A65" text-anchor="start">←</text>
+<text x="580" y="1203" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Checkout</text>
+<line x1="540" y1="1222" x2="930" y2="1222" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="1242" width="173.0" height="56" rx="8" fill="none" stroke="#185FA5" stroke-width="2"/>
+<text x="644.5" y="1268" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="middle">Collection</text>
+<text x="644.5" y="1286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Ready in 15 min</text>
+<rect x="739.0" y="1242" width="173.0" height="56" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="825.5" y="1268" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="middle">Delivery</text>
+<text x="825.5" y="1286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">+£2.50 · 2 miles</text>
+<text x="558" y="1330" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">When</text>
+<rect x="558" y="1342" width="51.839999999999996" height="28" rx="14.0" fill="#1F1E1C"/>
+<text x="583.92" y="1360.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">ASAP</text>
+<rect x="640" y="1342" width="100.55999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="690.28" y="1360.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Pick a time</text>
+<text x="558" y="1408" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Your details</text>
+<rect x="558" y="1420" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="570" y="1444.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Name</text>
+<rect x="558" y="1470" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="570" y="1494.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">07700 900123</text>
+<rect x="558" y="1520" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="570" y="1544.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Notes for the kitchen (optional)</text>
+<line x1="540" y1="1586" x2="930" y2="1586" stroke="#E1DFD8" stroke-width="1"/>
+<text x="558" y="1614" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">3 items</text>
+<text x="912" y="1614" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£18.46</text>
+<text x="558" y="1640" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Collection</text>
+<text x="912" y="1640" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">Free</text>
+<text x="558" y="1674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#1F1E1C" text-anchor="start">Total</text>
+<text x="912" y="1674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#1F1E1C" text-anchor="end">£18.46</text>
+<rect x="558" y="1704" width="354" height="48" rx="8" fill="#1F1E1C"/>
+<text x="735.0" y="1732.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Pay by card</text>
+<rect x="558" y="1762" width="354" height="48" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="735.0" y="1790.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Pay on collection</text>
+<text x="735.0" y="1834" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Card payments handled by Stripe</text>
+<text x="1000" y="1120" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">14 · Checkout with delivery</text>
+<rect x="1000" y="1134" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1020" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="1370" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="1018" y="1202" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6B6A65" text-anchor="start">←</text>
+<text x="1040" y="1203" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Checkout</text>
+<line x1="1000" y1="1222" x2="1390" y2="1222" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1018" y="1242" width="173.0" height="56" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1104.5" y="1268" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="middle">Collection</text>
+<text x="1104.5" y="1286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Ready in 15 min</text>
+<rect x="1199.0" y="1242" width="173.0" height="56" rx="8" fill="none" stroke="#185FA5" stroke-width="2"/>
+<text x="1285.5" y="1268" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="middle">Delivery</text>
+<text x="1285.5" y="1286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">£2.50 · 30–40 min</text>
+<text x="1018" y="1330" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Deliver to</text>
+<rect x="1018" y="1342" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1030" y="1366.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Postcode</text>
+<rect x="1270" y="1342" width="102" height="40" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1321.0" y="1366.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Find address</text>
+<rect x="1018" y="1392" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1030" y="1416.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Address line 1</text>
+<rect x="1018" y="1440" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1030" y="1464.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Flat, building (optional)</text>
+<rect x="1018" y="1488" width="354" height="52" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1030" y="1518.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Delivery notes — buzzer, gate code</text>
+<rect x="1018" y="1552" width="228.32000000000002" height="24" rx="12.0" fill="#EAF3DE"/>
+<text x="1132.16" y="1568.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Inside the 2 mile delivery area</text>
+<text x="1018" y="1610" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Your details</text>
+<rect x="1018" y="1622" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1030" y="1646.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Name</text>
+<rect x="1018" y="1670" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1030" y="1694.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">07700 900123</text>
+<line x1="1000" y1="1730" x2="1390" y2="1730" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1018" y="1758" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">3 items</text>
+<text x="1372" y="1758" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£18.46</text>
+<text x="1018" y="1782" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Delivery</text>
+<text x="1372" y="1782" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£2.50</text>
+<text x="1018" y="1820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#1F1E1C" text-anchor="start">Total</text>
+<text x="1372" y="1820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#1F1E1C" text-anchor="end">£20.96</text>
+<rect x="1018" y="1844" width="354" height="48" rx="8" fill="#1F1E1C"/>
+<text x="1195.0" y="1872.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Pay by card</text>
+<text x="1195.0" y="1916" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Delivery orders must be paid in advance</text>
+<text x="1460" y="1120" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">7 · Order tracking</text>
+<rect x="1460" y="1134" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1480" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="1830" y="1160" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="1478" y="1203" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Order #1042</text>
+<text x="1832" y="1202" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">Collection</text>
+<line x1="1460" y1="1222" x2="1850" y2="1222" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1478" y="1240" width="354" height="92" rx="12" fill="#F6F5F1"/>
+<text x="1655.0" y="1274" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Ready at</text>
+<text x="1655.0" y="1310" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#1F1E1C" text-anchor="middle">18:40</text>
+<circle cx="1492" cy="1374" r="9" fill="#3B6D11" stroke="#C9C7BF" stroke-width="1"/>
+<line x1="1492" y1="1386" x2="1492" y2="1416" stroke="#C9C7BF" stroke-width="2"/>
+<text x="1516" y="1375" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#1F1E1C" text-anchor="start">Order placed</text>
+<text x="1516" y="1394" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">18:21</text>
+<circle cx="1492" cy="1438" r="9" fill="#3B6D11" stroke="#C9C7BF" stroke-width="1"/>
+<line x1="1492" y1="1450" x2="1492" y2="1480" stroke="#C9C7BF" stroke-width="2"/>
+<text x="1516" y="1439" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#1F1E1C" text-anchor="start">Accepted by the kitchen</text>
+<text x="1516" y="1458" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">18:23</text>
+<circle cx="1492" cy="1502" r="9" fill="#185FA5" stroke="#C9C7BF" stroke-width="1"/>
+<line x1="1492" y1="1514" x2="1492" y2="1544" stroke="#E1DFD8" stroke-width="2"/>
+<text x="1516" y="1503" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Preparing your food</text>
+<text x="1516" y="1522" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">started 18:24</text>
+<circle cx="1492" cy="1566" r="9" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1516" y="1567" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#9D9B95" text-anchor="start">Ready to collect</text>
+<line x1="1460" y1="1654" x2="1850" y2="1654" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="1682" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Your order</text>
+<text x="1478" y="1710" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × BBQ Stack Meal</text>
+<text x="1832" y="1710" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">£8.79</text>
+<text x="1478" y="1736" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">  regular fries, cola</text>
+<text x="1478" y="1762" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × Milkshake · salted caramel</text>
+<text x="1832" y="1762" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">£3.69</text>
+<line x1="1460" y1="1798" x2="1850" y2="1798" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1478" y="1826" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Total paid</text>
+<text x="1832" y="1826" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="end">£12.48</text>
+<rect x="1478" y="1850" width="354" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1655.0" y="1876.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#9D9B95" text-anchor="middle">Cancel · kitchen already started</text>
+<rect x="1478" y="1906" width="354" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1655.0" y="1932.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Get directions</text>
+<text x="80" y="2094" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">8 · Order history</text>
+<rect x="80" y="2108" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="100" y="2134" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="450" y="2134" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="98" y="2177" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Your orders</text>
+<line x1="80" y1="2196" x2="470" y2="2196" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="80" y1="2214" x2="470" y2="2214" stroke="#E1DFD8" stroke-width="1"/>
+<text x="98" y="2246" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">#1042</text>
+<rect x="156" y="2232" width="75.44" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="193.72" y="2245.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Preparing</text>
+<text x="452" y="2246" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="end">£12.48</text>
+<text x="98" y="2270" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Today 18:21</text>
+<text x="98" y="2290" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × BBQ Stack Meal, 1 × Milkshake</text>
+<rect x="340" y="2276" width="112" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="396.0" y="2295.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Order again</text>
+<line x1="80" y1="2324" x2="470" y2="2324" stroke="#E1DFD8" stroke-width="1"/>
+<text x="98" y="2356" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">#1038</text>
+<rect x="156" y="2342" width="75.44" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="193.72" y="2355.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Completed</text>
+<text x="452" y="2356" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="end">£8.98</text>
+<text x="98" y="2380" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Tue 12:05</text>
+<text x="98" y="2400" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × BBQ Stack Meal, 1 × Milkshake</text>
+<rect x="340" y="2386" width="112" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="396.0" y="2405.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Order again</text>
+<line x1="80" y1="2434" x2="470" y2="2434" stroke="#E1DFD8" stroke-width="1"/>
+<text x="98" y="2466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">#1031</text>
+<rect x="156" y="2452" width="75.44" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="193.72" y="2465.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Completed</text>
+<text x="452" y="2466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="end">£24.99</text>
+<text x="98" y="2490" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Sun 19:40</text>
+<text x="98" y="2510" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × BBQ Stack Meal, 1 × Milkshake</text>
+<rect x="340" y="2496" width="112" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="396.0" y="2515.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Order again</text>
+<line x1="80" y1="2544" x2="470" y2="2544" stroke="#E1DFD8" stroke-width="1"/>
+<text x="98" y="2576" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">#1024</text>
+<rect x="156" y="2562" width="75.44" height="20" rx="10.0" fill="#FCEBEB"/>
+<text x="193.72" y="2575.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#A32D2D" text-anchor="middle">Cancelled</text>
+<text x="452" y="2576" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="end">£6.49</text>
+<text x="98" y="2600" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Fri 13:12</text>
+<text x="98" y="2620" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">1 × BBQ Stack Meal, 1 × Milkshake</text>
+<rect x="340" y="2606" width="112" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="396.0" y="2625.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Order again</text>
+<line x1="80" y1="2886" x2="470" y2="2886" stroke="#E1DFD8" stroke-width="1"/>
+<text x="129" y="2918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Menu</text>
+<text x="226" y="2918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Chat</text>
+<text x="323" y="2918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#1F1E1C" text-anchor="middle">Orders</text>
+<text x="420" y="2918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="middle">Account</text>
+<text x="80" y="3112" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#1F1E1C" text-anchor="start">Customer · desktop (1440 × 900)</text>
+<text x="80" y="3168" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">D1 · Home (desktop 1440)</text>
+<rect x="80" y="3182" width="1440" height="900" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="120" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<text x="270" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<text x="390" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Your orders</text>
+<text x="510" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Account</text>
+<rect x="1100" y="3212" width="127.52000000000001" height="26" rx="13.0" fill="#EAF3DE"/>
+<text x="1163.76" y="3229.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00</text>
+<line x1="80" y1="3254" x2="1520" y2="3254" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="120" y="3290" width="680" height="380" rx="16" fill="#F6F5F1"/>
+<line x1="120" y1="3290" x2="800" y2="3670" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="800" y1="3290" x2="120" y2="3670" stroke="#E1DFD8" stroke-width="1"/>
+<text x="860" y="3372" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500" fill="#1F1E1C" text-anchor="start">Say it. We serve it.</text>
+<text x="860" y="3422" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6B6A65" text-anchor="start">Type or speak your order, or browse the menu.</text>
+<text x="860" y="3450" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6B6A65" text-anchor="start">Halal certified · collection in 15 minutes.</text>
+<rect x="860" y="3492" width="280" height="56" rx="8" fill="#1F1E1C"/>
+<text x="1000.0" y="3524.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle">Just tell us what you want</text>
+<rect x="1160" y="3492" width="200" height="56" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1260.0" y="3524.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="middle">Browse the menu</text>
+<circle cx="870" cy="3586" r="4" fill="#9D9B95"/>
+<text x="886" y="3591" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Collection or delivery</text>
+<circle cx="870" cy="3618" r="4" fill="#9D9B95"/>
+<text x="886" y="3623" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Order again in one tap</text>
+<circle cx="870" cy="3650" r="4" fill="#9D9B95"/>
+<text x="886" y="3655" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Allergens on every item</text>
+<text x="120" y="3722" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1F1E1C" text-anchor="start">Popular right now</text>
+<rect x="120" y="3748" width="325" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="121" y="3749" width="323" height="140" rx="12" fill="#F6F5F1"/>
+<line x1="121" y1="3749" x2="444" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="444" y1="3749" x2="121" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<text x="140" y="3918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger</text>
+<text x="140" y="3940" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Beef patty, cheddar, lettuce</text>
+<text x="140" y="3974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">£4.49</text>
+<rect x="345" y="3954" width="80" height="32" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="385.0" y="3974.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="465" y="3748" width="325" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="466" y="3749" width="323" height="140" rx="12" fill="#F6F5F1"/>
+<line x1="466" y1="3749" x2="789" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="789" y1="3749" x2="466" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<text x="485" y="3918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Double Smash Burger</text>
+<text x="485" y="3940" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Two patties, double cheddar</text>
+<text x="485" y="3974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">£6.49</text>
+<rect x="690" y="3954" width="80" height="32" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="730.0" y="3974.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="810" y="3748" width="325" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="811" y="3749" width="323" height="140" rx="12" fill="#F6F5F1"/>
+<line x1="811" y1="3749" x2="1134" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="1134" y1="3749" x2="811" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<text x="830" y="3918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Loaded Fries</text>
+<text x="830" y="3940" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Cheese sauce, crispy onions</text>
+<text x="830" y="3974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">£4.29</text>
+<rect x="1035" y="3954" width="80" height="32" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1075.0" y="3974.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="1155" y="3748" width="325" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1156" y="3749" width="323" height="140" rx="12" fill="#F6F5F1"/>
+<line x1="1156" y1="3749" x2="1479" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="1479" y1="3749" x2="1156" y2="3889" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1175" y="3918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Milkshake</text>
+<text x="1175" y="3940" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Thick shake, blended to order</text>
+<text x="1175" y="3974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">£3.29</text>
+<rect x="1380" y="3954" width="80" height="32" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1420.0" y="3974.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<line x1="80" y1="4030" x2="1520" y2="4030" stroke="#E1DFD8" stroke-width="1"/>
+<text x="120" y="4060" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Halal certified · Allergen information on every item</text>
+<text x="1600" y="3168" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">D2 · Menu with live cart (desktop 1440)</text>
+<rect x="1600" y="3182" width="1440" height="900" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1640" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<text x="1790" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<text x="1910" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Your orders</text>
+<text x="2030" y="3226" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Account</text>
+<rect x="2620" y="3212" width="127.52000000000001" height="26" rx="13.0" fill="#EAF3DE"/>
+<text x="2683.76" y="3229.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00</text>
+<rect x="2810" y="3206" width="190" height="40" rx="8" fill="#1F1E1C"/>
+<text x="2828" y="3231" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="start">Cart · 2 items</text>
+<text x="2984" y="3231" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="end">£8.78</text>
+<line x1="1600" y1="3254" x2="3040" y2="3254" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1640" y="3298" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Categories</text>
+<rect x="1630" y="3314" width="200" height="34" rx="8" fill="#F6F5F1"/>
+<text x="1646" y="3336" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Popular</text>
+<rect x="1630" y="3356" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3378" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Burgers 11</text>
+<rect x="1630" y="3398" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3420" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Chicken 7</text>
+<rect x="1630" y="3440" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3462" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Wraps 5</text>
+<rect x="1630" y="3482" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3504" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Sides 11</text>
+<rect x="1630" y="3524" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3546" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Drinks 13</text>
+<rect x="1630" y="3566" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3588" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Desserts 7</text>
+<rect x="1630" y="3608" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3630" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Meals 7</text>
+<rect x="1630" y="3650" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3672" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Breakfast 6</text>
+<rect x="1630" y="3692" width="200" height="34" rx="8" fill="none"/>
+<text x="1646" y="3714" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Kids 3</text>
+<line x1="1860" y1="3254" x2="1860" y2="4082" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1892" y="3286" width="500" height="42" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1904" y="3311.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Search "chips", "nuggs", "fizzy drink"…</text>
+<rect x="2412" y="3286" width="130" height="42" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2477.0" y="3311.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Hold to speak</text>
+<text x="1892" y="3368" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1F1E1C" text-anchor="start">Popular</text>
+<rect x="1892" y="3392" width="206" height="262" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1893" y="3393" width="204" height="130" rx="12" fill="#F6F5F1"/>
+<line x1="1893" y1="3393" x2="2097" y2="3523" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="2097" y1="3393" x2="1893" y2="3523" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1908" y="3554" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger</text>
+<text x="1908" y="3574" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Cheddar, lettuce, tomato</text>
+<text x="1908" y="3608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">£4.49</text>
+<rect x="1952" y="3594" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="1977.4" y="3607.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<rect x="1908" y="3620" width="174" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1995.0" y="3639.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="2118" y="3392" width="206" height="262" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="2119" y="3393" width="204" height="130" rx="12" fill="#F6F5F1"/>
+<line x1="2119" y1="3393" x2="2323" y2="3523" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="2323" y1="3393" x2="2119" y2="3523" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2134" y="3554" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Double Smash Burger</text>
+<text x="2134" y="3574" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Two patties, onions</text>
+<text x="2134" y="3608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">£6.49</text>
+<rect x="2178" y="3594" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="2203.4" y="3607.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<rect x="2134" y="3620" width="174" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2221.0" y="3639.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="2344" y="3392" width="206" height="262" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="2345" y="3393" width="204" height="130" rx="12" fill="#F6F5F1"/>
+<line x1="2345" y1="3393" x2="2549" y2="3523" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="2549" y1="3393" x2="2345" y2="3523" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2360" y="3554" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Loaded Fries</text>
+<text x="2360" y="3574" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Cheese sauce, BBQ</text>
+<text x="2360" y="3608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">£4.29</text>
+<rect x="2404" y="3594" width="56.96" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="2432.48" y="3607.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Veggie</text>
+<rect x="2360" y="3620" width="174" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2447.0" y="3639.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="1892" y="3678" width="206" height="262" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1893" y="3679" width="204" height="130" rx="12" fill="#F6F5F1"/>
+<line x1="1893" y1="3679" x2="2097" y2="3809" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="2097" y1="3679" x2="1893" y2="3809" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1908" y="3840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger Meal</text>
+<text x="1908" y="3860" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Burger, side and drink</text>
+<text x="1908" y="3894" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">£7.29</text>
+<rect x="1952" y="3880" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="1977.4" y="3893.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<rect x="1908" y="3906" width="174" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1995.0" y="3925.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="2118" y="3678" width="206" height="262" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="2119" y="3679" width="204" height="130" rx="12" fill="#F6F5F1"/>
+<line x1="2119" y1="3679" x2="2323" y2="3809" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="2323" y1="3679" x2="2119" y2="3809" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2134" y="3840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Chicken Nuggets</text>
+<text x="2134" y="3860" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Breaded chicken breast</text>
+<text x="2134" y="3894" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">£3.99</text>
+<rect x="2178" y="3880" width="50.800000000000004" height="20" rx="10.0" fill="#EAF3DE"/>
+<text x="2203.4" y="3893.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">Halal</text>
+<rect x="2134" y="3906" width="174" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2221.0" y="3925.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add</text>
+<rect x="2344" y="3678" width="206" height="262" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1" opacity="0.5"/>
+<rect x="2345" y="3679" width="204" height="130" rx="12" fill="#F6F5F1"/>
+<line x1="2345" y1="3679" x2="2549" y2="3809" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="2549" y1="3679" x2="2345" y2="3809" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2360" y="3840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Chicken Wings</text>
+<text x="2360" y="3860" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Marinated and glazed</text>
+<text x="2360" y="3894" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Sold out today</text>
+<line x1="2680" y1="3254" x2="2680" y2="4082" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2712" y="3298" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Your cart</text>
+<text x="3000" y="3298" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="end">Clear</text>
+<line x1="2712" y1="3332" x2="3000" y2="3332" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2712" y="3360" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">2 × Cheeseburger</text>
+<text x="2712" y="3380" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">No onions</text>
+<text x="2712" y="3402" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">Edit</text>
+<text x="3000" y="3360" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£8.98</text>
+<line x1="2712" y1="3424" x2="3000" y2="3424" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2712" y="3452" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cola</text>
+<text x="2712" y="3472" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Large</text>
+<text x="2712" y="3494" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">Edit</text>
+<text x="3000" y="3452" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£2.19</text>
+<line x1="2712" y1="3516" x2="3000" y2="3516" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2712" y="3544" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cheeseburger Meal</text>
+<text x="2712" y="3564" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Regular fries</text>
+<rect x="2712" y="3574" width="100.08000000000001" height="20" rx="10.0" fill="#FAEEDA"/>
+<text x="2762.04" y="3587.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#854F0B" text-anchor="middle">Needs a drink</text>
+<text x="3000" y="3544" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="end">—</text>
+<line x1="2712" y1="3614" x2="3000" y2="3614" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2712" y="3644" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Subtotal</text>
+<text x="3000" y="3644" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£11.17</text>
+<rect x="2712" y="3668" width="288" height="46" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2856.0" y="3695.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#9D9B95" text-anchor="middle">Checkout · finish the meal first</text>
+<rect x="2712" y="3738" width="288" height="200" rx="12" fill="#F6F5F1"/>
+<text x="2732" y="3770" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Prefer to talk?</text>
+<text x="2732" y="3794" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Type or speak your whole order</text>
+<text x="2732" y="3814" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">and we fill this cart for you.</text>
+<rect x="2732" y="3838" width="248" height="40" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2856.0" y="3862.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Open the assistant</text>
+<text x="2732" y="3906" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="start">Handled without the model 58% of the time</text>
+<text x="80" y="4198" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">D3 · Item customiser (modal over the menu)</text>
+<rect x="80" y="4212" width="1440" height="900" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="120" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<text x="270" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<text x="390" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Your orders</text>
+<text x="510" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Account</text>
+<rect x="1100" y="4242" width="127.52000000000001" height="26" rx="13.0" fill="#EAF3DE"/>
+<text x="1163.76" y="4259.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00</text>
+<rect x="1290" y="4236" width="190" height="40" rx="8" fill="#1F1E1C"/>
+<text x="1308" y="4261" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="start">Cart · 2 items</text>
+<text x="1464" y="4261" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="end">£8.78</text>
+<line x1="80" y1="4284" x2="1520" y2="4284" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="80" y="4284" width="1440" height="828" rx="0" fill="#1F1E1C" opacity="0.32"/>
+<rect x="380" y="4330" width="840" height="704" rx="16" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1190" y="4368" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6B6A65" text-anchor="end">✕</text>
+<rect x="381" y="4331" width="360" height="702" rx="16" fill="#F6F5F1"/>
+<line x1="381" y1="4331" x2="741" y2="5033" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="741" y1="4331" x2="381" y2="5033" stroke="#E1DFD8" stroke-width="1"/>
+<text x="776" y="4378" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger Meal</text>
+<text x="776" y="4406" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Burger, a side and a drink.</text>
+<text x="776" y="4428" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Contains gluten, milk, sesame, egg</text>
+<line x1="776" y1="4446" x2="1188" y2="4446" stroke="#E1DFD8" stroke-width="1"/>
+<text x="776" y="4474" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Choose a side</text>
+<rect x="1110" y="4460" width="69.28" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="1144.64" y="4473.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Required</text>
+<circle cx="784" cy="4500" r="7" fill="#1F1E1C" stroke="#C9C7BF" stroke-width="1"/>
+<circle cx="784" cy="4500" r="3" fill="#FFFFFF"/>
+<text x="802" y="4505" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Regular fries</text>
+<circle cx="784" cy="4530" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="802" y="4535" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Curly fries</text>
+<text x="1188" y="4535" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">+£0.60</text>
+<circle cx="784" cy="4560" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="802" y="4565" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Onion rings</text>
+<text x="1188" y="4565" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">+£0.60</text>
+<text x="802" y="4594" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">3 more options</text>
+<line x1="776" y1="4614" x2="1188" y2="4614" stroke="#E1DFD8" stroke-width="1"/>
+<text x="776" y="4642" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Choose a drink</text>
+<rect x="1110" y="4628" width="69.28" height="20" rx="10.0" fill="#E6F1FB"/>
+<text x="1144.64" y="4641.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#185FA5" text-anchor="middle">Required</text>
+<circle cx="784" cy="4668" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="802" y="4673" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Not chosen yet</text>
+<circle cx="784" cy="4698" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="802" y="4703" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Cola</text>
+<circle cx="784" cy="4728" r="7" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="802" y="4733" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Milkshake</text>
+<text x="1188" y="4733" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">+£1.60</text>
+<text x="802" y="4762" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">3 more options</text>
+<line x1="776" y1="4782" x2="1188" y2="4782" stroke="#E1DFD8" stroke-width="1"/>
+<text x="776" y="4810" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Remove anything?</text>
+<text x="926" y="4810" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">optional</text>
+<rect x="776" y="4826" width="86.63999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="819.3199999999999" y="4844.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">No onions</text>
+<rect x="870.64" y="4826" width="93.6" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="917.4399999999999" y="4844.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">No pickles</text>
+<rect x="972.24" y="4826" width="86.63999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1015.56" y="4844.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">No cheese</text>
+<text x="776" y="4890" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Add extras</text>
+<rect x="776" y="4906" width="156.23999999999998" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="854.12" y="4924.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Extra cheese +£0.60</text>
+<rect x="940.24" y="4906" width="135.35999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1007.92" y="4924.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Fried egg +£0.70</text>
+<line x1="776" y1="4960" x2="1188" y2="4960" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="776" y="4978" width="100" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="794" y="5006" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="start">−</text>
+<text x="826" y="5006" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="middle">1</text>
+<text x="858" y="5006" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#1F1E1C" text-anchor="start">+</text>
+<rect x="892" y="4978" width="296" height="44" rx="8" fill="#1F1E1C"/>
+<text x="1040.0" y="5004.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Add to cart · £7.29</text>
+<text x="1600" y="4198" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">D4 · Assistant and voice (desktop)</text>
+<rect x="1600" y="4212" width="1440" height="900" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1640" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<text x="1790" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<text x="1910" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Your orders</text>
+<text x="2030" y="4256" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Account</text>
+<rect x="2620" y="4242" width="127.52000000000001" height="26" rx="13.0" fill="#EAF3DE"/>
+<text x="2683.76" y="4259.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00</text>
+<rect x="2810" y="4236" width="190" height="40" rx="8" fill="#1F1E1C"/>
+<text x="2828" y="4261" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="start">Cart · 2 items</text>
+<text x="2984" y="4261" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="end">£8.78</text>
+<line x1="1600" y1="4284" x2="3040" y2="4284" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1640" y="4328" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">Just tell us what you want</text>
+<text x="1640" y="4354" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Type it, or hold the button and say it. Everything lands in the cart on the right, and you can edit any line by hand.</text>
+<rect x="1640" y="4380" width="960" height="560" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="2220" y="4408" width="360" height="44" rx="12" fill="#1F1E1C"/>
+<text x="2562" y="4436" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="end">two cheeseburgers, no onions, and a large coke</text>
+<rect x="1660" y="4464" width="220" height="44" rx="12" fill="#F6F5F1"/>
+<text x="1678" y="4492" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Added. Anything else?</text>
+<text x="1664" y="4528" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="start">Matched directly · 22 ms · no model call</text>
+<rect x="2350" y="4544" width="230" height="44" rx="12" fill="#1F1E1C"/>
+<text x="2562" y="4572" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="end">and a cheeseburger meal</text>
+<rect x="1660" y="4600" width="250" height="44" rx="12" fill="#F6F5F1"/>
+<text x="1678" y="4628" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Which drink with the meal?</text>
+<rect x="1660" y="4656" width="54.16" height="34" rx="17.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1687.08" y="4677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="middle">Cola</text>
+<rect x="1724.16" y="4656" width="84.32" height="34" rx="17.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1766.3200000000002" y="4677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="middle">Lemonade</text>
+<rect x="1818.48" y="4656" width="61.699999999999996" height="34" rx="17.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1849.33" y="4677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="middle">Water</text>
+<rect x="1890.18" y="4656" width="114.47999999999999" height="34" rx="17.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1947.42" y="4677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="middle">Orange juice</text>
+<rect x="2014.66" y="4656" width="144.64" height="34" rx="17.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2086.98" y="4677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="middle">Milkshake +£1.60</text>
+<rect x="2350" y="4712" width="230" height="44" rx="12" fill="#1F1E1C"/>
+<text x="2562" y="4740" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="end">is the chicken one spicy?</text>
+<rect x="1660" y="4768" width="470" height="44" rx="12" fill="#F6F5F1"/>
+<text x="1678" y="4796" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">The Crispy Chicken Burger is mild. The Spicy one has jalapeños.</text>
+<text x="1664" y="4832" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#9D9B95" text-anchor="start">Answered from the menu · model call · 640 ms</text>
+<line x1="1640" y1="4864" x2="2600" y2="4864" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1664" y="4884" width="700" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1676" y="4910.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Type your order</text>
+<rect x="2376" y="4884" width="100" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2426.0" y="4910.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Hold ⏺</text>
+<rect x="2488" y="4884" width="88" height="44" rx="8" fill="#1F1E1C"/>
+<text x="2532.0" y="4910.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Send</text>
+<line x1="2640" y1="4284" x2="2640" y2="5112" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2672" y="4328" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Your cart</text>
+<line x1="2672" y1="4362" x2="3000" y2="4362" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2672" y="4390" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">2 × Cheeseburger</text>
+<text x="2672" y="4410" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">No onions</text>
+<text x="2672" y="4432" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">Edit</text>
+<text x="3000" y="4390" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£8.98</text>
+<line x1="2672" y1="4454" x2="3000" y2="4454" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2672" y="4482" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cola</text>
+<text x="2672" y="4502" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Large</text>
+<text x="2672" y="4524" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="start">Edit</text>
+<text x="3000" y="4482" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£2.19</text>
+<line x1="2672" y1="4546" x2="3000" y2="4546" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2672" y="4574" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cheeseburger Meal</text>
+<text x="2672" y="4594" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Regular fries</text>
+<rect x="2672" y="4604" width="100.08000000000001" height="20" rx="10.0" fill="#FAEEDA"/>
+<text x="2722.04" y="4617.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#854F0B" text-anchor="middle">Needs a drink</text>
+<text x="3000" y="4574" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="end">—</text>
+<line x1="2672" y1="4644" x2="3000" y2="4644" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2672" y="4674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Subtotal</text>
+<text x="3000" y="4674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£11.17</text>
+<rect x="2672" y="4698" width="288" height="46" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2816.0" y="4725.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#9D9B95" text-anchor="middle">Checkout · finish the meal first</text>
+<text x="80" y="5228" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">D5 · Checkout (desktop)</text>
+<rect x="80" y="5242" width="1440" height="900" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="120" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<text x="270" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<text x="390" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Your orders</text>
+<text x="510" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Account</text>
+<rect x="1100" y="5272" width="127.52000000000001" height="26" rx="13.0" fill="#EAF3DE"/>
+<text x="1163.76" y="5289.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00</text>
+<line x1="80" y1="5314" x2="1520" y2="5314" stroke="#E1DFD8" stroke-width="1"/>
+<text x="120" y="5366" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#1F1E1C" text-anchor="start">Checkout</text>
+<text x="120" y="5420" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">How would you like it?</text>
+<rect x="120" y="5438" width="380" height="74" rx="10" fill="none" stroke="#185FA5" stroke-width="2"/>
+<text x="144" y="5470" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Collection</text>
+<text x="144" y="5494" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Ready in about 15 minutes · free</text>
+<rect x="520" y="5438" width="380" height="74" rx="10" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="544" y="5470" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="start">Delivery</text>
+<text x="544" y="5494" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">£2.50 · within 2 miles</text>
+<text x="120" y="5560" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">When</text>
+<rect x="120" y="5576" width="51.839999999999996" height="34" rx="17.0" fill="#1F1E1C"/>
+<text x="145.92" y="5597.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">ASAP</text>
+<rect x="220" y="5576" width="100.55999999999999" height="34" rx="17.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="270.28" y="5597.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">Pick a time</text>
+<text x="120" y="5666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Your details</text>
+<rect x="120" y="5684" width="380" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="132" y="5710.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Name</text>
+<rect x="520" y="5684" width="380" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="532" y="5710.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">07700 900123</text>
+<rect x="120" y="5742" width="780" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="132" y="5768.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Email for the receipt</text>
+<rect x="120" y="5800" width="780" height="64" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="132" y="5836.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Notes for the kitchen (optional)</text>
+<text x="120" y="5906" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Payment</text>
+<rect x="120" y="5924" width="380" height="64" rx="10" fill="none" stroke="#185FA5" stroke-width="2"/>
+<text x="144" y="5962" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#1F1E1C" text-anchor="start">Card · handled by Stripe</text>
+<rect x="520" y="5924" width="380" height="64" rx="10" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="544" y="5962" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Pay on collection</text>
+<rect x="980" y="5410" width="500" height="470" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1008" y="5450" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Your order</text>
+<text x="1452" y="5450" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#185FA5" text-anchor="end">Edit</text>
+<line x1="1008" y1="5474" x2="1452" y2="5474" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1008" y="5504" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">2 × Cheeseburger</text>
+<text x="1008" y="5524" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">No onions</text>
+<text x="1452" y="5504" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£8.98</text>
+<line x1="1008" y1="5550" x2="1452" y2="5550" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1008" y="5580" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cola</text>
+<text x="1008" y="5600" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Large</text>
+<text x="1452" y="5580" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£2.19</text>
+<line x1="1008" y1="5626" x2="1452" y2="5626" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1008" y="5656" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cheeseburger Meal</text>
+<text x="1008" y="5676" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Curly fries, lemonade</text>
+<text x="1452" y="5656" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£7.29</text>
+<line x1="1008" y1="5702" x2="1452" y2="5702" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1008" y="5732" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Subtotal</text>
+<text x="1452" y="5732" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">£18.46</text>
+<text x="1008" y="5758" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Collection</text>
+<text x="1452" y="5758" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">Free</text>
+<text x="1008" y="5802" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">Total</text>
+<text x="1452" y="5802" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="end">£18.46</text>
+<rect x="1008" y="5828" width="444" height="50" rx="8" fill="#1F1E1C"/>
+<text x="1230.0" y="5857.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Pay £18.46</text>
+<text x="980" y="5918" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Prices come from the live menu, never from the assistant.</text>
+<text x="1600" y="5228" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">D6 · Order tracking (desktop)</text>
+<rect x="1600" y="5242" width="1440" height="900" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1640" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe</text>
+<text x="1790" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Menu</text>
+<text x="1910" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">Your orders</text>
+<text x="2030" y="5286" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Account</text>
+<rect x="2620" y="5272" width="127.52000000000001" height="26" rx="13.0" fill="#EAF3DE"/>
+<text x="2683.76" y="5289.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Open until 23:00</text>
+<line x1="1600" y1="5314" x2="3040" y2="5314" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1640" y="5366" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#1F1E1C" text-anchor="start">Order #1042</text>
+<rect x="1820" y="5348" width="85.52000000000001" height="26" rx="13.0" fill="#E6F1FB"/>
+<text x="1862.76" y="5365.68" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#185FA5" text-anchor="middle">Preparing</text>
+<text x="1640" y="5394" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Collection · placed at 18:21</text>
+<rect x="1640" y="5428" width="860" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1668" y="5468" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">Ready at</text>
+<text x="1668" y="5514" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="500" fill="#1F1E1C" text-anchor="start">18:40</text>
+<text x="1840" y="5514" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="start">about 9 minutes away</text>
+<line x1="1714" y1="5608" x2="1886" y2="5608" stroke="#C9C7BF" stroke-width="3"/>
+<circle cx="1700" cy="5608" r="12" fill="#3B6D11" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1700" y="5642" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="middle">Placed</text>
+<text x="1700" y="5662" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="middle">18:21</text>
+<line x1="1914" y1="5608" x2="2086" y2="5608" stroke="#C9C7BF" stroke-width="3"/>
+<circle cx="1900" cy="5608" r="12" fill="#3B6D11" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1900" y="5642" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="middle">Accepted</text>
+<text x="1900" y="5662" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="middle">18:23</text>
+<line x1="2114" y1="5608" x2="2286" y2="5608" stroke="#E1DFD8" stroke-width="3"/>
+<circle cx="2100" cy="5608" r="12" fill="#185FA5" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2100" y="5642" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Preparing</text>
+<text x="2100" y="5662" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="middle">18:24</text>
+<circle cx="2300" cy="5608" r="12" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2300" y="5642" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="middle">Ready to collect</text>
+<rect x="2540" y="5428" width="460" height="420" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2568" y="5468" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Your order</text>
+<line x1="2568" y1="5492" x2="2972" y2="5492" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2568" y="5522" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × BBQ Stack Meal</text>
+<text x="2568" y="5542" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Regular fries, cola</text>
+<text x="2972" y="5522" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£8.79</text>
+<line x1="2568" y1="5568" x2="2972" y2="5568" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2568" y="5598" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Milkshake</text>
+<text x="2568" y="5618" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Salted caramel, large</text>
+<text x="2972" y="5598" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="end">£3.69</text>
+<line x1="2568" y1="5644" x2="2972" y2="5644" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2568" y="5674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Total paid</text>
+<text x="2972" y="5674" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="end">£12.48</text>
+<rect x="2568" y="5702" width="404" height="44" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2770.0" y="5728.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#9D9B95" text-anchor="middle">Cancel · kitchen already started</text>
+<rect x="2568" y="5758" width="404" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2770.0" y="5784.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Get directions</text>
+<text x="1640" y="5738" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Collect from</text>
+<rect x="1640" y="5756" width="860" height="92" rx="12" fill="#F6F5F1"/>
+<text x="1668" y="5792" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#1F1E1C" text-anchor="start">SayServe · 14 High Street</text>
+<text x="1668" y="5818" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Open until 23:00 · 07700 900100</text>
+<text x="80" y="6302" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#1F1E1C" text-anchor="start">Staff and admin (tablet 1194 × 834)</text>
+<text x="80" y="6358" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">9 · Staff sign-in</text>
+<rect x="80" y="6372" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="100" y="6398" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="450" y="6398" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="98" y="6468" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">SayServe staff</text>
+<text x="98" y="6494" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Kitchen and admin access</text>
+<rect x="98" y="6540" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="110" y="6564.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Email</text>
+<rect x="98" y="6592" width="354" height="40" rx="8" fill="none" stroke="#E1DFD8" stroke-width="1"/>
+<text x="110" y="6616.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#9D9B95" text-anchor="start">Password</text>
+<rect x="98" y="6656" width="354" height="46" rx="8" fill="#1F1E1C"/>
+<text x="275.0" y="6683.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Sign in</text>
+<line x1="98" y1="6738" x2="452" y2="6738" stroke="#E1DFD8" stroke-width="1"/>
+<text x="275.0" y="6734" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="middle">  demo  </text>
+<rect x="98" y="6764" width="354" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="275.0" y="6790.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Try as staff</text>
+<rect x="98" y="6820" width="354" height="44" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="275.0" y="6846.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Try as customer</text>
+<text x="98" y="6888" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Demo accounts get a private sandbox</text>
+<text x="98" y="6908" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">with sample orders, deleted after 24 hours.</text>
+<text x="540" y="6358" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">10 · Order detail (staff)</text>
+<rect x="540" y="6372" width="390" height="844" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="560" y="6398" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="start">9:41</text>
+<text x="910" y="6398" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="end">▮▮▮</text>
+<text x="558" y="6440" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6B6A65" text-anchor="start">←</text>
+<text x="580" y="6441" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1F1E1C" text-anchor="start">Order #1043</text>
+<text x="912" y="6440" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="end">6:12 waiting</text>
+<line x1="540" y1="6460" x2="930" y2="6460" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="558" y="6476" width="140.96" height="24" rx="12.0" fill="#FCEBEB"/>
+<text x="628.48" y="6492.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A32D2D" text-anchor="middle">New · paid by card</text>
+<text x="558" y="6528" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Collection · ASAP</text>
+<text x="558" y="6550" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Aisha K. · 07700 900123</text>
+<line x1="540" y1="6572" x2="930" y2="6572" stroke="#E1DFD8" stroke-width="1"/>
+<text x="558" y="6596" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">2 × Cheeseburger</text>
+<text x="558" y="6618" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A32D2D" text-anchor="start">No onions</text>
+<text x="558" y="6652" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Large fries</text>
+<text x="558" y="6708" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1F1E1C" text-anchor="start">1 × Cheeseburger Meal</text>
+<text x="558" y="6730" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Curly fries, lemonade</text>
+<line x1="540" y1="6768" x2="930" y2="6768" stroke="#E1DFD8" stroke-width="1"/>
+<text x="558" y="6796" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Note from customer</text>
+<rect x="558" y="6808" width="354" height="52" rx="8" fill="#F6F5F1"/>
+<text x="570" y="6838" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#1F1E1C" text-anchor="start">Please make the fries extra crispy</text>
+<line x1="540" y1="6884" x2="930" y2="6884" stroke="#E1DFD8" stroke-width="1"/>
+<text x="558" y="6912" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Status history</text>
+<text x="558" y="6938" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Placed</text>
+<text x="912" y="6938" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="end">18:21</text>
+<text x="558" y="6962" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Payment confirmed</text>
+<text x="912" y="6962" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="end">18:21</text>
+<text x="558" y="7064" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Ready in</text>
+<rect x="558" y="7076" width="65.75999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="590.88" y="7094.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">10 min</text>
+<rect x="631.76" y="7076" width="65.75999999999999" height="28" rx="14.0" fill="#1F1E1C"/>
+<text x="664.64" y="7094.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">15 min</text>
+<rect x="705.52" y="7076" width="65.75999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="738.4" y="7094.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">20 min</text>
+<rect x="558" y="7124" width="354" height="44" rx="8" fill="#1F1E1C"/>
+<text x="735.0" y="7150.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Accept order</text>
+<rect x="558" y="7176" width="354" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="735.0" y="7195.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Reject · needs a reason</text>
+<text x="1000" y="6358" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">11 · Kitchen board (tablet)</text>
+<rect x="1000" y="6372" width="1194" height="834" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1024" y="6412" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1F1E1C" text-anchor="start">Kitchen</text>
+<rect x="1110" y="6398" width="87.2" height="24" rx="12.0" fill="#EAF3DE"/>
+<text x="1153.6" y="6414.32" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3B6D11" text-anchor="middle">Store open</text>
+<text x="1804" y="6412" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Board</text>
+<text x="1914" y="6412" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Menu</text>
+<text x="2024" y="6412" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Dashboard</text>
+<text x="2134" y="6412" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Settings</text>
+<line x1="1000" y1="6434" x2="2194" y2="6434" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1020.0" y="6466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">New</text>
+<text x="1378.0" y="6466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">2</text>
+<line x1="1000.0" y1="6482" x2="1398.0" y2="6482" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="1398.0" y1="6434" x2="1398.0" y2="7206" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1418.0" y="6466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Preparing</text>
+<text x="1776.0" y="6466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">2</text>
+<line x1="1398.0" y1="6482" x2="1796.0" y2="6482" stroke="#E1DFD8" stroke-width="1"/>
+<line x1="1796.0" y1="6434" x2="1796.0" y2="7206" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1816.0" y="6466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Ready</text>
+<text x="2174.0" y="6466" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">1</text>
+<line x1="1796.0" y1="6482" x2="2194.0" y2="6482" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1016" y="6502" width="366.0" height="222" rx="12" fill="#FFFFFF" stroke="#A32D2D" stroke-width="2"/>
+<text x="1034" y="6534" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">#1043</text>
+<rect x="1268.0" y="6520" width="93.92" height="22" rx="11.0" fill="#FCEBEB"/>
+<text x="1314.96" y="6534.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#A32D2D" text-anchor="middle">6:12 waiting</text>
+<text x="1034" y="6558" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Collection · paid</text>
+<text x="1034" y="6586" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">2 × Cheeseburger</text>
+<text x="1159.2" y="6586" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#A32D2D" text-anchor="start">no onions</text>
+<text x="1034" y="6620" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">1 × Large fries</text>
+<rect x="1034" y="6654" width="268.0" height="38" rx="8" fill="#1F1E1C"/>
+<text x="1168.0" y="6677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Accept</text>
+<rect x="1310.0" y="6654" width="40" height="38" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1330.0" y="6679" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B6A65" text-anchor="middle">✕</text>
+<rect x="1016" y="6752" width="366.0" height="222" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1034" y="6784" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">#1044</text>
+<rect x="1268.0" y="6770" width="93.92" height="22" rx="11.0" fill="#F6F5F1"/>
+<text x="1314.96" y="6784.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">0:41 waiting</text>
+<text x="1034" y="6808" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Delivery · pay on collection</text>
+<text x="1034" y="6836" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">1 × Family Bundle</text>
+<text x="1034" y="6870" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">4 × Regular fries</text>
+<rect x="1034" y="6904" width="268.0" height="38" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1168.0" y="6927.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Accept</text>
+<rect x="1414.0" y="6502" width="366.0" height="222" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1432.0" y="6534" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">#1042</text>
+<rect x="1666.0" y="6520" width="87.76" height="22" rx="11.0" fill="#FAEEDA"/>
+<text x="1709.88" y="6534.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#854F0B" text-anchor="middle">ready 18:40</text>
+<text x="1432.0" y="6558" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Collection · paid</text>
+<text x="1432.0" y="6586" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">1 × BBQ Stack Meal</text>
+<text x="1432.0" y="6620" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">1 × Milkshake</text>
+<text x="1535.6" y="6620" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#A32D2D" text-anchor="start">salted caramel</text>
+<rect x="1432.0" y="6654" width="268.0" height="38" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1566.0" y="6677.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Mark ready</text>
+<rect x="1414.0" y="6752" width="366.0" height="188" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1432.0" y="6784" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">#1040</text>
+<rect x="1666.0" y="6770" width="87.76" height="22" rx="11.0" fill="#FAEEDA"/>
+<text x="1709.88" y="6784.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#854F0B" text-anchor="middle">ready 18:45</text>
+<text x="1432.0" y="6808" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Delivery · paid</text>
+<text x="1432.0" y="6836" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">2 × Chicken Wrap</text>
+<text x="1557.2" y="6836" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#A32D2D" text-anchor="start">no sauce</text>
+<rect x="1432.0" y="6870" width="268.0" height="38" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1566.0" y="6893.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Out for delivery</text>
+<rect x="1812.0" y="6502" width="366.0" height="188" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1830.0" y="6534" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">#1041</text>
+<rect x="2064.0" y="6520" width="93.92" height="22" rx="11.0" fill="#EAF3DE"/>
+<text x="2110.96" y="6534.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#3B6D11" text-anchor="middle">waiting 2:05</text>
+<text x="1830.0" y="6558" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Collection · Aisha</text>
+<text x="1830.0" y="6586" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">1 × Chicken Wrap</text>
+<rect x="1830.0" y="6620" width="268.0" height="38" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1964.0" y="6643.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Collected</text>
+<text x="80" y="7332" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">12 · Menu manager (admin)</text>
+<rect x="80" y="7346" width="1194" height="834" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="104" y="7386" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1F1E1C" text-anchor="start">Menu</text>
+<rect x="1114" y="7368" width="136" height="36" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1182.0" y="7390.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="middle">Add item</text>
+<line x1="80" y1="7408" x2="1274" y2="7408" stroke="#E1DFD8" stroke-width="1"/>
+<text x="104" y="7442" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Categories</text>
+<rect x="104" y="7458" width="190" height="32" rx="8" fill="#F6F5F1"/>
+<text x="118" y="7479" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Burgers 11</text>
+<rect x="104" y="7498" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7519" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Chicken 7</text>
+<rect x="104" y="7538" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7559" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Wraps 5</text>
+<rect x="104" y="7578" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7599" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Sides 11</text>
+<rect x="104" y="7618" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7639" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Drinks 13</text>
+<rect x="104" y="7658" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7679" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Desserts 7</text>
+<rect x="104" y="7698" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7719" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Meals 7</text>
+<rect x="104" y="7738" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7759" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Breakfast 6</text>
+<rect x="104" y="7778" width="190" height="32" rx="8" fill="none"/>
+<text x="118" y="7799" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Kids 3</text>
+<line x1="318" y1="7408" x2="318" y2="8180" stroke="#E1DFD8" stroke-width="1"/>
+<text x="350" y="7442" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Item</text>
+<text x="700" y="7442" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Price</text>
+<text x="800" y="7442" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Options</text>
+<text x="960" y="7442" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Tags</text>
+<text x="1140" y="7442" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#9D9B95" text-anchor="start">Available</text>
+<line x1="318" y1="7456" x2="1274" y2="7456" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7466" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7492" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Cheeseburger</text>
+<text x="700" y="7492" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£4.49</text>
+<text x="800" y="7492" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">3 groups</text>
+<rect x="960" y="7479" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="7492.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Halal</text>
+<rect x="1140" y="7477" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7489" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7492" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7518" x2="1274" y2="7518" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7524" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7550" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Classic Hamburger</text>
+<text x="700" y="7550" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£3.99</text>
+<text x="800" y="7550" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">3 groups</text>
+<rect x="960" y="7537" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="7550.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Halal</text>
+<rect x="1140" y="7535" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7547" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7550" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7576" x2="1274" y2="7576" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7582" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">BBQ Stack Burger</text>
+<text x="700" y="7608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£5.99</text>
+<text x="800" y="7608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">3 groups</text>
+<rect x="960" y="7595" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="7608.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Halal</text>
+<rect x="1140" y="7593" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7605" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7608" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7634" x2="1274" y2="7634" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7640" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Crispy Chicken Burger</text>
+<text x="700" y="7666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£4.79</text>
+<text x="800" y="7666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">2 groups</text>
+<rect x="960" y="7653" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="7666.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Halal</text>
+<rect x="1140" y="7651" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7663" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7692" x2="1274" y2="7692" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7698" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7724" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Spicy Chicken Burger</text>
+<text x="700" y="7724" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£4.99</text>
+<text x="800" y="7724" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">3 groups</text>
+<rect x="960" y="7711" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="7724.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Spicy</text>
+<rect x="1140" y="7709" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7721" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7724" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7750" x2="1274" y2="7750" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7756" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7782" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Veggie Burger</text>
+<text x="700" y="7782" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£4.49</text>
+<text x="800" y="7782" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">1 group</text>
+<rect x="960" y="7769" width="56.96" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="988.48" y="7782.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Veggie</text>
+<rect x="1140" y="7767" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7779" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7782" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7808" x2="1274" y2="7808" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7814" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Plant Deluxe Burger</text>
+<text x="700" y="7840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£5.49</text>
+<text x="800" y="7840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">2 groups</text>
+<rect x="960" y="7827" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="7840.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Vegan</text>
+<rect x="1140" y="7825" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7837" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7840" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7866" x2="1274" y2="7866" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7872" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7898" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Fish Burger</text>
+<text x="700" y="7898" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£4.69</text>
+<text x="800" y="7898" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">1 group</text>
+<rect x="960" y="7885" width="26.16" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="973.08" y="7898.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">—</text>
+<rect x="1140" y="7883" width="42" height="24" rx="12" fill="#E1DFD8"/>
+<circle cx="1152" cy="7895" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7898" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7924" x2="1274" y2="7924" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7930" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="7956" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Halloumi Burger</text>
+<text x="700" y="7956" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£5.29</text>
+<text x="800" y="7956" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">1 group</text>
+<rect x="960" y="7943" width="56.96" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="988.48" y="7956.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Veggie</text>
+<rect x="1140" y="7941" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="7953" r="9" fill="#FFFFFF"/>
+<text x="1234" y="7956" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="7982" x2="1274" y2="7982" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="338" y="7988" width="40" height="40" rx="6" fill="#F6F5F1"/>
+<text x="390" y="8014" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1F1E1C" text-anchor="start">Double Smash Burger</text>
+<text x="700" y="8014" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">£6.49</text>
+<text x="800" y="8014" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">2 groups</text>
+<rect x="960" y="8001" width="50.800000000000004" height="20" rx="10.0" fill="#F6F5F1"/>
+<text x="985.4" y="8014.96" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6A65" text-anchor="middle">Halal</text>
+<rect x="1140" y="7999" width="42" height="24" rx="12" fill="#3B6D11"/>
+<circle cx="1170" cy="8011" r="9" fill="#FFFFFF"/>
+<text x="1234" y="8014" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#6B6A65" text-anchor="end">⋯</text>
+<line x1="318" y1="8040" x2="1274" y2="8040" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1354" y="7332" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6B6A65" text-anchor="start">13 · Dashboard (admin)</text>
+<rect x="1354" y="7346" width="1194" height="834" rx="20" fill="#FFFFFF" stroke="#C9C7BF" stroke-width="1"/>
+<text x="1378" y="7386" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1F1E1C" text-anchor="start">Dashboard</text>
+<rect x="2248" y="7368" width="58.8" height="28" rx="14.0" fill="#1F1E1C"/>
+<text x="2277.4" y="7386.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">Today</text>
+<rect x="2344" y="7368" width="65.75999999999999" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2376.88" y="7386.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">7 days</text>
+<rect x="2440" y="7368" width="72.72" height="28" rx="14.0" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2476.36" y="7386.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="middle">30 days</text>
+<line x1="1354" y1="7408" x2="2548" y2="7408" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1378" y="7434" width="266" height="92" rx="12" fill="#F6F5F1"/>
+<text x="1398" y="7464" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Sales today</text>
+<text x="1398" y="7502" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#1F1E1C" text-anchor="start">£1,284</text>
+<rect x="1668" y="7434" width="266" height="92" rx="12" fill="#F6F5F1"/>
+<text x="1688" y="7464" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Orders</text>
+<text x="1688" y="7502" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#1F1E1C" text-anchor="start">96</text>
+<rect x="1958" y="7434" width="266" height="92" rx="12" fill="#F6F5F1"/>
+<text x="1978" y="7464" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Average order</text>
+<text x="1978" y="7502" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#1F1E1C" text-anchor="start">£13.38</text>
+<rect x="2248" y="7434" width="266" height="92" rx="12" fill="#F6F5F1"/>
+<text x="2268" y="7464" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="start">Average prep time</text>
+<text x="2268" y="7502" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#1F1E1C" text-anchor="start">11 min</text>
+<text x="1378" y="7572" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Orders by hour</text>
+<rect x="1378" y="7588" width="700" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<rect x="1410" y="7778" width="28" height="20" rx="4" fill="#1F1E1C"/>
+<text x="1424" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">11</text>
+<rect x="1456" y="7768" width="28" height="30" rx="4" fill="#1F1E1C"/>
+<text x="1470" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">12</text>
+<rect x="1502" y="7753" width="28" height="45" rx="4" fill="#1F1E1C"/>
+<text x="1516" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">13</text>
+<rect x="1548" y="7728" width="28" height="70" rx="4" fill="#1F1E1C"/>
+<text x="1562" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">14</text>
+<rect x="1594" y="7688" width="28" height="110" rx="4" fill="#1F1E1C"/>
+<text x="1608" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">15</text>
+<rect x="1640" y="7643" width="28" height="155" rx="4" fill="#1F1E1C"/>
+<text x="1654" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">16</text>
+<rect x="1686" y="7663" width="28" height="135" rx="4" fill="#1F1E1C"/>
+<text x="1700" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">17</text>
+<rect x="1732" y="7703" width="28" height="95" rx="4" fill="#1F1E1C"/>
+<text x="1746" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">18</text>
+<rect x="1778" y="7678" width="28" height="120" rx="4" fill="#1F1E1C"/>
+<text x="1792" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">19</text>
+<rect x="1824" y="7633" width="28" height="165" rx="4" fill="#1F1E1C"/>
+<text x="1838" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">20</text>
+<rect x="1870" y="7608" width="28" height="190" rx="4" fill="#1F1E1C"/>
+<text x="1884" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">21</text>
+<rect x="1916" y="7653" width="28" height="145" rx="4" fill="#1F1E1C"/>
+<text x="1930" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">22</text>
+<rect x="1962" y="7718" width="28" height="80" rx="4" fill="#1F1E1C"/>
+<text x="1976" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">23</text>
+<rect x="2008" y="7758" width="28" height="40" rx="4" fill="#1F1E1C"/>
+<text x="2022" y="7820" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#9D9B95" text-anchor="middle">24</text>
+<text x="2114" y="7572" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Top items</text>
+<rect x="2114" y="7588" width="404" height="250" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2138" y="7628" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Cheeseburger</text>
+<text x="2494" y="7628" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">41</text>
+<line x1="2138" y1="7644" x2="2494" y2="7644" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2138" y="7672" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Loaded Fries</text>
+<text x="2494" y="7672" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">33</text>
+<line x1="2138" y1="7688" x2="2494" y2="7688" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2138" y="7716" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Cheeseburger Meal</text>
+<text x="2494" y="7716" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">28</text>
+<line x1="2138" y1="7732" x2="2494" y2="7732" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2138" y="7760" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Milkshake</text>
+<text x="2494" y="7760" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">24</text>
+<line x1="2138" y1="7776" x2="2494" y2="7776" stroke="#E1DFD8" stroke-width="1"/>
+<text x="2138" y="7804" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">Chicken Nuggets</text>
+<text x="2494" y="7804" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6A65" text-anchor="end">19</text>
+<text x="1378" y="7880" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Assistant</text>
+<rect x="1378" y="7898" width="208" height="84" rx="12" fill="#F6F5F1"/>
+<text x="1396" y="7926" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Handled without the model</text>
+<text x="1396" y="7960" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">58%</text>
+<rect x="1610" y="7898" width="208" height="84" rx="12" fill="#F6F5F1"/>
+<text x="1628" y="7926" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Needed the model</text>
+<text x="1628" y="7960" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">39%</text>
+<rect x="1842" y="7898" width="208" height="84" rx="12" fill="#F6F5F1"/>
+<text x="1860" y="7926" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Asked a question</text>
+<text x="1860" y="7960" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">11%</text>
+<rect x="2074" y="7898" width="208" height="84" rx="12" fill="#F6F5F1"/>
+<text x="2092" y="7926" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Blocked by safety rules</text>
+<text x="2092" y="7960" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">3</text>
+<rect x="2306" y="7898" width="208" height="84" rx="12" fill="#F6F5F1"/>
+<text x="2324" y="7926" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">Cost today</text>
+<text x="2324" y="7960" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1F1E1C" text-anchor="start">£0.14</text>
+<text x="1378" y="8026" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1F1E1C" text-anchor="start">Needs review</text>
+<rect x="1378" y="8042" width="1146" height="110" rx="12" fill="#FFFFFF" stroke="#E1DFD8" stroke-width="1"/>
+<text x="1402" y="8076" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">"gimme the usual"</text>
+<text x="1654" y="8076" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">asked a question · no history</text>
+<rect x="2258" y="8060" width="110" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2313.0" y="8079.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Correct</text>
+<rect x="2380" y="8060" width="110" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2435.0" y="8079.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Looks right</text>
+<text x="1402" y="8116" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1F1E1C" text-anchor="start">"a brew please"</text>
+<text x="1654" y="8116" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B6A65" text-anchor="start">ambiguous · coffee or tea</text>
+<rect x="2258" y="8100" width="110" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2313.0" y="8119.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Correct</text>
+<rect x="2380" y="8100" width="110" height="30" rx="8" fill="none" stroke="#C9C7BF" stroke-width="1"/>
+<text x="2435.0" y="8119.0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F1E1C" text-anchor="middle">Looks right</text>
+</svg>

@@ -1,0 +1,2399 @@
+{
+  "restaurant": "SayServe",
+  "currency": "GBP",
+  "schemaVersion": "2.0",
+  "halalCertified": true,
+  "optionGroups": [
+    {
+      "groupId": "burger-size",
+      "name": "Size",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Single",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Double",
+          "priceDelta": 1.8
+        }
+      ]
+    },
+    {
+      "groupId": "fries-size",
+      "name": "Size",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Small",
+          "priceDelta": 0
+        },
+        {
+          "name": "Medium",
+          "priceDelta": 0.5,
+          "default": true
+        },
+        {
+          "name": "Large",
+          "priceDelta": 1.0
+        }
+      ]
+    },
+    {
+      "groupId": "drink-size",
+      "name": "Size",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Regular",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Large",
+          "priceDelta": 0.7
+        }
+      ]
+    },
+    {
+      "groupId": "shake-size",
+      "name": "Size",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Regular",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Large",
+          "priceDelta": 0.8
+        }
+      ]
+    },
+    {
+      "groupId": "hot-drink-size",
+      "name": "Size",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Regular",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Large",
+          "priceDelta": 0.6
+        }
+      ]
+    },
+    {
+      "groupId": "nugget-count",
+      "name": "How many",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "6 pieces",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "9 pieces",
+          "priceDelta": 1.6
+        },
+        {
+          "name": "15 pieces",
+          "priceDelta": 4.2
+        }
+      ]
+    },
+    {
+      "groupId": "wing-count",
+      "name": "How many",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "6 wings",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "12 wings",
+          "priceDelta": 4.5
+        }
+      ]
+    },
+    {
+      "groupId": "burger-remove",
+      "name": "Remove anything?",
+      "min": 0,
+      "max": 6,
+      "note": "",
+      "options": [
+        {
+          "name": "No cheese",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No lettuce",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No tomato",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No onions",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No pickles",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No sauce",
+          "priceDelta": 0.0
+        }
+      ]
+    },
+    {
+      "groupId": "wrap-remove",
+      "name": "Remove anything?",
+      "min": 0,
+      "max": 4,
+      "note": "",
+      "options": [
+        {
+          "name": "No cheese",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No lettuce",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No tomato",
+          "priceDelta": 0.0
+        },
+        {
+          "name": "No sauce",
+          "priceDelta": 0.0
+        }
+      ]
+    },
+    {
+      "groupId": "burger-addons",
+      "name": "Add extras",
+      "min": 0,
+      "max": 5,
+      "note": "",
+      "options": [
+        {
+          "name": "Extra cheese",
+          "priceDelta": 0.6
+        },
+        {
+          "name": "Turkey rasher",
+          "priceDelta": 1.0
+        },
+        {
+          "name": "Extra patty",
+          "priceDelta": 1.8
+        },
+        {
+          "name": "Jalapeños",
+          "priceDelta": 0.4
+        },
+        {
+          "name": "Fried egg",
+          "priceDelta": 0.7
+        }
+      ]
+    },
+    {
+      "groupId": "spice-level",
+      "name": "Spice level",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Mild",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Medium",
+          "priceDelta": 0
+        },
+        {
+          "name": "Hot",
+          "priceDelta": 0
+        }
+      ]
+    },
+    {
+      "groupId": "dips",
+      "name": "Add a dip",
+      "min": 0,
+      "max": 3,
+      "note": "",
+      "options": [
+        {
+          "name": "Garlic mayo",
+          "priceDelta": 0.5
+        },
+        {
+          "name": "BBQ",
+          "priceDelta": 0.5
+        },
+        {
+          "name": "Sweet chilli",
+          "priceDelta": 0.5
+        },
+        {
+          "name": "Ketchup",
+          "priceDelta": 0.5
+        },
+        {
+          "name": "Hot sauce",
+          "priceDelta": 0.5
+        }
+      ]
+    },
+    {
+      "groupId": "shake-flavour",
+      "name": "Flavour",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Chocolate",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Strawberry",
+          "priceDelta": 0
+        },
+        {
+          "name": "Vanilla",
+          "priceDelta": 0
+        },
+        {
+          "name": "Salted caramel",
+          "priceDelta": 0.4
+        }
+      ]
+    },
+    {
+      "groupId": "coffee-milk",
+      "name": "Milk",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Whole milk",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Semi-skimmed",
+          "priceDelta": 0
+        },
+        {
+          "name": "Oat milk",
+          "priceDelta": 0.35
+        },
+        {
+          "name": "Soya milk",
+          "priceDelta": 0.35
+        },
+        {
+          "name": "No milk",
+          "priceDelta": 0
+        }
+      ]
+    },
+    {
+      "groupId": "sundae-sauce",
+      "name": "Sauce",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Chocolate",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Strawberry",
+          "priceDelta": 0
+        },
+        {
+          "name": "Toffee",
+          "priceDelta": 0
+        }
+      ]
+    },
+    {
+      "groupId": "meal-side",
+      "name": "Choose a side",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Regular fries",
+          "priceDelta": 0,
+          "linkedItem": "fries",
+          "default": true
+        },
+        {
+          "name": "Curly fries",
+          "priceDelta": 0.6,
+          "linkedItem": "curly-fries"
+        },
+        {
+          "name": "Sweet potato fries",
+          "priceDelta": 0.8,
+          "linkedItem": "sweet-potato-fries"
+        },
+        {
+          "name": "Onion rings",
+          "priceDelta": 0.6,
+          "linkedItem": "onion-rings"
+        },
+        {
+          "name": "Side salad",
+          "priceDelta": 0,
+          "linkedItem": "side-salad"
+        },
+        {
+          "name": "Coleslaw",
+          "priceDelta": 0,
+          "linkedItem": "coleslaw"
+        }
+      ]
+    },
+    {
+      "groupId": "meal-drink",
+      "name": "Choose a drink",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Cola",
+          "priceDelta": 0,
+          "linkedItem": "cola",
+          "default": true
+        },
+        {
+          "name": "Diet cola",
+          "priceDelta": 0,
+          "linkedItem": "diet-cola"
+        },
+        {
+          "name": "Lemonade",
+          "priceDelta": 0,
+          "linkedItem": "lemonade"
+        },
+        {
+          "name": "Orange juice",
+          "priceDelta": 0.3,
+          "linkedItem": "orange-juice"
+        },
+        {
+          "name": "Bottled water",
+          "priceDelta": 0,
+          "linkedItem": "bottled-water"
+        },
+        {
+          "name": "Milkshake",
+          "priceDelta": 1.6,
+          "linkedItem": "milkshake"
+        }
+      ]
+    },
+    {
+      "groupId": "meal-upsize",
+      "name": "Make it large?",
+      "min": 0,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Large fries and drink",
+          "priceDelta": 1.2
+        }
+      ]
+    },
+    {
+      "groupId": "kids-side",
+      "name": "Choose a side",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Small fries",
+          "priceDelta": 0,
+          "linkedItem": "fries",
+          "default": true
+        },
+        {
+          "name": "Apple slices",
+          "priceDelta": 0
+        },
+        {
+          "name": "Coleslaw",
+          "priceDelta": 0,
+          "linkedItem": "coleslaw"
+        }
+      ]
+    },
+    {
+      "groupId": "kids-drink",
+      "name": "Choose a drink",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Orange juice",
+          "priceDelta": 0,
+          "linkedItem": "orange-juice",
+          "default": true
+        },
+        {
+          "name": "Bottled water",
+          "priceDelta": 0,
+          "linkedItem": "bottled-water"
+        },
+        {
+          "name": "Milk",
+          "priceDelta": 0
+        }
+      ]
+    },
+    {
+      "groupId": "breakfast-bread",
+      "name": "Served in",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Muffin",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Bagel",
+          "priceDelta": 0.4
+        },
+        {
+          "name": "Tortilla wrap",
+          "priceDelta": 0.3
+        }
+      ]
+    },
+    {
+      "groupId": "egg-style",
+      "name": "Egg",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Fried",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Scrambled",
+          "priceDelta": 0
+        },
+        {
+          "name": "No egg",
+          "priceDelta": -0.4
+        }
+      ]
+    },
+    {
+      "groupId": "salad-dressing",
+      "name": "Dressing",
+      "min": 1,
+      "max": 1,
+      "note": "",
+      "options": [
+        {
+          "name": "Balsamic",
+          "priceDelta": 0,
+          "default": true
+        },
+        {
+          "name": "Garlic mayo",
+          "priceDelta": 0
+        },
+        {
+          "name": "No dressing",
+          "priceDelta": 0
+        }
+      ]
+    },
+    {
+      "groupId": "family-bundle-choice",
+      "name": "Choose 4 mains",
+      "min": 4,
+      "max": 4,
+      "note": "",
+      "options": [
+        {
+          "name": "Cheeseburger",
+          "priceDelta": 0,
+          "linkedItem": "cheeseburger",
+          "default": true
+        },
+        {
+          "name": "Classic hamburger",
+          "priceDelta": -0.4,
+          "linkedItem": "classic-hamburger"
+        },
+        {
+          "name": "Crispy chicken burger",
+          "priceDelta": 0.3,
+          "linkedItem": "crispy-chicken-burger"
+        },
+        {
+          "name": "Spicy chicken burger",
+          "priceDelta": 0.5,
+          "linkedItem": "spicy-chicken-burger"
+        },
+        {
+          "name": "Veggie burger",
+          "priceDelta": 0,
+          "linkedItem": "veggie-burger"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "slug": "cheeseburger",
+      "name": "Cheeseburger",
+      "category": "burgers",
+      "basePrice": 4.49,
+      "description": "Beef patty, cheddar, lettuce, tomato, onions and pickles in a toasted bun.",
+      "aliases": [
+        "cheese burger",
+        "cheeseburgers",
+        "burger with cheese",
+        "cheesy burger"
+      ],
+      "tags": [
+        "halal",
+        "bestseller"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "sesame",
+        "egg"
+      ],
+      "optionGroups": [
+        "burger-size",
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "classic-hamburger",
+      "name": "Classic Hamburger",
+      "category": "burgers",
+      "basePrice": 3.99,
+      "description": "Beef patty, lettuce, tomato, onions and ketchup. No cheese, no fuss.",
+      "aliases": [
+        "hamburger",
+        "plain burger",
+        "beef burger",
+        "normal burger"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-size",
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "bbq-stack-burger",
+      "name": "BBQ Stack Burger",
+      "category": "burgers",
+      "basePrice": 5.99,
+      "description": "Two beef patties, smoked turkey rashers, cheddar, crispy onions and BBQ sauce.",
+      "aliases": [
+        "bbq burger",
+        "barbecue burger",
+        "stack burger",
+        "bbq stack"
+      ],
+      "tags": [
+        "halal",
+        "bestseller"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "sesame",
+        "soya"
+      ],
+      "optionGroups": [
+        "burger-size",
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "crispy-chicken-burger",
+      "name": "Crispy Chicken Burger",
+      "category": "burgers",
+      "basePrice": 4.79,
+      "description": "Buttermilk chicken fillet, lettuce and garlic mayo.",
+      "aliases": [
+        "chicken burger",
+        "crispy chicken",
+        "chicken sandwich",
+        "fried chicken burger"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "spicy-chicken-burger",
+      "name": "Spicy Chicken Burger",
+      "category": "burgers",
+      "basePrice": 4.99,
+      "description": "Chilli-marinated chicken fillet, jalapeños, lettuce and hot mayo.",
+      "aliases": [
+        "spicy chicken",
+        "hot chicken burger",
+        "chilli chicken burger"
+      ],
+      "tags": [
+        "halal",
+        "spicy"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "spice-level",
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "veggie-burger",
+      "name": "Veggie Burger",
+      "category": "burgers",
+      "basePrice": 4.49,
+      "description": "Spiced chickpea and vegetable patty, lettuce, tomato and garlic mayo.",
+      "aliases": [
+        "vegetarian burger",
+        "veg burger",
+        "chickpea burger"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "plant-deluxe-burger",
+      "name": "Plant Deluxe Burger",
+      "category": "burgers",
+      "basePrice": 5.49,
+      "description": "Plant-based patty, vegan cheese, lettuce, tomato and vegan mayo.",
+      "aliases": [
+        "vegan burger",
+        "plant burger",
+        "plant based burger",
+        "the vegan one"
+      ],
+      "tags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "soya",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-size",
+        "burger-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "fish-burger",
+      "name": "Fish Burger",
+      "category": "burgers",
+      "basePrice": 4.69,
+      "description": "Crispy battered pollock, cheese slice and tartare sauce.",
+      "aliases": [
+        "filet o fish",
+        "fish sandwich",
+        "fish fillet burger"
+      ],
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "fish",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "halloumi-burger",
+      "name": "Halloumi Burger",
+      "category": "burgers",
+      "basePrice": 5.29,
+      "description": "Grilled halloumi, roasted peppers, rocket and chilli jam.",
+      "aliases": [
+        "cheese patty burger",
+        "grilled cheese burger"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "smash-double",
+      "name": "Double Smash Burger",
+      "category": "burgers",
+      "basePrice": 6.49,
+      "description": "Two smashed beef patties, double cheddar, onions and burger sauce.",
+      "aliases": [
+        "smash burger",
+        "double burger",
+        "double cheeseburger"
+      ],
+      "tags": [
+        "halal",
+        "bestseller"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "chicken-nuggets",
+      "name": "Chicken Nuggets",
+      "category": "chicken",
+      "basePrice": 3.99,
+      "description": "Breaded chicken breast nuggets.",
+      "aliases": [
+        "nuggets",
+        "chicken nuggs",
+        "nuggs",
+        "chicken bites"
+      ],
+      "tags": [
+        "halal",
+        "bestseller"
+      ],
+      "allergens": [
+        "gluten",
+        "egg"
+      ],
+      "optionGroups": [
+        "nugget-count",
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "chicken-wings",
+      "name": "Chicken Wings",
+      "category": "chicken",
+      "basePrice": 4.99,
+      "description": "Marinated wings, oven-finished and glazed.",
+      "aliases": [
+        "wings",
+        "hot wings",
+        "buffalo wings"
+      ],
+      "tags": [
+        "halal",
+        "spicy"
+      ],
+      "allergens": [
+        "gluten",
+        "soya"
+      ],
+      "optionGroups": [
+        "wing-count",
+        "spice-level",
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "chicken-tenders",
+      "name": "Chicken Tenders",
+      "category": "chicken",
+      "basePrice": 4.79,
+      "description": "Buttermilk chicken strips in a light crumb.",
+      "aliases": [
+        "tenders",
+        "chicken strips",
+        "goujons",
+        "chicken fingers"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "popcorn-chicken",
+      "name": "Popcorn Chicken",
+      "category": "chicken",
+      "basePrice": 3.79,
+      "description": "Bite-sized seasoned chicken pieces.",
+      "aliases": [
+        "popcorn chick",
+        "chicken popcorn",
+        "small chicken bites"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "egg"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "grilled-chicken-fillet",
+      "name": "Grilled Chicken Fillet",
+      "category": "chicken",
+      "basePrice": 4.29,
+      "description": "Plain grilled chicken breast fillet. No breading.",
+      "aliases": [
+        "grilled chicken",
+        "plain chicken",
+        "healthy chicken"
+      ],
+      "tags": [
+        "halal",
+        "healthy"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "spice-level"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "hot-wings-bucket",
+      "name": "Hot Wings Bucket",
+      "category": "chicken",
+      "basePrice": 12.99,
+      "description": "Twenty wings to share, with three dips.",
+      "aliases": [
+        "wings bucket",
+        "bucket of wings",
+        "party wings"
+      ],
+      "tags": [
+        "halal",
+        "spicy",
+        "sharing"
+      ],
+      "allergens": [
+        "gluten",
+        "soya"
+      ],
+      "optionGroups": [
+        "spice-level",
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "chicken-strips-box",
+      "name": "Chicken Strips Box",
+      "category": "chicken",
+      "basePrice": 7.99,
+      "description": "Six tenders, regular fries and a dip.",
+      "aliases": [
+        "tenders box",
+        "chicken box",
+        "strips box"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "chicken-wrap",
+      "name": "Crispy Chicken Wrap",
+      "category": "wraps",
+      "basePrice": 4.59,
+      "description": "Crispy chicken, lettuce, tomato and garlic mayo in a warm tortilla.",
+      "aliases": [
+        "wrap",
+        "chicken wrap",
+        "crispy wrap",
+        "tortilla"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [
+        "wrap-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "spicy-wrap",
+      "name": "Spicy Chicken Wrap",
+      "category": "wraps",
+      "basePrice": 4.79,
+      "description": "Chilli chicken, jalapeños, lettuce and hot mayo.",
+      "aliases": [
+        "hot wrap",
+        "spicy wrap",
+        "chilli wrap"
+      ],
+      "tags": [
+        "halal",
+        "spicy"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [
+        "spice-level",
+        "wrap-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "grilled-chicken-wrap",
+      "name": "Grilled Chicken Wrap",
+      "category": "wraps",
+      "basePrice": 4.69,
+      "description": "Grilled chicken breast, salad and light yoghurt dressing.",
+      "aliases": [
+        "healthy wrap",
+        "grilled wrap"
+      ],
+      "tags": [
+        "halal",
+        "healthy"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [
+        "wrap-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "falafel-wrap",
+      "name": "Falafel Wrap",
+      "category": "wraps",
+      "basePrice": 4.39,
+      "description": "Falafel, salad, pickles and tahini sauce.",
+      "aliases": [
+        "veggie wrap",
+        "vegan wrap",
+        "falafel"
+      ],
+      "tags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "sesame"
+      ],
+      "optionGroups": [
+        "wrap-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "halloumi-wrap",
+      "name": "Halloumi Wrap",
+      "category": "wraps",
+      "basePrice": 4.89,
+      "description": "Grilled halloumi, roasted peppers, rocket and chilli jam.",
+      "aliases": [
+        "cheese wrap",
+        "halloumi"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [
+        "wrap-remove"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "fries",
+      "name": "Fries",
+      "category": "sides",
+      "basePrice": 1.99,
+      "description": "Skin-on fries, lightly salted.",
+      "aliases": [
+        "chips",
+        "french fries",
+        "reg fries",
+        "side of chips"
+      ],
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "bestseller"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "fries-size",
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "curly-fries",
+      "name": "Curly Fries",
+      "category": "sides",
+      "basePrice": 2.49,
+      "description": "Seasoned spiral fries.",
+      "aliases": [
+        "curly chips",
+        "spiral fries",
+        "twister fries"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "optionGroups": [
+        "fries-size",
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "sweet-potato-fries",
+      "name": "Sweet Potato Fries",
+      "category": "sides",
+      "basePrice": 2.69,
+      "description": "Sweet potato fries with a light crisp coating.",
+      "aliases": [
+        "sweet fries",
+        "sweet potato chips"
+      ],
+      "tags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "optionGroups": [
+        "fries-size",
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "onion-rings",
+      "name": "Onion Rings",
+      "category": "sides",
+      "basePrice": 2.49,
+      "description": "Battered onion rings, six per portion.",
+      "aliases": [
+        "rings",
+        "onion ring"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "mozzarella-sticks",
+      "name": "Mozzarella Sticks",
+      "category": "sides",
+      "basePrice": 3.29,
+      "description": "Six breaded mozzarella sticks with a sweet chilli dip.",
+      "aliases": [
+        "cheese sticks",
+        "mozzarella",
+        "cheese bites"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "side-salad",
+      "name": "Side Salad",
+      "category": "sides",
+      "basePrice": 2.29,
+      "description": "Leaves, cucumber, tomato and red onion.",
+      "aliases": [
+        "salad",
+        "green salad",
+        "healthy side"
+      ],
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "healthy"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "salad-dressing"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "coleslaw",
+      "name": "Coleslaw",
+      "category": "sides",
+      "basePrice": 1.49,
+      "description": "Creamy cabbage and carrot slaw.",
+      "aliases": [
+        "slaw",
+        "cole slaw"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "egg",
+        "milk"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "corn-on-the-cob",
+      "name": "Corn on the Cob",
+      "category": "sides",
+      "basePrice": 1.79,
+      "description": "Buttered corn on the cob.",
+      "aliases": [
+        "corn",
+        "sweetcorn"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "loaded-fries",
+      "name": "Loaded Fries",
+      "category": "sides",
+      "basePrice": 4.29,
+      "description": "Fries topped with cheese sauce, crispy onions and BBQ drizzle.",
+      "aliases": [
+        "cheesy fries",
+        "cheese chips",
+        "loaded chips",
+        "dirty fries"
+      ],
+      "tags": [
+        "vegetarian",
+        "bestseller"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "cola",
+      "name": "Cola",
+      "category": "drinks",
+      "basePrice": 1.49,
+      "description": "Chilled cola over ice.",
+      "aliases": [
+        "coke",
+        "coca cola",
+        "fizzy drink",
+        "pop"
+      ],
+      "tags": [
+        "vegan"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "diet-cola",
+      "name": "Diet Cola",
+      "category": "drinks",
+      "basePrice": 1.49,
+      "description": "Sugar-free cola.",
+      "aliases": [
+        "diet coke",
+        "coke zero",
+        "sugar free cola",
+        "zero"
+      ],
+      "tags": [
+        "vegan"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "lemonade",
+      "name": "Lemonade",
+      "category": "drinks",
+      "basePrice": 1.49,
+      "description": "Cloudy lemonade.",
+      "aliases": [
+        "sprite",
+        "7up",
+        "lemon drink"
+      ],
+      "tags": [
+        "vegan"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "orange-juice",
+      "name": "Orange Juice",
+      "category": "drinks",
+      "basePrice": 1.79,
+      "description": "Chilled orange juice.",
+      "aliases": [
+        "oj",
+        "juice",
+        "orange"
+      ],
+      "tags": [
+        "vegan",
+        "healthy"
+      ],
+      "allergens": [],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "bottled-water",
+      "name": "Bottled Water",
+      "category": "drinks",
+      "basePrice": 1.19,
+      "description": "Still bottled water.",
+      "aliases": [
+        "water",
+        "still water",
+        "bottle of water"
+      ],
+      "tags": [
+        "vegan",
+        "healthy"
+      ],
+      "allergens": [],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "sparkling-water",
+      "name": "Sparkling Water",
+      "category": "drinks",
+      "basePrice": 1.29,
+      "description": "Sparkling water.",
+      "aliases": [
+        "fizzy water",
+        "soda water"
+      ],
+      "tags": [
+        "vegan",
+        "healthy"
+      ],
+      "allergens": [],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "milkshake",
+      "name": "Milkshake",
+      "category": "drinks",
+      "basePrice": 3.29,
+      "description": "Thick shake, blended to order.",
+      "aliases": [
+        "shake",
+        "thick shake",
+        "milk shake"
+      ],
+      "tags": [
+        "vegetarian",
+        "bestseller"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "optionGroups": [
+        "shake-flavour",
+        "shake-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "iced-coffee",
+      "name": "Iced Coffee",
+      "category": "drinks",
+      "basePrice": 2.79,
+      "description": "Espresso over ice with milk.",
+      "aliases": [
+        "cold coffee",
+        "iced latte"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "optionGroups": [
+        "coffee-milk",
+        "drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "coffee",
+      "name": "Coffee",
+      "category": "drinks",
+      "basePrice": 1.99,
+      "description": "Freshly brewed filter coffee.",
+      "aliases": [
+        "americano",
+        "black coffee",
+        "hot coffee",
+        "brew"
+      ],
+      "tags": [
+        "vegan"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "coffee-milk",
+        "hot-drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "tea",
+      "name": "Tea",
+      "category": "drinks",
+      "basePrice": 1.49,
+      "description": "English breakfast tea.",
+      "aliases": [
+        "cuppa",
+        "english tea",
+        "hot tea",
+        "brew"
+      ],
+      "tags": [
+        "vegan"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "coffee-milk",
+        "hot-drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "hot-chocolate",
+      "name": "Hot Chocolate",
+      "category": "drinks",
+      "basePrice": 2.29,
+      "description": "Rich hot chocolate.",
+      "aliases": [
+        "hot choc",
+        "cocoa"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "optionGroups": [
+        "hot-drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "ice-cream-sundae",
+      "name": "Ice Cream Sundae",
+      "category": "desserts",
+      "basePrice": 2.49,
+      "description": "Soft-serve vanilla ice cream with sauce.",
+      "aliases": [
+        "sundae",
+        "ice cream",
+        "soft serve"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "optionGroups": [
+        "sundae-sauce"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "apple-pie",
+      "name": "Apple Pie",
+      "category": "desserts",
+      "basePrice": 1.79,
+      "description": "Warm apple pie in a crisp pastry case.",
+      "aliases": [
+        "pie",
+        "hot apple pie"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "chocolate-brownie",
+      "name": "Chocolate Brownie",
+      "category": "desserts",
+      "basePrice": 2.29,
+      "description": "Fudgy chocolate brownie, served warm.",
+      "aliases": [
+        "brownie",
+        "choc brownie"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "cookies",
+      "name": "Cookies",
+      "category": "desserts",
+      "basePrice": 1.59,
+      "description": "Two warm chocolate chip cookies.",
+      "aliases": [
+        "cookie",
+        "biscuits",
+        "choc chip cookies"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "glazed-donut",
+      "name": "Glazed Donut",
+      "category": "desserts",
+      "basePrice": 1.49,
+      "description": "Ring donut with a sugar glaze.",
+      "aliases": [
+        "donut",
+        "doughnut"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "churros",
+      "name": "Churros",
+      "category": "desserts",
+      "basePrice": 3.19,
+      "description": "Five cinnamon churros with a chocolate dip.",
+      "aliases": [
+        "churro",
+        "cinnamon sticks"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "chilli-cheese-burger",
+      "name": "Chilli Cheese Burger",
+      "category": "burgers",
+      "basePrice": 5.49,
+      "description": "Beef patty, melted cheese sauce, jalapeños and chipotle mayo.",
+      "aliases": [
+        "chilli burger",
+        "jalapeno burger",
+        "chipotle burger"
+      ],
+      "tags": [
+        "halal",
+        "spicy"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "spice-level",
+        "burger-size",
+        "burger-remove",
+        "burger-addons"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "garlic-bread",
+      "name": "Garlic Bread",
+      "category": "sides",
+      "basePrice": 2.19,
+      "description": "Four slices of garlic butter bread.",
+      "aliases": [
+        "garlic slices",
+        "garlic toast"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "mac-bites",
+      "name": "Mac and Cheese Bites",
+      "category": "sides",
+      "basePrice": 3.39,
+      "description": "Six crumbed macaroni cheese bites.",
+      "aliases": [
+        "mac bites",
+        "mac and cheese",
+        "macaroni bites"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [
+        "dips"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "apple-juice",
+      "name": "Apple Juice",
+      "category": "drinks",
+      "basePrice": 1.79,
+      "description": "Chilled apple juice.",
+      "aliases": [
+        "apple",
+        "aj"
+      ],
+      "tags": [
+        "vegan",
+        "healthy"
+      ],
+      "allergens": [],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "iced-tea",
+      "name": "Iced Tea",
+      "category": "drinks",
+      "basePrice": 1.99,
+      "description": "Lemon iced tea over ice.",
+      "aliases": [
+        "cold tea",
+        "lemon iced tea"
+      ],
+      "tags": [
+        "vegan"
+      ],
+      "allergens": [],
+      "optionGroups": [
+        "drink-size"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "cheesecake",
+      "name": "Baked Cheesecake",
+      "category": "desserts",
+      "basePrice": 3.29,
+      "description": "New York style baked cheesecake with berry compote.",
+      "aliases": [
+        "cheese cake",
+        "baked cheesecake"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "cheeseburger-meal",
+      "name": "Cheeseburger Meal",
+      "category": "meals",
+      "basePrice": 7.29,
+      "description": "Cheeseburger with a side and a drink.",
+      "aliases": [
+        "cheeseburger combo",
+        "burger meal",
+        "cheeseburger and chips"
+      ],
+      "tags": [
+        "halal",
+        "bestseller"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "sesame",
+        "egg"
+      ],
+      "optionGroups": [
+        "burger-remove",
+        "burger-addons",
+        "meal-side",
+        "meal-drink",
+        "meal-upsize"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": true
+    },
+    {
+      "slug": "bbq-stack-meal",
+      "name": "BBQ Stack Meal",
+      "category": "meals",
+      "basePrice": 8.79,
+      "description": "BBQ Stack Burger with a side and a drink.",
+      "aliases": [
+        "bbq meal",
+        "bbq burger meal",
+        "stack meal"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "sesame",
+        "soya"
+      ],
+      "optionGroups": [
+        "burger-remove",
+        "burger-addons",
+        "meal-side",
+        "meal-drink",
+        "meal-upsize"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "chicken-burger-meal",
+      "name": "Chicken Burger Meal",
+      "category": "meals",
+      "basePrice": 7.59,
+      "description": "Crispy Chicken Burger with a side and a drink.",
+      "aliases": [
+        "chicken meal",
+        "chicken combo",
+        "crispy chicken meal"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove",
+        "burger-addons",
+        "meal-side",
+        "meal-drink",
+        "meal-upsize"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "nugget-meal",
+      "name": "Nugget Meal",
+      "category": "meals",
+      "basePrice": 6.99,
+      "description": "Six nuggets with a side, a drink and a dip.",
+      "aliases": [
+        "nuggets meal",
+        "nugget combo"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "egg"
+      ],
+      "optionGroups": [
+        "dips",
+        "meal-side",
+        "meal-drink",
+        "meal-upsize"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "veggie-meal",
+      "name": "Veggie Meal",
+      "category": "meals",
+      "basePrice": 7.19,
+      "description": "Veggie Burger with a side and a drink.",
+      "aliases": [
+        "vegetarian meal",
+        "veg meal"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "burger-remove",
+        "meal-side",
+        "meal-drink",
+        "meal-upsize"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "wrap-meal",
+      "name": "Wrap Meal",
+      "category": "meals",
+      "basePrice": 7.29,
+      "description": "Crispy Chicken Wrap with a side and a drink.",
+      "aliases": [
+        "wrap combo",
+        "wrap and chips"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg"
+      ],
+      "optionGroups": [
+        "wrap-remove",
+        "meal-side",
+        "meal-drink",
+        "meal-upsize"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "family-bundle",
+      "name": "Family Bundle",
+      "category": "meals",
+      "basePrice": 24.99,
+      "description": "Four mains, four regular fries, four drinks and a sharing side.",
+      "aliases": [
+        "family meal",
+        "family box",
+        "bundle",
+        "sharing box"
+      ],
+      "tags": [
+        "halal",
+        "sharing"
+      ],
+      "allergens": [
+        "gluten",
+        "milk",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "family-bundle-choice"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "breakfast-muffin",
+      "name": "Sausage and Egg Muffin",
+      "category": "breakfast",
+      "basePrice": 3.29,
+      "description": "Chicken sausage patty, fried egg and cheese.",
+      "aliases": [
+        "sausage egg muffin",
+        "breakfast muffin",
+        "egg muffin",
+        "brekkie muffin"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "milk"
+      ],
+      "optionGroups": [
+        "breakfast-bread",
+        "egg-style"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false,
+      "availableFrom": "06:00",
+      "availableTo": "11:00"
+    },
+    {
+      "slug": "breakfast-wrap",
+      "name": "Big Breakfast Wrap",
+      "category": "breakfast",
+      "basePrice": 4.29,
+      "description": "Sausage, egg, hash brown, cheese and brown sauce in a tortilla.",
+      "aliases": [
+        "breakfast wrap",
+        "morning wrap",
+        "big brekkie"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "milk"
+      ],
+      "optionGroups": [
+        "egg-style"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false,
+      "availableFrom": "06:00",
+      "availableTo": "11:00"
+    },
+    {
+      "slug": "veggie-breakfast-muffin",
+      "name": "Veggie Breakfast Muffin",
+      "category": "breakfast",
+      "basePrice": 3.19,
+      "description": "Hash brown, fried egg, cheese and relish.",
+      "aliases": [
+        "veggie muffin",
+        "vegetarian breakfast"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "milk"
+      ],
+      "optionGroups": [
+        "breakfast-bread",
+        "egg-style"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false,
+      "availableFrom": "06:00",
+      "availableTo": "11:00"
+    },
+    {
+      "slug": "hash-browns",
+      "name": "Hash Browns",
+      "category": "breakfast",
+      "basePrice": 1.39,
+      "description": "Two crispy hash browns.",
+      "aliases": [
+        "hash brown",
+        "potato cake"
+      ],
+      "tags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false,
+      "availableFrom": "06:00",
+      "availableTo": "11:00"
+    },
+    {
+      "slug": "pancakes",
+      "name": "Pancakes",
+      "category": "breakfast",
+      "basePrice": 3.49,
+      "description": "Three pancakes with maple syrup and butter.",
+      "aliases": [
+        "pancake",
+        "hotcakes",
+        "stack of pancakes"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "milk"
+      ],
+      "optionGroups": [],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false,
+      "availableFrom": "06:00",
+      "availableTo": "11:00"
+    },
+    {
+      "slug": "porridge",
+      "name": "Porridge",
+      "category": "breakfast",
+      "basePrice": 2.29,
+      "description": "Oat porridge with a choice of milk.",
+      "aliases": [
+        "oats",
+        "oatmeal"
+      ],
+      "tags": [
+        "vegetarian",
+        "healthy"
+      ],
+      "allergens": [
+        "gluten",
+        "milk"
+      ],
+      "optionGroups": [
+        "coffee-milk"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false,
+      "availableFrom": "06:00",
+      "availableTo": "11:00"
+    },
+    {
+      "slug": "kids-nugget-meal",
+      "name": "Kids Nugget Meal",
+      "category": "kids",
+      "basePrice": 4.49,
+      "description": "Four nuggets, a side, a drink and a toy.",
+      "aliases": [
+        "happy meal",
+        "kids meal",
+        "child meal",
+        "kids nuggets"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "egg"
+      ],
+      "optionGroups": [
+        "kids-side",
+        "kids-drink"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "kids-burger-meal",
+      "name": "Kids Burger Meal",
+      "category": "kids",
+      "basePrice": 4.79,
+      "description": "Small hamburger, a side, a drink and a toy.",
+      "aliases": [
+        "kids burger",
+        "child burger meal"
+      ],
+      "tags": [
+        "halal"
+      ],
+      "allergens": [
+        "gluten",
+        "sesame"
+      ],
+      "optionGroups": [
+        "kids-side",
+        "kids-drink"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    },
+    {
+      "slug": "kids-veggie-meal",
+      "name": "Kids Veggie Meal",
+      "category": "kids",
+      "basePrice": 4.59,
+      "description": "Small veggie burger, a side, a drink and a toy.",
+      "aliases": [
+        "kids vegetarian",
+        "child veggie meal"
+      ],
+      "tags": [
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "egg",
+        "sesame"
+      ],
+      "optionGroups": [
+        "kids-side",
+        "kids-drink"
+      ],
+      "available": true,
+      "maxQuantityPerOrder": 10,
+      "popular": false
+    }
+  ]
+}
