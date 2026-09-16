@@ -14,7 +14,8 @@
 | --- | --- | --- |
 | 0 | Plan, menu data, wireframes | Done |
 | 1 | Auth and roles, menu API, pricing engine, order state machine, idempotent checkout | Done |
-| 2 | Customer web: menu, customiser, cart, checkout, tracking | Next |
+| 2a | Customer web: menu, customiser, cart, live server pricing | Done |
+| 2b | Checkout, order tracking, account and history | Next |
 | 3 | Admin: live kitchen board, menu manager, dashboard | |
 | 4 | The assistant: safety gate, parser, embeddings, chat, voice, eval harness | |
 | 5 | Stripe, refunds, demo mode, accessibility | |
@@ -40,6 +41,14 @@ See [`src/lib/pricing.ts`](apps/api/src/lib/pricing.ts).
 Nothing else in the codebase assigns `order.status`. A route asks `canTransition` first, and anything unlisted is a `409`. Each move also records who may make it, so "customer cancels" and "staff rejects" are different transitions even though both end an order. A customer can cancel before the kitchen accepts and not after — in the API, not just in the button.
 
 See [`src/lib/orderState.ts`](apps/api/src/lib/orderState.ts).
+
+**3. The browser never holds a price.**
+
+The cart in `localStorage` stores *which* item and *which* options, and nothing about money. Every figure on screen comes back from `POST /api/orders/quote`. A tampered cart changes which items get quoted and nothing else, and a stale price cannot be displayed because there is no price to go stale.
+
+The same rule makes the UI honest about incomplete orders: a meal with no drink chosen sits in the cart flagged and unpriced, and the Checkout button is disabled because the server said `complete: false` — not because the client worked it out.
+
+See [`apps/web/src/lib/cart.ts`](apps/web/src/lib/cart.ts) and [`CartPanel.tsx`](apps/web/src/components/CartPanel.tsx).
 
 ## API
 
@@ -67,9 +76,12 @@ git clone https://github.com/YOUR-USERNAME/sayserve.git
 cd sayserve
 npm install
 
-cp apps/api/.env.example apps/api/.env   # then fill in MONGODB_URI and JWT_SECRET
+cp apps/api/.env.example apps/api/.env   # fill in MONGODB_URI and JWT_SECRET
+cp apps/web/.env.example apps/web/.env.local
 npm run seed                             # loads 70 items and 24 option groups
+
 npm run dev:api                          # http://localhost:5000
+npm run dev:web                          # http://localhost:3000  (second terminal)
 ```
 
 Generate a secret with:
@@ -99,6 +111,14 @@ npm test            # everything, including the full order lifecycle over HTTP
 The integration suite places a real order and drives it to Completed, then proves the closed paths are closed: skipping a step, rejecting without a reason, a customer accepting their own order, cancelling after the kitchen started, a double-tapped Pay button, and one customer reading another's order. It uses an in-memory MongoDB, so it needs no database of your own — the first run downloads a `mongod` binary.
 
 CI runs the typecheck and both suites on every push, against a MongoDB service container.
+
+## The web app
+
+`apps/web` is Next.js with the App Router and Tailwind, using the palette from the wireframes so the drawing and the build match.
+
+The customiser is generated entirely from option group data. There is no special case for "size" or for meals — a meal is just an item with a group whose `min` is 1, so the same code that renders "Remove anything?" renders "Choose a drink" and blocks Add until it is answered.
+
+The pricing and order-status *types* are imported straight from the API source (`@api/lib/pricing`, `@api/lib/orderState`). Both files import nothing at all, so this costs the bundle nothing and there is one definition of the contract instead of two that drift. This is the main practical reason both apps live in one repository.
 
 ## Menu data
 

@@ -37,10 +37,29 @@ jobs:
       - run: npm ci
 
       - name: Typecheck
-        run: npm run typecheck
+        run: npm run typecheck --workspace @sayserve/api
 
       - name: Unit tests — pricing and the state machine
         run: npm run test:unit
 
       - name: Integration tests — the whole order lifecycle
         run: npm test
+
+  web:
+    name: Web — typecheck and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        run: npm run build:web
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+          NEXT_PUBLIC_API_URL: http://localhost:5000
