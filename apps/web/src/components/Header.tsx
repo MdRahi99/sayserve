@@ -21,6 +21,7 @@ export function Header() {
           <Link href="/" className="text-lg font-medium">SayServe</Link>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
             <Link href="/menu" className="text-ink-soft hover:text-ink">Menu</Link>
+            <Link href="/chat" className="text-ink-soft hover:text-ink">Just tell us</Link>
             <Link href="/orders" className="text-ink-soft hover:text-ink">Your orders</Link>
           </nav>
         </div>

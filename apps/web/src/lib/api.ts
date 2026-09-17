@@ -164,6 +164,36 @@ export type Stats = {
   byStatus: Record<string, number>;
 };
 
+export type ChatReply = {
+  sessionId: string;
+  reply: string;
+  route: string;
+  lines: QuoteLine[];
+  quickReplies: { label: string; value: string }[];
+  cart: PricedCart | null;
+  storeOpen: boolean;
+  telemetry: { modelCalled: boolean; ms: number };
+};
+
+export type AssistantStats = {
+  days: number;
+  messages: number;
+  modelCalls: number;
+  withoutModel: number;
+  withoutModelShare: number | null;
+  avgMs: number;
+  byRoute: Record<string, number>;
+  refusals: number;
+  needsReview: {
+    sessionId: string; route: string; reply: string;
+    safetyRule: string | null; at: string;
+  }[];
+  providers: {
+    model: string | null; embeddings: string | null;
+    vectorsBuilt: number; indexedAt: string | null;
+  };
+};
+
 export type CheckoutBody = {
   lines: QuoteLine[];
   fulfilment: "collection" | "delivery";
@@ -224,7 +254,15 @@ export const api = {
       body: JSON.stringify({ to, ...extra }),
     }),
 
+  chat: (message: string, sessionId: string | null, lines: QuoteLine[]) =>
+    call<ChatReply>("/api/chat", {
+      method: "POST",
+      body: JSON.stringify({ message, sessionId: sessionId ?? undefined, lines }),
+    }),
+
   admin: {
+    assistant: (days = 7) => call<AssistantStats>(`/api/admin/assistant?days=${days}`),
+
     menu: () => call<{ items: MenuItem[]; optionGroups: OptionGroup[] }>("/api/admin/menu"),
 
     setAvailability: (slug: string, available: boolean) =>

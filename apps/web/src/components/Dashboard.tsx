@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { api, ApiError, type Stats, type StoreSettings } from "@/lib/api";
+import { api, ApiError, type AssistantStats, type Stats, type StoreSettings } from "@/lib/api";
 import { money } from "@/lib/format";
 import { useUser } from "@/lib/useUser";
 import { StaffNav } from "./StaffNav";
@@ -11,6 +11,7 @@ export function Dashboard() {
   const [days, setDays] = useState(1);
   const [stats, setStats] = useState<Stats | null>(null);
   const [settings, setSettings] = useState<StoreSettings | null>(null);
+  const [assistant, setAssistant] = useState<AssistantStats | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -22,6 +23,11 @@ export function Dashboard() {
     if (!user) return;
     api.admin.settings().then((r) => setSettings(r.settings)).catch(() => {});
   }, [user]);
+
+  useEffect(() => {
+    if (!user) return;
+    api.admin.assistant(Math.max(days, 7)).then(setAssistant).catch(() => setAssistant(null));
+  }, [user, days]);
 
   async function toggleOpen() {
     if (!settings) return;
@@ -165,12 +171,76 @@ export function Dashboard() {
             </section>
 
             <section className="card p-5 mt-4">
-              <h2 className="text-sm font-medium">Assistant</h2>
-              <p className="text-sm text-ink-soft mt-2">
-                Nothing to show yet — the chat and voice assistant arrives in the next phase.
-                This is where the share of orders handled without a language model will live,
-                along with what it cost.
-              </p>
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h2 className="text-sm font-medium">Assistant</h2>
+                {assistant && (
+                  <span className="text-xs text-ink-muted">
+                    last {assistant.days} days ·{" "}
+                    {assistant.providers.model ?? "no model configured"}
+                    {assistant.providers.vectorsBuilt > 0 &&
+                      ` · ${assistant.providers.vectorsBuilt} items embedded`}
+                  </span>
+                )}
+              </div>
+
+              {!assistant || assistant.messages === 0 ? (
+                <p className="text-sm text-ink-muted mt-3">
+                  No messages yet. Try the assistant from the menu and this fills in.
+                </p>
+              ) : (
+                <>
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
+                    <Metric label="Messages" value={String(assistant.messages)} />
+                    <Metric
+                      label="Handled without the model"
+                      value={`${assistant.withoutModelShare ?? 0}%`}
+                      note={`${assistant.withoutModel} of ${assistant.messages}`}
+                    />
+                    <Metric label="Average response" value={`${assistant.avgMs} ms`} />
+                    <Metric label="Blocked by safety rules" value={String(assistant.refusals)} />
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {Object.entries(assistant.byRoute).map(([route, count]) => (
+                      <span key={route} className={`tag h-7 px-3 ${
+                        route === "refused" ? "bg-bad-bg text-bad"
+                        : route === "unknown" ? "bg-warn-bg text-warn"
+                        : route === "fast_path" ? "bg-ok-bg text-ok"
+                        : "bg-surface text-ink-soft"}`}>
+                        {route.replace(/_/g, " ")} {count}
+                      </span>
+                    ))}
+                  </div>
+
+                  <p className="text-xs text-ink-muted mt-3">
+                    &quot;Fast path&quot; means the message was understood without a language
+                    model at all. That share is what keeps this cheap and quick.
+                  </p>
+
+                  {assistant.needsReview.length > 0 && (
+                    <div className="mt-5 border-t border-line pt-4">
+                      <h3 className="text-sm font-medium">Worth a look</h3>
+                      <p className="text-xs text-ink-muted mt-1">
+                        Messages it could not place, and ones it refused. The first kind
+                        usually means a missing alias on the menu.
+                      </p>
+                      <ul className="mt-3 divide-y divide-line">
+                        {assistant.needsReview.slice(0, 8).map((row, i) => (
+                          <li key={i} className="py-2.5 flex items-baseline justify-between gap-3">
+                            <span className="text-sm text-ink-soft min-w-0 truncate">
+                              {row.reply}
+                            </span>
+                            <span className={`tag shrink-0 ${
+                              row.route === "refused" ? "bg-bad-bg text-bad" : "bg-warn-bg text-warn"}`}>
+                              {row.safetyRule ?? row.route}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </>
+              )}
             </section>
           </>
         )}

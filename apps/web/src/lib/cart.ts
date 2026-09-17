@@ -28,6 +28,8 @@ type CartState = {
   setQuantity: (key: string, quantity: number) => void;
   remove: (key: string) => void;
   replace: (key: string, line: Omit<CartLine, "key">) => void;
+  /** Used by the assistant, which returns the whole cart rather than a change. */
+  replaceAll: (lines: Omit<CartLine, "key">[]) => void;
   clear: () => void;
   count: () => number;
 };
@@ -76,6 +78,9 @@ export const useCart = create<CartState>()(
             l.key === key ? { ...line, key: lineKey(line.slug, line.choices) } : l
           ),
         }),
+
+      replaceAll: (lines) =>
+        set({ lines: lines.map((l) => ({ ...l, key: lineKey(l.slug, l.choices) })) }),
 
       clear: () => set({ lines: [] }),
 

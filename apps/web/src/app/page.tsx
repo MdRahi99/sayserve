@@ -16,8 +16,8 @@ export default function HomePage() {
             <li>Prices always come from the live menu, never from a guess</li>
           </ul>
           <div className="flex flex-wrap gap-3 mt-8">
-            <Link href="/menu" className="btn-primary px-6">Browse the menu</Link>
-            <Link href="/orders" className="btn-ghost px-6">Track an order</Link>
+            <Link href="/chat" className="btn-primary px-6">Just tell us what you want</Link>
+            <Link href="/menu" className="btn-ghost px-6">Browse the menu</Link>
           </div>
         </div>
       </div>

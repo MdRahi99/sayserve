@@ -16,9 +16,8 @@
 | 1 | Auth and roles, menu API, pricing engine, order state machine, idempotent checkout | Done |
 | 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
 | 3 | Admin: live kitchen board, menu manager, settings, dashboard | Done |
-| 4a | The assistant: safety gate, parser, menu matching, eval harness | Done |
-| 4b | Chat and voice in the browser, assistant metrics on the dashboard | Next |
-| 5 | Stripe, refunds, demo mode, accessibility | |
+| 4 | The assistant: safety gate, parser, menu matching, chat, voice, eval harness | Done |
+| 5 | Stripe, refunds, demo mode, accessibility | Next |
 | 6 | Deploy and write up | |
 
 ## The two ideas worth reading the code for
@@ -171,6 +170,21 @@ Slowest case                 11 ms
 Two things about that set. It is written by hand and never generated: a test set produced by the same kind of model the system uses measures agreement, not correctness. And it scores the resulting **cart**, not the wording, so the reply is free to change and the order is not.
 
 It also carries a must-not-refuse list — "is anything half price today?", "can I collect at 1800", "I'll pay cash". fronter's safety rules refused all three. An attack that gets through is a bug; a customer who gets refused is a lost order.
+
+### In the browser
+
+The assistant writes into the same cart the menu writes into, and the cart sits
+beside the conversation so you watch it fill. Anything it adds can still be
+edited by hand. Each reply carries a small grey line saying which route the
+message took — "Matched directly · 11 ms · no model call" — because an assistant
+that admits when it did not need a model is easier to trust than one that never
+explains itself.
+
+Voice uses the browser's own Web Speech API: no audio upload, no transcription
+bill, no latency past the local recogniser. The trade is support — Chrome, Edge
+and Safari have it, Firefox does not — so the mic button only appears where it
+works. Speech lands in the input box rather than sending straight away, so a
+misheard word gets corrected instead of ordered.
 
 ### Two keys, both optional
 

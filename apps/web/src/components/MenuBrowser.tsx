@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { api, ApiError, type MenuItem, type MenuResponse, type OptionGroup } from "@/lib/api";
 import { useCart, type CartLine } from "@/lib/cart";
 import { CATEGORY_LABELS, money } from "@/lib/format";
+import { Assistant } from "./Assistant";
 import { CartPanel } from "./CartPanel";
 import { ItemModal } from "./ItemModal";
 import { Photo } from "./Photo";
@@ -24,6 +25,7 @@ export function MenuBrowser() {
   const [search, setSearch] = useState("");
   const [open, setOpen] = useState<{ item: MenuItem; editing?: CartLine } | null>(null);
   const [cartOpen, setCartOpen] = useState(false);
+  const [assistantOpen, setAssistantOpen] = useState(false);
 
   const count = useCart((s) => s.lines.reduce((n, l) => n + l.quantity, 0));
 
@@ -110,6 +112,9 @@ export function MenuBrowser() {
                          placeholder:text-ink-muted"
             />
           </label>
+          <button onClick={() => setAssistantOpen(true)} className="btn-ghost h-11 px-4 shrink-0">
+            Just tell us
+          </button>
         </div>
 
         <div className="lg:hidden flex gap-2 overflow-x-auto py-4 -mx-4 px-4">
@@ -180,6 +185,15 @@ export function MenuBrowser() {
       {open && (
         <ItemModal item={open.item} groups={groups} editing={open.editing}
           onClose={() => setOpen(null)} />
+      )}
+
+      {assistantOpen && (
+        <div className="fixed inset-0 z-40 bg-ink/40 flex items-stretch justify-end"
+          onClick={(e) => e.target === e.currentTarget && setAssistantOpen(false)}>
+          <div className="w-full sm:max-w-md bg-card shadow-xl">
+            <Assistant items={data.items} onClose={() => setAssistantOpen(false)} />
+          </div>
+        </div>
       )}
     </div>
   );

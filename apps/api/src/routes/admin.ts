@@ -8,7 +8,9 @@ import { validate } from "../middleware/validate.js";
 import { CATEGORIES, MenuItem } from "../models/MenuItem.js";
 import { OptionGroup } from "../models/OptionGroup.js";
 import { Order } from "../models/Order.js";
+import { Conversation } from "../models/Conversation.js";
 import { getSettings, Settings } from "../models/Settings.js";
+import { assistantStatus } from "../assistant/registry.js";
 
 const router = Router();
 router.use(attachUser);
@@ -280,6 +282,87 @@ router.get("/stats", staff, asyncRoute(async (req, res) => {
       revenue: Math.round(t.revenue * 100) / 100,
     })),
     byStatus: Object.fromEntries(byStatus.map((s) => [s._id, s.count])),
+  });
+}));
+
+/**
+ * What the assistant actually did.
+ *
+ * The share of messages finished without a model call is the number worth
+ * watching: it is the difference between an assistant that is cheap and fast
+ * and one that bills for every hello. The refusals and the messages it could
+ * not place are the review queue — the raw material for the next round of
+ * aliases.
+ */
+router.get("/assistant", staff, asyncRoute(async (req, res) => {
+  const days = Math.min(Number(req.query.days) || 7, 90);
+  const since = new Date(Date.now() - days * 24 * 3600 * 1000);
+
+  const [summary, recent] = await Promise.all([
+    Conversation.aggregate([
+      { $unwind: "$turns" },
+      { $match: { "turns.role": "assistant", "turns.at": { $gte: since } } },
+      {
+        $group: {
+          _id: "$turns.route",
+          count: { $sum: 1 },
+          modelCalls: { $sum: { $cond: ["$turns.modelCalled", 1, 0] } },
+          avgMs: { $avg: "$turns.ms" },
+        },
+      },
+      { $sort: { count: -1 } },
+    ]),
+
+    // What it could not place, and what it refused: worth a human eye.
+    Conversation.aggregate([
+      { $unwind: { path: "$turns", includeArrayIndex: "i" } },
+      { $match: { "turns.role": "assistant", "turns.at": { $gte: since },
+                  "turns.route": { $in: ["unknown", "refused"] } } },
+      { $sort: { "turns.at": -1 } },
+      { $limit: 20 },
+      { $project: { sessionId: 1, route: "$turns.route", reply: "$turns.content",
+                    safetyRule: "$turns.safetyRule", at: "$turns.at",
+                    asked: { $arrayElemAt: ["$turns", 0] } } },
+    ]),
+  ]);
+
+  const total = summary.reduce((sum, r) => sum + r.count, 0);
+  const modelCalls = summary.reduce((sum, r) => sum + r.modelCalls, 0);
+  const byRoute = Object.fromEntries(summary.map((r) => [r._id ?? "unknown", r.count]));
+
+  // Weighted so one slow outlier does not look like the average.
+  const avgMs = total
+    ? Math.round(summary.reduce((sum, r) => sum + (r.avgMs ?? 0) * r.count, 0) / total)
+    : 0;
+
+  res.json({
+    days,
+    messages: total,
+    modelCalls,
+    withoutModel: total - modelCalls,
+    withoutModelShare: total ? Math.round(((total - modelCalls) / total) * 100) : null,
+    avgMs,
+    byRoute,
+    refusals: byRoute.refused ?? 0,
+    needsReview: recent.map((r) => ({
+      sessionId: r.sessionId,
+      route: r.route,
+      reply: r.reply,
+      safetyRule: r.safetyRule,
+      at: r.at,
+    })),
+    providers: assistantStatus(),
+  });
+}));
+
+/** The messages of one conversation, for looking at a flagged case. */
+router.get("/assistant/:sessionId", staff, asyncRoute(async (req, res) => {
+  const conversation = await Conversation.findOne({ sessionId: req.params.sessionId }).lean();
+  if (!conversation) throw new HttpError(404, "No such conversation.");
+  res.json({
+    sessionId: conversation.sessionId,
+    turns: conversation.turns,
+    lines: conversation.lines,
   });
 }));
 
