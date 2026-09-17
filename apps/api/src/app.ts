@@ -6,6 +6,7 @@ import { attachUser } from "./middleware/auth.js";
 import { errorHandler, notFound } from "./middleware/errors.js";
 import adminRoutes from "./routes/admin.js";
 import authRoutes from "./routes/auth.js";
+import chatRoutes from "./routes/chat.js";
 import menuRoutes from "./routes/menu.js";
 import orderRoutes from "./routes/orders.js";
 import { getSettings } from "./models/Settings.js";
@@ -40,6 +41,7 @@ export function createApp() {
   app.use("/api/menu", menuRoutes);
   app.use("/api/orders", orderRoutes);
   app.use("/api/admin", adminRoutes);
+  app.use("/api/chat", chatRoutes);
 
   app.use(notFound);
   app.use(errorHandler);

@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { z } from "zod";
+import { invalidateAssistantIndex } from "../assistant/registry.js";
 import { emitStoreStatus } from "../lib/events.js";
 import { asyncRoute, HttpError } from "../middleware/errors.js";
 import { attachUser, requireRole } from "../middleware/auth.js";
@@ -68,6 +69,7 @@ router.post("/menu", admin, validate(itemSchema), asyncRoute(async (req, res) =>
   }
   await assertGroupsExist(body.optionGroups);
   const item = await MenuItem.create(body);
+  invalidateAssistantIndex();
   res.status(201).json({ item });
 }));
 
@@ -79,6 +81,7 @@ router.patch("/menu/:slug", admin, validate(itemSchema.partial()), asyncRoute(as
     { slug: req.params.slug }, body, { new: true }
   );
   if (!item) throw new HttpError(404, "No such menu item.");
+  invalidateAssistantIndex();
   res.json({ item });
 }));
 
@@ -104,6 +107,7 @@ router.post("/menu/:slug/availability", staff,
 router.delete("/menu/:slug", admin, asyncRoute(async (req, res) => {
   const item = await MenuItem.findOneAndDelete({ slug: req.params.slug });
   if (!item) throw new HttpError(404, "No such menu item.");
+  invalidateAssistantIndex();
 
   // An item can be referenced by a meal's "choose a drink" group. Deleting it
   // would leave a choice that prices fine but cannot be made.

@@ -404,8 +404,7 @@
         {
           "name": "Cola",
           "priceDelta": 0,
-          "linkedItem": "cola",
-          "default": true
+          "linkedItem": "cola"
         },
         {
           "name": "Diet cola",
@@ -457,8 +456,7 @@
         {
           "name": "Small fries",
           "priceDelta": 0,
-          "linkedItem": "fries",
-          "default": true
+          "linkedItem": "fries"
         },
         {
           "name": "Apple slices",
@@ -481,8 +479,7 @@
         {
           "name": "Orange juice",
           "priceDelta": 0,
-          "linkedItem": "orange-juice",
-          "default": true
+          "linkedItem": "orange-juice"
         },
         {
           "name": "Bottled water",
@@ -571,8 +568,7 @@
         {
           "name": "Cheeseburger",
           "priceDelta": 0,
-          "linkedItem": "cheeseburger",
-          "default": true
+          "linkedItem": "cheeseburger"
         },
         {
           "name": "Classic hamburger",

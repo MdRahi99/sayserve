@@ -9,6 +9,13 @@ const schema = z.object({
   CORS_ORIGIN: z.string().default("http://localhost:3000"),
   COOKIE_DOMAIN: z.string().optional(),
   DEMO_TTL_HOURS: z.coerce.number().default(24),
+
+  // The assistant works without these. They add meaning-matching and
+  // conversation; the parser and the safety gate need neither.
+  GROQ_API_KEY: z.string().optional(),
+  GROQ_MODEL: z.string().default("openai/gpt-oss-20b"),
+  VOYAGE_API_KEY: z.string().optional(),
+  VOYAGE_MODEL: z.string().default("voyage-3-lite"),
 });
 
 const parsed = schema.safeParse(process.env);

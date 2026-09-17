@@ -16,7 +16,8 @@
 | 1 | Auth and roles, menu API, pricing engine, order state machine, idempotent checkout | Done |
 | 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
 | 3 | Admin: live kitchen board, menu manager, settings, dashboard | Done |
-| 4 | The assistant: safety gate, parser, embeddings, chat, voice, eval harness | Next |
+| 4a | The assistant: safety gate, parser, menu matching, eval harness | Done |
+| 4b | Chat and voice in the browser, assistant metrics on the dashboard | Next |
 | 5 | Stripe, refunds, demo mode, accessibility | |
 | 6 | Deploy and write up | |
 
@@ -138,6 +139,42 @@ Tracking rides the same socket the kitchen board uses, so the timeline moves the
 Socket.io, with rooms rather than broadcasts. Staff join `kitchen` on connect and see every order. A customer joins only the room for an order they can prove is theirs — by owning it, or by holding the guest token from checkout. Without that check, anyone could listen to the whole shop by guessing an id.
 
 Routes never import the socket server. They call `emitOrderNew` in [`lib/events.ts`](apps/api/src/lib/events.ts), which does nothing at all when no socket is attached — which is exactly how the tests run.
+
+## The assistant
+
+Five stages. The model is the fourth, and most messages never reach it.
+
+```
+message
+  1. safety    deterministic regex. the only stage that may refuse
+  2. parse     "2 cheeseburgers, no onions, and a large coke" — no model call
+  3. resolve   exact, then typo-tolerant, then meaning: "chips", "something fizzy"
+  4. model     only the messy ones. returns the whole cart as JSON
+  5. apply     priced and validated against the live menu
+```
+
+Stage 5 decides what is missing by looking at the actual cart, not by guessing from wording. That is the part fronter got wrong: it asked a text classifier whether an order was "incomplete", a question the option-group data already answers.
+
+Everything before the model is local and offline, so the site keeps taking orders when the provider is down or unconfigured — and so the eval can run in CI with no keys.
+
+### What it scores
+
+29 hand-written cases, run through the real pipeline on every push:
+
+```
+Exact cart match             29/29  100%
+Route as expected            29/29
+Finished without the model   29/29  100%
+Slowest case                 11 ms
+```
+
+Two things about that set. It is written by hand and never generated: a test set produced by the same kind of model the system uses measures agreement, not correctness. And it scores the resulting **cart**, not the wording, so the reply is free to change and the order is not.
+
+It also carries a must-not-refuse list — "is anything half price today?", "can I collect at 1800", "I'll pay cash". fronter's safety rules refused all three. An attack that gets through is a bug; a customer who gets refused is a lost order.
+
+### Two keys, both optional
+
+`GROQ_API_KEY` adds conversation. `VOYAGE_API_KEY` adds meaning-matching, by embedding each item's name, aliases and description once at startup. Without either, ordering still works.
 
 ## Two roles, not one
 

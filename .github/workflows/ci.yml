@@ -42,6 +42,9 @@ jobs:
       - name: Unit tests — pricing and the state machine
         run: npm run test:unit
 
+      - name: Assistant eval — 29 hand-written cases, no model, no keys
+        run: npm run test:eval --workspace @sayserve/api
+
       - name: Integration tests — the whole order lifecycle
         run: npm test
 
