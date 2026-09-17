@@ -15,9 +15,8 @@
 | 0 | Plan, menu data, wireframes | Done |
 | 1 | Auth and roles, menu API, pricing engine, order state machine, idempotent checkout | Done |
 | 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
-| 3a | Live kitchen board over sockets | Done |
-| 3b | Menu manager, store settings, dashboard | Next |
-| 4 | The assistant: safety gate, parser, embeddings, chat, voice, eval harness | |
+| 3 | Admin: live kitchen board, menu manager, settings, dashboard | Done |
+| 4 | The assistant: safety gate, parser, embeddings, chat, voice, eval harness | Next |
 | 5 | Stripe, refunds, demo mode, accessibility | |
 | 6 | Deploy and write up | |
 
@@ -139,6 +138,12 @@ Tracking rides the same socket the kitchen board uses, so the timeline moves the
 Socket.io, with rooms rather than broadcasts. Staff join `kitchen` on connect and see every order. A customer joins only the room for an order they can prove is theirs — by owning it, or by holding the guest token from checkout. Without that check, anyone could listen to the whole shop by guessing an id.
 
 Routes never import the socket server. They call `emitOrderNew` in [`lib/events.ts`](apps/api/src/lib/events.ts), which does nothing at all when no socket is attached — which is exactly how the tests run.
+
+## Two roles, not one
+
+Staff can mark an item sold out and open or close the shop — things that happen mid-shift, where waiting for the owner would be absurd. Prices, new items, deletions and delivery settings are the owner's: a wrong price is a wrong receipt, and there is no undo on money.
+
+The split lives in the API, not in the UI. Hiding a button is a courtesy; `requireRole("admin")` is the rule.
 
 ## Menu data
 

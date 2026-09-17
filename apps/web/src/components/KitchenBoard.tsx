@@ -6,6 +6,7 @@ import { money } from "@/lib/format";
 import { getSocket } from "@/lib/socket";
 import { elapsed, useNow } from "@/lib/useElapsed";
 import { useUser } from "@/lib/useUser";
+import { StaffNav } from "./StaffNav";
 
 /**
  * The kitchen board.
@@ -134,6 +135,7 @@ export function KitchenBoard() {
 
   return (
     <div className="h-[calc(100vh-4rem)] flex flex-col">
+      <StaffNav active="board" />
       <div className="flex items-center justify-between px-4 lg:px-6 py-3 border-b border-line bg-card">
         <div className="flex items-center gap-3">
           <h1 className="text-lg font-medium">Kitchen</h1>

@@ -131,6 +131,42 @@ After `accepted`, the tracking page shows a ready time and the Cancel button dis
 
 ---
 
+## 4b. The staff tabs
+
+The board's top bar now has **Board · Menu · Dashboard · Settings**.
+
+**Menu** — every item with a sold-out switch. Flip one and check the customer's menu: the item greys out and cannot be added. Past orders keep their own copy of what was bought, so nothing historical changes.
+
+**Dashboard** — sales, order count, average order, average prep time, orders by hour, top items. Prep time is measured from the status history: the gap between "accepted" and "ready". Sales count only orders that reached the kitchen, so a cancelled order does not flatter the numbers.
+
+**Settings** — open or close the shop. Closing stops new orders immediately; orders already in the kitchen carry on. Try it, then attempt a checkout in the customer window.
+
+### Becoming the owner
+
+A demo staff account is deliberately **staff**, not **admin**. Staff can mark things sold out and open or close the shop. Prices, new items, deletions and delivery settings are the owner's, and the API refuses them for staff regardless of what the screen shows.
+
+Deliberately: a demo admin could delete the menu for everyone, since there is one menu.
+
+To try the owner's side, promote your own account in `mongosh`:
+
+```js
+use sayserve
+db.users.updateOne({ email: "you@example.com" }, { $set: { role: "admin" } })
+```
+
+Sign out and back in. You now see Edit, Delete, Add item, and the settings fields unlock.
+
+Check the rule holds from the other side — as staff, try an admin-only call directly:
+
+```bash
+curl -b staff.txt -X PATCH http://localhost:5000/api/admin/menu/cheeseburger \
+  -H 'Content-Type: application/json' -d '{"basePrice":0.01}'
+```
+
+Expect `403`. Hiding a button is a courtesy; the API is the rule.
+
+---
+
 ## 5. Try to break it
 
 These should all be refused. If any succeeds, something is wrong.
@@ -215,6 +251,5 @@ db.settings.updateOne({ key: "store" }, { $set: { isOpen: true } })
 
 ## 8. What is not built yet
 
-- The menu manager, store settings and dashboard screens — Phase 3b
 - Real card payment — Phase 5; choosing Card places the order and leaves it waiting for payment
 - The chat and voice assistant — Phase 4

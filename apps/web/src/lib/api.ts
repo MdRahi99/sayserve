@@ -142,6 +142,28 @@ export type TrackedOrder = {
 
 export type User = { id: string; name: string; role: "customer" | "staff" | "admin"; isDemo: boolean };
 
+export type StoreSettings = {
+  restaurantName: string;
+  isOpen: boolean;
+  prepTimeMinutes: number;
+  deliveryEnabled: boolean;
+  deliveryFee: number;
+  deliveryRadiusMiles: number;
+  minDeliveryOrder: number;
+};
+
+export type Stats = {
+  days: number;
+  sales: number;
+  orders: number;
+  averageOrder: number;
+  averagePrepMinutes: number | null;
+  prepSampleSize: number;
+  ordersByHour: { hour: number; orders: number }[];
+  topItems: { name: string; quantity: number; revenue: number }[];
+  byStatus: Record<string, number>;
+};
+
 export type CheckoutBody = {
   lines: QuoteLine[];
   fulfilment: "collection" | "delivery";
@@ -201,6 +223,42 @@ export const api = {
       method: "POST",
       body: JSON.stringify({ to, ...extra }),
     }),
+
+  admin: {
+    menu: () => call<{ items: MenuItem[]; optionGroups: OptionGroup[] }>("/api/admin/menu"),
+
+    setAvailability: (slug: string, available: boolean) =>
+      call<{ item: MenuItem }>(`/api/admin/menu/${slug}/availability`, {
+        method: "POST", body: JSON.stringify({ available }),
+      }),
+
+    updateItem: (slug: string, patch: Partial<MenuItem>) =>
+      call<{ item: MenuItem }>(`/api/admin/menu/${slug}`, {
+        method: "PATCH", body: JSON.stringify(patch),
+      }),
+
+    createItem: (item: Partial<MenuItem>) =>
+      call<{ item: MenuItem }>("/api/admin/menu", {
+        method: "POST", body: JSON.stringify(item),
+      }),
+
+    deleteItem: (slug: string) =>
+      call<{ deleted: string; warning?: string }>(`/api/admin/menu/${slug}`, { method: "DELETE" }),
+
+    settings: () => call<{ settings: StoreSettings }>("/api/admin/settings"),
+
+    updateSettings: (patch: Partial<StoreSettings>) =>
+      call<{ settings: StoreSettings }>("/api/admin/settings", {
+        method: "PATCH", body: JSON.stringify(patch),
+      }),
+
+    setOpen: (isOpen: boolean) =>
+      call<{ settings: StoreSettings }>("/api/admin/settings/open", {
+        method: "POST", body: JSON.stringify({ isOpen }),
+      }),
+
+    stats: (days = 1) => call<Stats>(`/api/admin/stats?days=${days}`),
+  },
 
   auth: {
     me: () => call<{ user: User }>("/api/auth/me"),
