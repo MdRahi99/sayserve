@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { api, ApiError, type TrackedOrder } from "@/lib/api";
 import { money } from "@/lib/format";
 import { tokenFor } from "@/lib/recentOrders";
+import { getSocket } from "@/lib/socket";
 
 const OPEN_STATUSES = ["pending_payment", "placed", "accepted", "preparing", "ready", "out_for_delivery"];
 
@@ -38,17 +39,31 @@ export function OrderTracking({ id }: { id: string }) {
   useEffect(() => { void load(); }, [load]);
 
   /**
-   * Polling every 15 seconds, and only while the order is still open.
+   * The socket is how this page updates: the kitchen taps Accept and the
+   * timeline moves immediately.
    *
-   * Phase 3 replaces this with a socket, which is what a kitchen board needs.
-   * Until then, polling is honest: a finished order stops asking, so a tab left
-   * open overnight does not hammer a free-tier API for nothing.
+   * Polling stays as a slow safety net, for a dropped connection or a proxy
+   * that will not hold a websocket open. Both stop once the order is finished,
+   * so a tab left open overnight costs nothing.
    */
   useEffect(() => {
     if (!data || !OPEN_STATUSES.includes(data.order.status)) return;
-    const timer = setInterval(() => void load(), 15000);
-    return () => clearInterval(timer);
-  }, [data, load]);
+
+    const socket = getSocket();
+    const join = () => socket.emit("watch:order", { id, token: tokenFor(id) });
+    join();
+    socket.on("connect", join);
+    socket.on("order:updated", () => void load());
+
+    const fallback = setInterval(() => void load(), 30000);
+
+    return () => {
+      socket.emit("unwatch:order", { id });
+      socket.off("order:updated");
+      socket.off("connect", join);
+      clearInterval(fallback);
+    };
+  }, [data, id, load]);
 
   async function cancel() {
     if (!confirm("Cancel this order?")) return;
@@ -149,7 +164,7 @@ export function OrderTracking({ id }: { id: string }) {
 
             {!finished && (
               <p className="text-xs text-ink-muted border-t border-line pt-3">
-                This page updates itself every few seconds.
+                This page updates itself as the kitchen works.
               </p>
             )}
           </div>

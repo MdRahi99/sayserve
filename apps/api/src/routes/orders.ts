@@ -4,6 +4,7 @@ import { z } from "zod";
 import { asyncRoute, HttpError } from "../middleware/errors.js";
 import { attachUser, requireAuth, requireRole } from "../middleware/auth.js";
 import { validate } from "../middleware/validate.js";
+import { emitOrderNew, emitOrderUpdated } from "../lib/events.js";
 import { loadMenuLookup } from "../lib/menuService.js";
 import {
   canTransition, customerCanCancel, customerTimeline, isTerminal, nextStatuses,
@@ -133,7 +134,11 @@ router.post("/", attachUser, validate(checkoutSchema), asyncRoute(async (req, re
     expiresAt: paying ? new Date(Date.now() + 30 * 60 * 1000) : null,
   });
 
-  res.status(201).json({ order: shape(order.toObject()) });
+  const created = shape(order.toObject());
+  // A card order is not the kitchen's problem until it is paid.
+  if (created.status === "placed") emitOrderNew(created);
+
+  res.status(201).json({ order: created });
 }));
 
 router.get("/mine", attachUser, requireAuth, asyncRoute(async (req, res) => {
@@ -271,6 +276,11 @@ async function move(
   }
 
   await order.save();
+
+  const updated = shape(order.toObject());
+  // A card order reaching "placed" is new to the kitchen, not an update.
+  if (to === "placed") emitOrderNew(updated);
+  else emitOrderUpdated(updated);
 }
 
 /** One shape for every order the API returns. */

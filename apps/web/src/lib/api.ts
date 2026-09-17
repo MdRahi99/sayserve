@@ -188,6 +188,20 @@ export const api = {
 
   myOrders: () => call<{ orders: Order[] }>("/api/orders/mine"),
 
+  kitchenBoard: () =>
+    call<{ columns: { new: Order[]; preparing: Order[]; ready: Order[] } }>(
+      "/api/orders/kitchen/board"
+    ),
+
+  setOrderStatus: (
+    id: string, to: OrderStatus,
+    extra: { reason?: string; readyInMinutes?: number } = {}
+  ) =>
+    call<{ order: Order }>(`/api/orders/${id}/status`, {
+      method: "POST",
+      body: JSON.stringify({ to, ...extra }),
+    }),
+
   auth: {
     me: () => call<{ user: User }>("/api/auth/me"),
     login: (email: string, password: string) =>

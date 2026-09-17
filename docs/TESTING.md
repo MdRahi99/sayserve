@@ -1,0 +1,220 @@
+# Testing what is built so far
+
+Two kinds of checking: the automated tests, and walking through it yourself.
+
+There is no staff screen yet — that is Phase 3 — so staff actions here are done with `curl`. Everything the kitchen will click is already working in the API.
+
+---
+
+## 1. Automated tests
+
+```bash
+npm run test:unit   # 33 tests, instant, no database needed
+npm test            # the above plus the full order lifecycle over HTTP
+npm run typecheck   # both apps
+```
+
+`npm test` places a real order and drives it to Completed, then proves the closed paths are closed: skipping a step, rejecting without a reason, a customer accepting their own order, cancelling after the kitchen started, a double-tapped Pay button, and one customer reading another's order.
+
+---
+
+## 2. Start everything
+
+Three terminals:
+
+```bash
+npm run dev:api     # http://localhost:5000
+npm run dev:web     # http://localhost:3000
+```
+
+Sanity check first:
+
+```bash
+curl http://localhost:5000/api/health
+```
+
+You want `{"ok":true,"storeOpen":true,...}`. If the store shows closed, see section 7.
+
+---
+
+## 3. Order as a customer
+
+Open **http://localhost:3000** in a normal window.
+
+| Step | What to do | What should happen |
+| --- | --- | --- |
+| 1 | Go to Menu | 70 items, categories down the left on desktop, cart panel on the right |
+| 2 | Search `chips` | Fries appears — it matched an alias, not the name |
+| 3 | Add a **Cheeseburger** | The customiser opens with "Remove anything?" marked Optional |
+| 4 | Add a **Cheeseburger Meal** without touching the drink | Add is blocked, and "Choose a drink" turns red saying "Please choose" |
+| 5 | Pick a drink, then Add | It lands in the cart with a price |
+| 6 | Watch the cart totals | Every figure came from the API, not the browser |
+| 7 | Press Checkout | Collection is selected, Pay on collection is available |
+| 8 | Switch to **Delivery** | Address fields appear and payment jumps to Card — delivery cannot be paid at the counter |
+| 9 | Switch back to Collection, fill name and phone, Place order | You land on the tracking page with an order number starting at 1001 |
+
+Leave that tab open. You will watch it change from the staff side.
+
+### The incomplete-order check, on purpose
+
+Add a Cheeseburger Meal, then in the cart panel notice:
+
+- the line shows **Needs choose a drink** and no price
+- the subtotal ignores it
+- Checkout is disabled
+
+None of that is the browser's judgement. The API returned `complete: false` with a `missing_choice` problem naming the group, and the UI repeated it. You can see it yourself:
+
+```bash
+curl -X POST http://localhost:5000/api/orders/quote \
+  -H 'Content-Type: application/json' \
+  -d '{"lines":[{"slug":"cheeseburger-meal","quantity":1}]}'
+```
+
+---
+
+## 4. Act as staff
+
+Open **http://localhost:3000/staff** in a *second browser* (or a private window — not just another tab, because the two sign-ins share cookies).
+
+Press **Try as staff**. You land on the kitchen board.
+
+| Step | What to do | What should happen |
+| --- | --- | --- |
+| 1 | Look at the top bar | A green **Live** badge. Amber means the socket dropped |
+| 2 | Place an order in the customer window | The card appears on the board with a beep, no refresh |
+| 3 | Watch the timer on the card | It ticks. At 2 minutes the badge turns amber, at 5 the card outlines red |
+| 4 | Pick a ready time and press **Accept** | The card moves to Preparing, and the customer's tracking page updates itself |
+| 5 | **Start preparing**, then **Mark ready**, then **Collected** | Each step mirrors on the customer page within a second |
+| 6 | Press ✕ on a new order | It asks for a reason. Without one, nothing happens — the API refuses it |
+
+Changes like "No onions" are printed in red on the card, because that is the line that gets missed.
+
+### The same thing with curl
+
+Useful for checking what the API actually returns. The `-c` and `-b` flags save and send the sign-in cookie.
+
+**Sign in as staff** (creates a throwaway demo account):
+
+```bash
+curl -c staff.txt -X POST http://localhost:5000/api/auth/demo \
+  -H 'Content-Type: application/json' -d '{"role":"staff"}'
+```
+
+**See the kitchen board:**
+
+```bash
+curl -b staff.txt http://localhost:5000/api/orders/kitchen/board
+```
+
+Your order is in the `new` column. Copy its `"id"`.
+
+**Move it through the kitchen.** Run these one at a time and watch the customer's tracking tab after each — it updates itself within 15 seconds.
+
+```bash
+ORDER=paste-the-id-here
+
+curl -b staff.txt -X POST http://localhost:5000/api/orders/$ORDER/status \
+  -H 'Content-Type: application/json' -d '{"to":"accepted","readyInMinutes":15}'
+
+curl -b staff.txt -X POST http://localhost:5000/api/orders/$ORDER/status \
+  -H 'Content-Type: application/json' -d '{"to":"preparing"}'
+
+curl -b staff.txt -X POST http://localhost:5000/api/orders/$ORDER/status \
+  -H 'Content-Type: application/json' -d '{"to":"ready"}'
+
+curl -b staff.txt -X POST http://localhost:5000/api/orders/$ORDER/status \
+  -H 'Content-Type: application/json' -d '{"to":"completed"}'
+```
+
+After `accepted`, the tracking page shows a ready time and the Cancel button disappears.
+
+---
+
+## 5. Try to break it
+
+These should all be refused. If any succeeds, something is wrong.
+
+**Skip a step** — place a fresh order, then:
+
+```bash
+curl -b staff.txt -X POST http://localhost:5000/api/orders/$ORDER/status \
+  -H 'Content-Type: application/json' -d '{"to":"ready"}'
+```
+Expect `409` and `"code":"not_allowed"`.
+
+**Reject with no reason:**
+
+```bash
+curl -b staff.txt -X POST http://localhost:5000/api/orders/$ORDER/status \
+  -H 'Content-Type: application/json' -d '{"to":"rejected"}'
+```
+Expect `409` and `"code":"needs_reason"`. Add `"reason":"Out of buns"` and it works.
+
+**Send your own price:**
+
+```bash
+curl -X POST http://localhost:5000/api/orders/quote \
+  -H 'Content-Type: application/json' \
+  -d '{"lines":[{"slug":"cheeseburger","quantity":1,"unitPrice":0.01}]}'
+```
+Expect £4.49. The field is ignored.
+
+**Order something that does not exist:**
+
+```bash
+curl -X POST http://localhost:5000/api/orders/quote \
+  -H 'Content-Type: application/json' \
+  -d '{"lines":[{"slug":"ferrari","quantity":1}]}'
+```
+Expect a `not_found` problem and a subtotal of 0.
+
+**Reach the kitchen board without signing in:**
+
+```bash
+curl http://localhost:5000/api/orders/kitchen/board
+```
+Expect `401`.
+
+**Cancel too late** — accept an order as staff, then press Cancel on the tracking page. Expect a message saying the kitchen has already started.
+
+**Double-tap Pay** — at checkout, click Place order twice quickly. You get one order, not two. The browser sends the same idempotency key both times.
+
+**Edit the cart in devtools** — change a quantity in the `sayserve-cart` localStorage entry and reload. The cart reprices from the API. There is no price stored in the browser to tamper with.
+
+---
+
+## 6. Guest versus account
+
+**As a guest** (normal window, not signed in): place an order, then close the tab and go to **Your orders**. It is still there — the browser kept the token the API gave it at checkout.
+
+**With an account**: press Sign in, then "Try as a customer". Place an order. **Your orders** now comes from the server, so it follows you to another device.
+
+**Someone else's order** — copy an order id from one browser and open `/orders/<id>` in a different browser. Expect an error. The token is the only way in.
+
+---
+
+## 7. If something looks wrong
+
+| Symptom | Likely cause |
+| --- | --- |
+| "Could not reach the kitchen" | The API is not running, or `NEXT_PUBLIC_API_URL` in `apps/web/.env.local` is wrong |
+| Menu is empty | `npm run seed` has not been run against this database |
+| "The restaurant is closed" | Flip it back: see below |
+| Breakfast items look sold out | They are outside their 06:00–11:00 window. Correct behaviour |
+| Cart shows an old item after reseeding | Clear `sayserve-cart` in localStorage |
+
+Open or close the shop by hand, in `mongosh`:
+
+```js
+use sayserve
+db.settings.updateOne({ key: "store" }, { $set: { isOpen: true } })
+```
+
+---
+
+## 8. What is not built yet
+
+- The menu manager, store settings and dashboard screens — Phase 3b
+- Real card payment — Phase 5; choosing Card places the order and leaves it waiting for payment
+- The chat and voice assistant — Phase 4

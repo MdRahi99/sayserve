@@ -4,7 +4,7 @@
 
 > Most orders never reach a language model. The ones that do cannot invent an item or a price.
 
-[Plan and architecture](docs/PLAN.md) · [Wireframes](docs/wireframes/) · [Menu data](docs/menu.json)
+[Plan and architecture](docs/PLAN.md) · [Testing walkthrough](docs/TESTING.md) · [Wireframes](docs/wireframes/) · [Menu data](docs/menu.json)
 
 ---
 
@@ -15,7 +15,8 @@
 | 0 | Plan, menu data, wireframes | Done |
 | 1 | Auth and roles, menu API, pricing engine, order state machine, idempotent checkout | Done |
 | 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
-| 3 | Admin: live kitchen board, menu manager, dashboard | |
+| 3a | Live kitchen board over sockets | Done |
+| 3b | Menu manager, store settings, dashboard | Next |
 | 4 | The assistant: safety gate, parser, embeddings, chat, voice, eval harness | |
 | 5 | Stripe, refunds, demo mode, accessibility | |
 | 6 | Deploy and write up | |
@@ -117,6 +118,8 @@ The integration suite places a real order and drives it to Completed, then prove
 
 CI runs the typecheck and both suites on every push, against a MongoDB service container.
 
+To walk through it by hand — ordering as a customer, accepting as staff, and trying to break it — see [docs/TESTING.md](docs/TESTING.md).
+
 ## The web app
 
 `apps/web` is Next.js with the App Router and Tailwind, using the palette from the wireframes so the drawing and the build match.
@@ -129,7 +132,13 @@ The pricing and order-status *types* are imported straight from the API source (
 
 There is no sign-up wall. Checkout takes a name and a phone number, and the API hands back a token that the browser keeps, so a guest can watch their order and cancel it without an account. Signing in only adds history across devices.
 
-Tracking polls every 15 seconds, and stops once the order is finished — a tab left open overnight does not hammer a free-tier API for nothing. Phase 3 replaces the polling with a socket.
+Tracking rides the same socket the kitchen board uses, so the timeline moves the moment the kitchen taps Accept. Polling stays as a slow safety net for a dropped connection or a proxy that will not hold a websocket open, and both stop once the order is finished.
+
+## Real-time
+
+Socket.io, with rooms rather than broadcasts. Staff join `kitchen` on connect and see every order. A customer joins only the room for an order they can prove is theirs — by owning it, or by holding the guest token from checkout. Without that check, anyone could listen to the whole shop by guessing an id.
+
+Routes never import the socket server. They call `emitOrderNew` in [`lib/events.ts`](apps/api/src/lib/events.ts), which does nothing at all when no socket is attached — which is exactly how the tests run.
 
 ## Menu data
 
