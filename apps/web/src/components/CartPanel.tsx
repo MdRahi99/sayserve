@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { api, ApiError, type MenuItem, type OptionGroup, type QuoteResponse } from "@/lib/api";
 import { toQuoteLines, useCart, type CartLine } from "@/lib/cart";
@@ -131,15 +132,16 @@ export function CartPanel({
           </p>
         )}
 
-        <button
-          className="btn-primary w-full"
-          disabled={!quote?.complete || !quote.storeOpen}
-          title={quote && !quote.complete ? "Some items still need a choice" : undefined}
-        >
-          {!quote?.complete && quote
-            ? "Finish your choices first"
-            : `Checkout${quote ? ` · ${money(quote.total)}` : ""}`}
-        </button>
+        {quote?.complete && quote.storeOpen ? (
+          <Link href="/checkout" className="btn-primary w-full">
+            Checkout · {money(quote.total)}
+          </Link>
+        ) : (
+          <button className="btn-primary w-full" disabled
+            title={quote && !quote.complete ? "Some items still need a choice" : undefined}>
+            {quote && !quote.complete ? "Finish your choices first" : "Checkout"}
+          </button>
+        )}
 
         {!compact && quote?.prepTimeMinutes && quote.complete && (
           <p className="text-xs text-ink-muted text-center">

@@ -94,6 +94,65 @@ async function call<T>(path: string, init: RequestInit = {}): Promise<T> {
   return body as T;
 }
 
+export type OrderLine = {
+  slug: string;
+  name: string;
+  quantity: number;
+  basePrice: number;
+  choices: { groupId: string; groupName: string; optionName: string; priceDelta: number }[];
+  unitPrice: number;
+  lineTotal: number;
+  notes?: string;
+};
+
+export type StatusEvent = {
+  from: string;
+  to: OrderStatus;
+  label: string;
+  actor: "customer" | "staff" | "admin" | "system";
+  reason?: string;
+  at: string;
+};
+
+export type Order = {
+  id: string;
+  orderNumber: number;
+  status: OrderStatus;
+  fulfilment: "collection" | "delivery";
+  customer: { name: string; phone: string; email?: string };
+  address?: { line1?: string; line2?: string; postcode?: string; notes?: string };
+  lines: OrderLine[];
+  subtotal: number;
+  deliveryFee: number;
+  total: number;
+  payment: { method: "card" | "on_collection"; status: string };
+  notes?: string;
+  readyAt: string | null;
+  scheduledFor: string | null;
+  guestToken: string | null;
+  statusHistory: StatusEvent[];
+  createdAt: string;
+};
+
+export type TrackedOrder = {
+  order: Order;
+  timeline: { status: OrderStatus; label: string }[];
+  canCancel: boolean;
+};
+
+export type User = { id: string; name: string; role: "customer" | "staff" | "admin"; isDemo: boolean };
+
+export type CheckoutBody = {
+  lines: QuoteLine[];
+  fulfilment: "collection" | "delivery";
+  customer: { name: string; phone: string; email?: string };
+  address?: { line1: string; line2?: string; postcode: string; notes?: string };
+  paymentMethod: "card" | "on_collection";
+  notes?: string;
+  source?: "menu" | "chat" | "voice" | "mixed";
+  idempotencyKey: string;
+};
+
 export const api = {
   menu: (params: { category?: string; search?: string } = {}) => {
     const qs = new URLSearchParams();
@@ -110,6 +169,37 @@ export const api = {
     }),
 
   health: () => call<{ ok: boolean; storeOpen: boolean | null }>("/api/health"),
+
+  createOrder: (body: CheckoutBody) =>
+    call<{ order: Order; idempotentReplay?: boolean }>("/api/orders", {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
+
+  /** Guests pass the token they were given at checkout; signed-in users do not. */
+  getOrder: (id: string, token?: string | null) =>
+    call<TrackedOrder>(`/api/orders/${id}${token ? `?token=${encodeURIComponent(token)}` : ""}`),
+
+  cancelOrder: (id: string, token?: string | null) =>
+    call<{ order: Order }>(`/api/orders/${id}/cancel`, {
+      method: "POST",
+      body: JSON.stringify(token ? { token } : {}),
+    }),
+
+  myOrders: () => call<{ orders: Order[] }>("/api/orders/mine"),
+
+  auth: {
+    me: () => call<{ user: User }>("/api/auth/me"),
+    login: (email: string, password: string) =>
+      call<{ user: User }>("/api/auth/login", {
+        method: "POST", body: JSON.stringify({ email, password }),
+      }),
+    register: (body: { name: string; email: string; password: string; phone?: string }) =>
+      call<{ user: User }>("/api/auth/register", { method: "POST", body: JSON.stringify(body) }),
+    demo: (role: "customer" | "staff") =>
+      call<{ user: User }>("/api/auth/demo", { method: "POST", body: JSON.stringify({ role }) }),
+    logout: () => call<{ ok: true }>("/api/auth/logout", { method: "POST" }),
+  },
 };
 
 /** What the client is allowed to send: what was chosen, never what it costs. */

@@ -14,8 +14,7 @@
 | --- | --- | --- |
 | 0 | Plan, menu data, wireframes | Done |
 | 1 | Auth and roles, menu API, pricing engine, order state machine, idempotent checkout | Done |
-| 2a | Customer web: menu, customiser, cart, live server pricing | Done |
-| 2b | Checkout, order tracking, account and history | Next |
+| 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
 | 3 | Admin: live kitchen board, menu manager, dashboard | |
 | 4 | The assistant: safety gate, parser, embeddings, chat, voice, eval harness | |
 | 5 | Stripe, refunds, demo mode, accessibility | |
@@ -49,6 +48,12 @@ The cart in `localStorage` stores *which* item and *which* options, and nothing 
 The same rule makes the UI honest about incomplete orders: a meal with no drink chosen sits in the cart flagged and unpriced, and the Checkout button is disabled because the server said `complete: false` — not because the client worked it out.
 
 See [`apps/web/src/lib/cart.ts`](apps/web/src/lib/cart.ts) and [`CartPanel.tsx`](apps/web/src/components/CartPanel.tsx).
+
+**4. One idempotency key per visit to checkout, not per click.**
+
+If the connection drops after the server created the order but before the reply arrives, pressing Pay again sends the same key and the API returns the order it already made. A fresh key per click would create a duplicate — which is the bug the key exists to prevent, so generating it in the click handler would quietly defeat it.
+
+See [`CheckoutForm.tsx`](apps/web/src/components/CheckoutForm.tsx).
 
 ## API
 
@@ -119,6 +124,12 @@ CI runs the typecheck and both suites on every push, against a MongoDB service c
 The customiser is generated entirely from option group data. There is no special case for "size" or for meals — a meal is just an item with a group whose `min` is 1, so the same code that renders "Remove anything?" renders "Choose a drink" and blocks Add until it is answered.
 
 The pricing and order-status *types* are imported straight from the API source (`@api/lib/pricing`, `@api/lib/orderState`). Both files import nothing at all, so this costs the bundle nothing and there is one definition of the contract instead of two that drift. This is the main practical reason both apps live in one repository.
+
+## Guests are first-class
+
+There is no sign-up wall. Checkout takes a name and a phone number, and the API hands back a token that the browser keeps, so a guest can watch their order and cancel it without an account. Signing in only adds history across devices.
+
+Tracking polls every 15 seconds, and stops once the order is finished — a tab left open overnight does not hammer a free-tier API for nothing. Phase 3 replaces the polling with a socket.
 
 ## Menu data
 

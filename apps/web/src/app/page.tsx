@@ -17,9 +17,7 @@ export default function HomePage() {
           </ul>
           <div className="flex flex-wrap gap-3 mt-8">
             <Link href="/menu" className="btn-primary px-6">Browse the menu</Link>
-            <span className="btn-ghost px-6 opacity-50 cursor-not-allowed" title="Coming in Phase 4">
-              Just tell us what you want
-            </span>
+            <Link href="/orders" className="btn-ghost px-6">Track an order</Link>
           </div>
         </div>
       </div>

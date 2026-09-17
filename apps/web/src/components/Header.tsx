@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useCart } from "@/lib/cart";
+import { useUser } from "@/lib/useUser";
 
 export function Header() {
   const [mounted, setMounted] = useState(false);
   const count = useCart((s) => s.lines.reduce((n, l) => n + l.quantity, 0));
+  const { user } = useUser();
 
   // The cart lives in localStorage, so the server render cannot know the count.
   // Showing it only after mount avoids a hydration mismatch.
@@ -19,12 +21,17 @@ export function Header() {
           <Link href="/" className="text-lg font-medium">SayServe</Link>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
             <Link href="/menu" className="text-ink-soft hover:text-ink">Menu</Link>
-            <span className="text-ink-muted cursor-not-allowed" title="Coming in the next step">Your orders</span>
+            <Link href="/orders" className="text-ink-soft hover:text-ink">Your orders</Link>
           </nav>
         </div>
 
         <div className="flex items-center gap-3">
           <span className="hidden md:inline tag bg-ok-bg text-ok">Open until 23:00</span>
+          {mounted && (
+            user
+              ? <span className="hidden sm:inline text-sm text-ink-soft">{user.name}</span>
+              : <Link href="/signin" className="hidden sm:inline text-sm text-ink-soft hover:text-ink">Sign in</Link>
+          )}
           <Link href="/cart" className="btn-primary h-10 px-4">
             Cart{mounted && count > 0 ? ` · ${count}` : ""}
           </Link>
