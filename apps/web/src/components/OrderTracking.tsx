@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { api, ApiError, type TrackedOrder } from "@/lib/api";
 import { money } from "@/lib/format";
@@ -26,6 +27,9 @@ export function OrderTracking({ id }: { id: string }) {
   const [data, setData] = useState<TrackedOrder | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [cancelling, setCancelling] = useState(false);
+  const params = useSearchParams();
+  const justPaid = params.get("paid") === "1";
+  const paymentCancelled = params.get("cancelled") === "1";
 
   const load = useCallback(async () => {
     try {
@@ -110,6 +114,17 @@ export function OrderTracking({ id }: { id: string }) {
           {order.fulfilment === "delivery" ? "Delivery" : "Collection"} · placed{" "}
           {new Date(order.createdAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}
         </p>
+
+        {justPaid && order.payment.status !== "paid" && (
+          <p className="tag bg-accent-bg text-accent mt-4 h-8 px-3">
+            Payment received — confirming with the kitchen…
+          </p>
+        )}
+        {paymentCancelled && order.status === "pending_payment" && (
+          <p className="tag bg-warn-bg text-warn mt-4 h-8 px-3">
+            Payment was not completed. This order expires in 30 minutes.
+          </p>
+        )}
 
         {stopped ? (
           <div className="card p-6 mt-6">

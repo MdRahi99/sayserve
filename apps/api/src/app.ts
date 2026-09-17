@@ -9,6 +9,8 @@ import authRoutes from "./routes/auth.js";
 import chatRoutes from "./routes/chat.js";
 import menuRoutes from "./routes/menu.js";
 import orderRoutes from "./routes/orders.js";
+import stripeWebhookRoutes from "./routes/stripeWebhook.js";
+import { paymentsEnabled } from "./lib/payments.js";
 import { getSettings } from "./models/Settings.js";
 
 export function createApp() {
@@ -23,6 +25,10 @@ export function createApp() {
     },
     credentials: true,
   }));
+  // Before express.json: the signature is a hash of the exact bytes Stripe
+  // sent, so this one route must keep its raw body.
+  app.use("/api/stripe/webhook", stripeWebhookRoutes);
+
   app.use(express.json({ limit: "200kb" }));
   app.use(cookieParser());
   app.use(attachUser);
@@ -33,6 +39,7 @@ export function createApp() {
       ok: true,
       service: "sayserve-api",
       storeOpen: settings?.isOpen ?? null,
+      paymentsEnabled,
       time: new Date().toISOString(),
     });
   });

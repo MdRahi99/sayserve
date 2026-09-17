@@ -17,7 +17,8 @@
 | 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
 | 3 | Admin: live kitchen board, menu manager, settings, dashboard | Done |
 | 4 | The assistant: safety gate, parser, menu matching, chat, voice, eval harness | Done |
-| 5 | Stripe, refunds, demo mode, accessibility | Next |
+| 5a | Stripe payments, webhook, automatic refunds | Done |
+| 5b | Demo mode, rush simulator, accessibility, end-to-end test | Next |
 | 6 | Deploy and write up | |
 
 ## The two ideas worth reading the code for
@@ -189,6 +190,26 @@ misheard word gets corrected instead of ordered.
 ### Two keys, both optional
 
 `GROQ_API_KEY` adds conversation. `VOYAGE_API_KEY` adds meaning-matching, by embedding each item's name, aliases and description once at startup. Without either, ordering still works.
+
+## Payments
+
+Stripe Checkout in test mode, and optional: with no key the card option is
+hidden and the shop takes payment on collection, which is how most takeaways
+started and a better failure than a checkout that throws.
+
+Two things make the webhook safe. The signature is verified, so only Stripe can
+reach it — without that, anyone who knows the URL could mark orders paid. And it
+moves the order through the same state machine as everything else, as the
+"system" actor, so a webhook cannot push an order somewhere a human could not.
+
+A card order exists before it is paid, as `pending_payment`, and the kitchen
+cannot see it. It becomes a real order when the payment lands, or expires by
+itself after thirty minutes. Line items are built from the order's own frozen
+lines, so what Stripe charges and what the kitchen cooks come from the same row.
+
+Rejecting or cancelling a paid order refunds it automatically. If the refund
+call fails, the status change still stands and the failure is logged: a refund
+needing a human beats an order stuck in the kitchen.
 
 ## Two roles, not one
 

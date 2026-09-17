@@ -11,6 +11,7 @@ import {
   type Actor, type OrderStatus,
 } from "../lib/orderState.js";
 import { deliveryTotal, priceCart, type CartLineInput } from "../lib/pricing.js";
+import { createCheckoutSession, paymentsEnabled, refundSession } from "../lib/payments.js";
 import { nextOrderNumber, Order } from "../models/Order.js";
 import { getSettings } from "../models/Settings.js";
 
@@ -47,6 +48,7 @@ router.post("/quote", validate(cartSchema), asyncRoute(async (req, res) => {
     total: deliveryTotal(cart.subtotal, fee),
     storeOpen: settings.isOpen,
     prepTimeMinutes: settings.prepTimeMinutes,
+    paymentsEnabled,
   });
 }));
 
@@ -106,6 +108,10 @@ router.post("/", attachUser, validate(checkoutSchema), asyncRoute(async (req, re
 
   // Card orders wait for the payment webhook; cash-on-collection goes straight
   // to the kitchen. Phase 5 replaces this with a real Stripe session.
+  if (body.paymentMethod === "card" && !paymentsEnabled) {
+    throw new HttpError(503, "Card payment is not available right now. Please pay on collection.");
+  }
+
   const paying = body.paymentMethod === "card";
   const status: OrderStatus = paying ? "pending_payment" : "placed";
 
@@ -138,7 +144,34 @@ router.post("/", attachUser, validate(checkoutSchema), asyncRoute(async (req, re
   // A card order is not the kitchen's problem until it is paid.
   if (created.status === "placed") emitOrderNew(created);
 
-  res.status(201).json({ order: created });
+  let checkoutUrl: string | undefined;
+  if (paying) {
+    try {
+      const session = await createCheckoutSession({
+        orderId: created.id,
+        orderNumber: created.orderNumber,
+        email: body.customer.email || undefined,
+        deliveryFee: fee,
+        guestToken: created.guestToken,
+        lines: cart.lines.map((line) => ({
+          name: line.name,
+          unitPrice: line.unitPrice,
+          quantity: line.quantity,
+          description: line.choices.map((c) => c.optionName).join(", ") || undefined,
+        })),
+      });
+      if (order.payment) order.payment.sessionId = session.id;
+      await order.save();
+      checkoutUrl = session.url ?? undefined;
+    } catch (err) {
+      // The order exists and is unpaid; it expires on its own in 30 minutes.
+      // Better to say so than to leave the customer on a dead button.
+      console.error("Stripe session failed:", err);
+      throw new HttpError(502, "Could not start the payment. Please try again, or pay on collection.");
+    }
+  }
+
+  res.status(201).json({ order: created, checkoutUrl });
 }));
 
 router.get("/mine", attachUser, requireAuth, asyncRoute(async (req, res) => {
@@ -268,6 +301,15 @@ async function move(
   });
 
   if (check.transition.refunds && order.payment?.status === "paid") {
+    if (order.payment.sessionId && paymentsEnabled) {
+      try {
+        await refundSession(order.payment.sessionId);
+      } catch (err) {
+        // The status change still stands. A refund that needs a human is
+        // better than a rejected order stuck in the kitchen.
+        console.error(`Refund failed for order ${order.orderNumber}:`, err);
+      }
+    }
     order.payment.status = "refunded";
     order.payment.refundedAt = new Date();
   }

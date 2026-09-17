@@ -62,6 +62,8 @@ export type QuoteResponse = PricedCart & {
   total: number;
   storeOpen: boolean;
   prepTimeMinutes: number;
+  /** False when Stripe is not configured; the card option is then hidden. */
+  paymentsEnabled: boolean;
 };
 
 export class ApiError extends Error {
@@ -223,7 +225,7 @@ export const api = {
   health: () => call<{ ok: boolean; storeOpen: boolean | null }>("/api/health"),
 
   createOrder: (body: CheckoutBody) =>
-    call<{ order: Order; idempotentReplay?: boolean }>("/api/orders", {
+    call<{ order: Order; checkoutUrl?: string; idempotentReplay?: boolean }>("/api/orders", {
       method: "POST",
       body: JSON.stringify(body),
     }),

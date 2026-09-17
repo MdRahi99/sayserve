@@ -238,6 +238,46 @@ curl -b staff.txt http://localhost:5000/api/chat/_status/health
 
 ---
 
+## 4d. Card payment
+
+Optional. With no Stripe key the card option is hidden and everything else works
+— which is worth checking first, because that is how the site behaves on a fresh
+clone.
+
+**Setting it up:**
+
+1. Test keys from the [Stripe dashboard](https://dashboard.stripe.com/test/apikeys).
+   Put the secret key in `apps/api/.env` as `STRIPE_SECRET_KEY`.
+2. Install the [Stripe CLI](https://stripe.com/docs/stripe-cli), then:
+
+   ```bash
+   stripe listen --forward-to localhost:5000/api/stripe/webhook
+   ```
+
+   It prints a signing secret. Put that in `.env` as `STRIPE_WEBHOOK_SECRET` and
+   restart the API.
+
+**The happy path:** order something, choose Card, press Pay. You land on Stripe.
+Card `4242 4242 4242 4242`, any future expiry, any CVC. You come back to the
+tracking page, and within a second or two the order appears on the kitchen board.
+
+That gap is the webhook doing its job. The order existed before you paid, as
+`pending_payment`, and the kitchen could not see it. Stripe told the API it was
+paid, the API ran that through the same state machine everything else uses, and
+only then did it become an order.
+
+**Worth trying:**
+
+| Try | What should happen |
+| --- | --- |
+| Press back on the Stripe page without paying | Tracking says payment was not completed; the order expires in 30 minutes and never reaches the kitchen |
+| Card `4000 0000 0000 0002` (declined) | Stripe refuses, the order stays unpaid |
+| Pay, then reject the order as staff with a reason | The refund is issued automatically; the tracking page says refunded |
+| Pay, then cancel as the customer before it is accepted | Same — money follows status |
+| `curl -X POST localhost:5000/api/stripe/webhook -d '{}'` | `400 Bad signature`. Without that check, anyone could mark any order paid |
+
+---
+
 ## 5. Try to break it
 
 These should all be refused. If any succeeds, something is wrong.

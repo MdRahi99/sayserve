@@ -16,6 +16,12 @@ const schema = z.object({
   GROQ_MODEL: z.string().default("openai/gpt-oss-20b"),
   VOYAGE_API_KEY: z.string().optional(),
   VOYAGE_MODEL: z.string().default("voyage-3-lite"),
+
+  // Payments are optional too. Without a key, card checkout is hidden and the
+  // shop takes payment on collection — which is how most takeaways started.
+  STRIPE_SECRET_KEY: z.string().optional(),
+  STRIPE_WEBHOOK_SECRET: z.string().optional(),
+  PUBLIC_WEB_URL: z.string().default("http://localhost:3000"),
 });
 
 const parsed = schema.safeParse(process.env);

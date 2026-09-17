@@ -47,11 +47,14 @@ export function CheckoutForm() {
     if (user) setForm((f) => ({ ...f, name: f.name || user.name }));
   }, [user]);
 
+  const cardsAvailable = quote?.paymentsEnabled ?? true;
+
   // Delivery must be paid up front, so nobody is out of pocket for a refusal
   // at the door. Switching to delivery moves the choice for you.
   useEffect(() => {
-    if (fulfilment === "delivery") setPayment("card");
-  }, [fulfilment]);
+    if (fulfilment === "delivery" && cardsAvailable) setPayment("card");
+    if (!cardsAvailable) setPayment("on_collection");
+  }, [fulfilment, cardsAvailable]);
 
   useEffect(() => {
     if (lines.length === 0) return;
@@ -72,6 +75,7 @@ export function CheckoutForm() {
   const deliveryReady = fulfilment === "collection" || (form.line1.trim() && form.postcode.trim());
   const canSubmit =
     Boolean(quote?.complete) && Boolean(quote?.storeOpen) &&
+    !(fulfilment === "delivery" && !cardsAvailable) &&
     form.name.trim().length > 0 && form.phone.trim().length >= 6 &&
     Boolean(deliveryReady) && !submitting;
 
@@ -80,7 +84,7 @@ export function CheckoutForm() {
     setError(null);
     setProblems([]);
     try {
-      const { order } = await api.createOrder({
+      const { order, checkoutUrl } = await api.createOrder({
         lines: toQuoteLines(lines),
         fulfilment,
         customer: {
@@ -106,6 +110,13 @@ export function CheckoutForm() {
 
       rememberOrder(order);
       clear();
+
+      // Card orders go to Stripe and come back to the tracking page. The order
+      // already exists, unpaid; if they abandon the payment it expires by itself.
+      if (checkoutUrl) {
+        window.location.href = checkoutUrl;
+        return;
+      }
       router.push(`/orders/${order.id}`);
     } catch (e) {
       if (e instanceof ApiError) {
@@ -170,8 +181,10 @@ export function CheckoutForm() {
         <section aria-labelledby="pay" className="mb-8">
           <h2 id="pay" className="text-sm font-medium mb-3">Payment</h2>
           <div className="grid grid-cols-2 gap-3">
-            <Choice on={payment === "card"} onClick={() => setPayment("card")}
-              title="Card" sub="Handled by Stripe" />
+            <Choice on={payment === "card"} onClick={() => cardsAvailable && setPayment("card")}
+              disabled={!cardsAvailable}
+              title="Card"
+              sub={cardsAvailable ? "Handled by Stripe" : "Not available right now"} />
             <Choice
               on={payment === "on_collection"}
               onClick={() => fulfilment === "collection" && setPayment("on_collection")}
@@ -182,7 +195,13 @@ export function CheckoutForm() {
           </div>
           {payment === "card" && (
             <p className="text-xs text-ink-muted mt-3">
-              Card payments arrive in the next step. For now this places the order and waits for payment.
+              You will be taken to Stripe to pay, then brought back to track your order.
+              In test mode, card 4242 4242 4242 4242 with any future date works.
+            </p>
+          )}
+          {fulfilment === "delivery" && !cardsAvailable && (
+            <p role="alert" className="text-xs text-bad mt-3">
+              Delivery needs card payment, which is unavailable at the moment. Please choose collection.
             </p>
           )}
         </section>
