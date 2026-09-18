@@ -12,7 +12,7 @@ import { closeSocket } from "@/lib/socket";
  * staff one fills the kitchen board on the way in, because a board with nothing
  * on it demonstrates nothing.
  */
-export function DemoBanner() {
+export function DemoBanner({ bare = false }: { bare?: boolean }) {
   const router = useRouter();
   const [busy, setBusy] = useState<"customer" | "staff" | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -37,9 +37,11 @@ export function DemoBanner() {
   }
 
   return (
-    <div className="mt-10 pt-6 border-t border-line">
-      <p className="text-sm text-ink-soft">Just looking? Try it from either side.</p>
-      <div className="flex flex-wrap gap-3 mt-3">
+    <div className={bare ? "" : "mt-10 pt-6 border-t border-line"}>
+      {!bare && (
+        <p className="text-sm text-ink-soft">Just looking? Try it from either side.</p>
+      )}
+      <div className={`flex flex-wrap gap-3 ${bare ? "mt-6" : "mt-3"}`}>
         <button onClick={() => enter("customer")} disabled={busy !== null} className="btn-ghost px-5">
           {busy === "customer" ? "Setting up…" : "Try as a customer"}
         </button>
