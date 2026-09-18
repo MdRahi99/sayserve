@@ -56,7 +56,7 @@ Vercel's free tier runs short-lived functions.
    | --- | --- |
    | Root Directory | *(leave empty — it is a workspace repo)* |
    | Runtime | Node |
-   | Build Command | `npm ci && npm run build:api` |
+   | Build Command | `npm ci --include=dev && npm run build:api` |
    | Start Command | `npm run start:api` |
    | Instance Type | Free |
 
@@ -81,6 +81,12 @@ Vercel's free tier runs short-lived functions.
    ```
 
    You want `{"ok":true,...}`. Copy that URL.
+
+**Why `--include=dev`?** With `NODE_ENV=production` set, `npm ci` skips
+devDependencies — and TypeScript and every `@types/*` package lives there, so
+the build fails with "Could not find a declaration file for module 'express'".
+The flag installs them for the build; they are not shipped, because only
+`dist/` is run.
 
 **The free tier sleeps** after fifteen minutes idle, and the next request takes
 about thirty seconds. The landing page pings `/api/health` on load so the API is

@@ -90,6 +90,11 @@ open, and Vercel's free tier runs short-lived functions.
 Step by step, including the Stripe webhook and the mistakes that cost an hour,
 in [docs/DEPLOY.md](docs/DEPLOY.md).
 
+Two settings do most of the damage if you get them wrong: `CORS_ORIGIN` must
+match the deployed web URL exactly, and the API's build command needs
+`npm ci --include=dev`, because `NODE_ENV=production` otherwise strips the
+TypeScript types the build depends on.
+
 ## Running it
 
 You need Node 20+ and a MongoDB connection string (a free Atlas M0 cluster works).
