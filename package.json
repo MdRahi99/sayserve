@@ -19,7 +19,9 @@
     "test:unit": "npm run test:unit --workspace @sayserve/api",
     "test:eval": "npm run test:eval --workspace @sayserve/api",
     "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e:ui": "playwright test --ui",
+    "build:api": "npm run build --workspace @sayserve/api",
+    "start:api": "node apps/api/dist/server.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.1"

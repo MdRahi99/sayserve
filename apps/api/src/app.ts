@@ -16,6 +16,11 @@ import { getSettings } from "./models/Settings.js";
 export function createApp() {
   const app = express();
 
+  // Render terminates TLS at its proxy. Without this, Express thinks the
+  // request arrived over http and refuses to set a `secure` cookie, so nobody
+  // can stay signed in.
+  app.set("trust proxy", 1);
+
   app.use(cors({
     origin(origin, cb) {
       if (!origin || corsOrigins.includes("*") || corsOrigins.includes(origin)) {

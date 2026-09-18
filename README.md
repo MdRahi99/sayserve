@@ -1,10 +1,19 @@
+<!-- Replace YOUR-USERNAME once the repo is pushed, and the two links below once deployed. -->
+[![CI](https://github.com/MdRahi99/sayserve/actions/workflows/ci.yml/badge.svg)](https://github.com/MdRahi99/sayserve/actions/workflows/ci.yml)
+
 # SayServe
 
 **Say it. We serve it.** A takeaway ordering system where tapping, typing and speaking all fill the same cart — and the server decides everything that involves money.
 
 > Most orders never reach a language model. The ones that do cannot invent an item or a price.
 
-[Plan and architecture](docs/PLAN.md) · [Testing walkthrough](docs/TESTING.md) · [Wireframes](docs/wireframes/) · [Menu data](docs/menu.json)
+**[Live site](https://sayserve.vercel.app)** · [Plan and architecture](docs/PLAN.md) · [Deploying](docs/DEPLOY.md) · [Testing walkthrough](docs/TESTING.md) · [Wireframes](docs/wireframes/)
+
+> Two buttons on the home page put you straight in as a customer or behind the
+> counter, with orders already on the kitchen board. No sign-up. The API sleeps
+> on the free tier, so the first load can take half a minute.
+
+<!-- Screenshots: see docs/SCREENSHOTS.md for the shot list -->
 
 ---
 
@@ -71,6 +80,15 @@ See [`CheckoutForm.tsx`](apps/web/src/components/CheckoutForm.tsx).
 | POST | `/api/orders/:id/status` | Staff, admin |
 
 Auth is a JWT in an httpOnly cookie. Guests get a token at checkout so they can watch their order without an account.
+
+## Deploying it
+
+Vercel for the web app, Render for the API, MongoDB Atlas for the database, all
+on free tiers. The API cannot go on Vercel: the kitchen board holds a websocket
+open, and Vercel's free tier runs short-lived functions.
+
+Step by step, including the Stripe webhook and the mistakes that cost an hour,
+in [docs/DEPLOY.md](docs/DEPLOY.md).
 
 ## Running it
 
