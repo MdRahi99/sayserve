@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { api } from "@/lib/api";
 import { closeSocket } from "@/lib/socket";
 import { useUser } from "@/lib/useUser";
+import { Logo } from "./Logo";
 
 const TABS = [
   { key: "board", href: "/staff", label: "Board" },
@@ -27,6 +28,9 @@ export function StaffNav({ active }: { active: (typeof TABS)[number]["key"] }) {
     <div className="border-b border-line bg-card">
       <div className="px-4 lg:px-6 h-14 flex items-center justify-between gap-6">
         <nav className="flex items-center gap-1 overflow-x-auto">
+          <Link href="/" aria-label="SayServe home" className="mr-2 shrink-0 text-ink">
+            <Logo className="w-7 h-7" />
+          </Link>
           {TABS.map((tab) => (
             <Link key={tab.key} href={tab.href}
               className={`px-3 h-9 inline-flex items-center rounded-lg text-sm whitespace-nowrap
