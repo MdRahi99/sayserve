@@ -68,12 +68,18 @@ export function Assistant({ items, onClose }: { items: MenuItem[]; onClose?: () 
       sessionId.current = reply.sessionId;
       localStorage.setItem(SESSION_KEY, reply.sessionId);
 
-      // The assistant's cart becomes the cart. Named lines so the panel can
-      // render without a second menu lookup.
+      // The assistant's cart becomes the cart.
+      //
+      // Names come from the priced cart the server sent, not from the menu
+      // list this component was handed: on a cold load that list can still be
+      // empty, and the cart would show a slug where a name belongs.
       replaceAll(
         reply.lines.map((line) => ({
           slug: line.slug,
-          name: items.find((i) => i.slug === line.slug)?.name ?? line.slug,
+          name:
+            reply.cart?.lines.find((l) => l.slug === line.slug)?.name ??
+            items.find((i) => i.slug === line.slug)?.name ??
+            line.slug,
           quantity: line.quantity,
           choices: line.choices ?? {},
         }))
@@ -103,7 +109,8 @@ export function Assistant({ items, onClose }: { items: MenuItem[]; onClose?: () 
         )}
       </div>
 
-      <div ref={scroller} className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
+      <div ref={scroller} role="log" aria-live="polite" aria-label="Conversation"
+        className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
         {turns.map((turn, i) => (
           <div key={i}>
             <div className={turn.role === "user" ? "flex justify-end" : "flex justify-start"}>

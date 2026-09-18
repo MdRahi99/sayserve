@@ -147,7 +147,7 @@ export function OrderTracking({ id }: { id: string }) {
               </div>
             )}
 
-            <ol className="space-y-0">
+            <ol aria-label="Order progress" className="space-y-0">
               {timeline.map((step, i) => {
                 const done = reached.has(step.status);
                 const current = order.status === step.status;

@@ -97,8 +97,16 @@ const OrderSchema = new mongoose.Schema(
      */
     idempotencyKey: { type: String, required: true, unique: true, index: true },
 
-    /** Unpaid card orders are swept at this time. */
+    /** Unpaid card orders are swept at this time, and so are demo orders. */
     expiresAt: { type: Date, default: null },
+
+    /**
+     * Made by the rush simulator, not by a customer.
+     *
+     * Flagged so the dashboard can be honest about which numbers are real, and
+     * so they can be cleared in one go without touching anything genuine.
+     */
+    isDemo: { type: Boolean, default: false, index: true },
   },
   { timestamps: true }
 );

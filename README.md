@@ -17,8 +17,7 @@
 | 2 | Customer web: menu, customiser, cart, checkout, tracking, history | Done |
 | 3 | Admin: live kitchen board, menu manager, settings, dashboard | Done |
 | 4 | The assistant: safety gate, parser, menu matching, chat, voice, eval harness | Done |
-| 5a | Stripe payments, webhook, automatic refunds | Done |
-| 5b | Demo mode, rush simulator, accessibility, end-to-end test | Next |
+| 5 | Payments, demo mode, accessibility, end-to-end test | Done |
 | 6 | Deploy and write up | |
 
 ## The two ideas worth reading the code for
@@ -116,7 +115,15 @@ npm test            # everything, including the full order lifecycle over HTTP
 
 The integration suite places a real order and drives it to Completed, then proves the closed paths are closed: skipping a step, rejecting without a reason, a customer accepting their own order, cancelling after the kitchen started, a double-tapped Pay button, and one customer reading another's order. It uses an in-memory MongoDB, so it needs no database of your own — the first run downloads a `mongod` binary.
 
-CI runs the typecheck and both suites on every push, against a MongoDB service container.
+CI runs the typecheck, the unit tests, the integration suite and the assistant eval on every push, against a MongoDB service container.
+
+```bash
+npm run test:e2e    # one order, the whole way through, in a real browser
+```
+
+The end-to-end tests are not in CI. They need two servers, a database and a
+browser; a flaky end-to-end job teaches everyone to ignore red builds, which
+costs more than it catches. They run before a deploy. See [e2e/README.md](e2e/README.md).
 
 To walk through it by hand — ordering as a customer, accepting as staff, and trying to break it — see [docs/TESTING.md](docs/TESTING.md).
 
@@ -210,6 +217,18 @@ lines, so what Stripe charges and what the kitchen cooks come from the same row.
 Rejecting or cancelling a paid order refunds it automatically. If the refund
 call fails, the status change still stands and the failure is logged: a refund
 needing a human beats an order stuck in the kitchen.
+
+## Seeing it work in thirty seconds
+
+Two buttons on the home page: try as a customer, or try as staff. Each makes a
+throwaway account that deletes itself after a day.
+
+The staff one fills the kitchen board on the way in. A board with nothing on it
+demonstrates nothing, so **Simulate a rush** makes five plausible orders —
+staggered start times so the age timers differ, a few with modifiers so the red
+"no onions" line shows, a mix of collection and delivery. Everything it makes is
+flagged `isDemo` and expires, so the dashboard can tell real numbers from
+theatre.
 
 ## Two roles, not one
 

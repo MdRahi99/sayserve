@@ -8,6 +8,7 @@ import { validate } from "../middleware/validate.js";
 import { CATEGORIES, MenuItem } from "../models/MenuItem.js";
 import { OptionGroup } from "../models/OptionGroup.js";
 import { Order } from "../models/Order.js";
+import { clearDemoOrders, simulateRush } from "../lib/demoOrders.js";
 import { Conversation } from "../models/Conversation.js";
 import { getSettings, Settings } from "../models/Settings.js";
 import { assistantStatus } from "../assistant/registry.js";
@@ -364,6 +365,27 @@ router.get("/assistant/:sessionId", staff, asyncRoute(async (req, res) => {
     turns: conversation.turns,
     lines: conversation.lines,
   });
+}));
+
+/**
+ * Fill the board for a visitor.
+ *
+ * Staff-only, and everything it makes is flagged and expires. A demo that opens
+ * onto an empty kitchen shows nothing; this is the difference between "here is
+ * my project" and "here is my project working".
+ */
+router.post("/demo/rush", staff,
+  validate(z.object({ count: z.number().int().min(1).max(12).default(5) })),
+  asyncRoute(async (req, res) => {
+    const made = await simulateRush(req.body.count);
+    res.status(201).json({
+      created: made.length,
+      orderNumbers: made.map((o) => o.orderNumber),
+    });
+  }));
+
+router.delete("/demo/orders", staff, asyncRoute(async (_req, res) => {
+  res.json({ deleted: await clearDemoOrders() });
 }));
 
 export default router;

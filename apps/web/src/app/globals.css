@@ -5,8 +5,19 @@
 @layer base {
   html { -webkit-text-size-adjust: 100%; }
   body { @apply bg-page text-ink antialiased; }
+
   /* Keyboard users get a visible focus ring; mouse users do not. */
   :focus-visible { @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-page; }
+
+  /* Some people get motion sick, and some just turned it off. Respect it. */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 @layer components {

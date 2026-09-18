@@ -298,6 +298,14 @@ export const api = {
       }),
 
     stats: (days = 1) => call<Stats>(`/api/admin/stats?days=${days}`),
+
+    simulateRush: (count = 5) =>
+      call<{ created: number; orderNumbers: number[] }>("/api/admin/demo/rush", {
+        method: "POST", body: JSON.stringify({ count }),
+      }),
+
+    clearDemoOrders: () =>
+      call<{ deleted: number }>("/api/admin/demo/orders", { method: "DELETE" }),
   },
 
   auth: {

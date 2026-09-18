@@ -44,7 +44,7 @@ export function CartPanel({
 
   if (lines.length === 0) {
     return (
-      <div className="p-6 text-center">
+      <div className="p-6 text-center" role="status">
         <p className="text-sm text-ink-soft">Your cart is empty.</p>
         <p className="text-xs text-ink-muted mt-1">Add something from the menu to get started.</p>
       </div>
@@ -59,7 +59,7 @@ export function CartPanel({
     quote?.lines.find((l) => l.slug === slug && l.choices.length === choiceCount);
 
   return (
-    <div className="flex flex-col h-full">
+    <section aria-label="Your cart" className="flex flex-col h-full">
       <div className="flex items-center justify-between px-4 pt-4 pb-2">
         <h2 className="text-base font-medium">Your cart</h2>
         <button onClick={clear} className="text-xs text-accent hover:underline">Clear</button>
@@ -116,6 +116,11 @@ export function CartPanel({
         })}
       </div>
 
+      {/* Screen readers hear the total change without having to go looking. */}
+      <p className="sr-only" role="status" aria-live="polite">
+        {quote ? `Cart total ${money(quote.total)}, ${quote.complete ? "ready to check out" : "some choices still needed"}` : ""}
+      </p>
+
       <div className="border-t border-line p-4 space-y-3">
         {error && <p role="alert" className="text-xs text-bad">{error}</p>}
 
@@ -149,6 +154,6 @@ export function CartPanel({
           </p>
         )}
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,10 +1,14 @@
 import Link from "next/link";
+import { DemoBanner } from "@/components/DemoBanner";
 
 export default function HomePage() {
   return (
     <div className="px-4 lg:px-8 py-10 lg:py-16 max-w-6xl mx-auto">
       <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
-        <div className="bg-surface rounded-2xl h-56 lg:h-96 order-2 lg:order-1" aria-hidden />
+        <img
+          src="/hero.svg" alt=""
+          className="rounded-2xl w-full h-56 lg:h-96 object-cover order-2 lg:order-1"
+        />
         <div className="order-1 lg:order-2 mb-8 lg:mb-0">
           <h1 className="text-4xl lg:text-5xl font-medium tracking-tight">Say it. We serve it.</h1>
           <p className="text-ink-soft mt-4 text-base lg:text-lg">
@@ -19,6 +23,8 @@ export default function HomePage() {
             <Link href="/chat" className="btn-primary px-6">Just tell us what you want</Link>
             <Link href="/menu" className="btn-ghost px-6">Browse the menu</Link>
           </div>
+
+          <DemoBanner />
         </div>
       </div>
     </div>

@@ -360,7 +360,42 @@ db.settings.updateOne({ key: "store" }, { $set: { isOpen: true } })
 
 ---
 
+## 7b. Demo mode and accessibility
+
+**Demo mode.** On the home page, press **Try as staff**. It makes a throwaway
+account, fills the kitchen board with five orders, and drops you on the board.
+**Try as a customer** does the same on the other side. Both delete themselves
+after 24 hours. There is also a **Simulate a rush** button on the board itself.
+
+The simulated orders are flagged, so `db.orders.deleteMany({ isDemo: true })`
+clears them — or use the button.
+
+**Keyboard only.** Put the mouse down and Tab through it:
+
+- The first Tab shows "Skip to content"
+- Every control has a visible focus ring
+- Tab inside the item dialog stays inside it, and Escape closes it
+- Closing the dialog returns focus to the button that opened it
+
+**Screen reader.** VoiceOver on Mac (Cmd+F5) or NVDA on Windows:
+
+- The cart total is announced when it changes, along with whether you can check out
+- The kitchen board announces how many orders are waiting
+- The chat thread is announced as replies arrive
+
+**Reduced motion.** Turn it on in your system settings; animations stop.
+
+**End to end.** With both servers running:
+
+```bash
+npx playwright install chromium   # first time
+npm run test:e2e
+```
+
+Three tests: a whole order from menu to collected including the socket updating
+the customer's page, a meal that will not add until the drink is chosen, and the
+assistant filling the cart without a model call.
+
 ## 8. What is not built yet
 
-- The chat and voice assistant in the browser — Phase 4b; the pipeline behind it works now over HTTP
-- Real card payment — Phase 5; choosing Card places the order and leaves it waiting for payment
+- Nothing, apart from the deploy — that is Phase 6

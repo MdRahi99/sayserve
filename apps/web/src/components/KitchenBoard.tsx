@@ -27,6 +27,7 @@ export function KitchenBoard() {
   const [error, setError] = useState<string | null>(null);
   const [connected, setConnected] = useState(false);
   const [soundOn, setSoundOn] = useState(true);
+  const [rushing, setRushing] = useState(false);
   const now = useNow();
   const seen = useRef<Set<string>>(new Set());
 
@@ -96,6 +97,20 @@ export function KitchenBoard() {
     }
   }, [soundOn]);
 
+  /** Fills the board for a visitor. The orders it makes are flagged and expire. */
+  async function rush() {
+    setRushing(true);
+    try {
+      await api.admin.simulateRush(5);
+      // The sockets deliver them; this is only a safety net.
+      setTimeout(() => void load(), 800);
+    } catch (e) {
+      setError(e instanceof ApiError ? e.message : "Could not simulate a rush.");
+    } finally {
+      setRushing(false);
+    }
+  }
+
   async function move(order: Order, to: OrderStatus, extra: { reason?: string; readyInMinutes?: number } = {}) {
     // Update immediately so a busy kitchen never taps twice; the socket
     // confirms, and a failure puts it back.
@@ -147,6 +162,9 @@ export function KitchenBoard() {
           <button onClick={() => setSoundOn((s) => !s)} className="btn-ghost h-9 px-3 text-xs">
             Sound {soundOn ? "on" : "off"}
           </button>
+          <button onClick={rush} disabled={rushing} className="btn-ghost h-9 px-3 text-xs">
+            {rushing ? "Sending…" : "Simulate a rush"}
+          </button>
           <button onClick={() => void load()} className="btn-ghost h-9 px-3 text-xs">Refresh</button>
         </div>
       </div>
@@ -154,6 +172,10 @@ export function KitchenBoard() {
       {error && (
         <p role="alert" className="bg-bad-bg text-bad text-sm px-4 py-2">{error}</p>
       )}
+
+      <p className="sr-only" role="status" aria-live="polite">
+        {orders.filter((o) => o.status === "placed").length} new orders waiting
+      </p>
 
       <div className="flex-1 grid grid-cols-1 md:grid-cols-3 overflow-hidden">
         {columns.map((col, i) => {
