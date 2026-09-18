@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError, type MenuItem, type MenuResponse, type OptionGroup } from "@/lib/api";
-import { useCart, type CartLine } from "@/lib/cart";
+import { toQuoteLines, useCart, type CartLine } from "@/lib/cart";
 import { CATEGORY_LABELS, money } from "@/lib/format";
 import { Assistant } from "./Assistant";
 import { CartPanel } from "./CartPanel";
@@ -28,12 +28,25 @@ export function MenuBrowser() {
   const [assistantOpen, setAssistantOpen] = useState(false);
 
   const count = useCart((s) => s.lines.reduce((n, l) => n + l.quantity, 0));
+  const [cartTotal, setCartTotal] = useState<string | null>(null);
 
   useEffect(() => {
     api.menu()
       .then(setData)
       .catch((e) => setError(e instanceof ApiError ? e.message : "Could not load the menu."));
   }, []);
+
+  // The bar shows a total, and a total comes from the server like every other
+  // price on this site.
+  const lines = useCart((s) => s.lines);
+  useEffect(() => {
+    if (lines.length === 0) return setCartTotal(null);
+    let cancelled = false;
+    api.quote(toQuoteLines(lines))
+      .then((q) => !cancelled && setCartTotal(money(q.subtotal)))
+      .catch(() => !cancelled && setCartTotal(null));
+    return () => { cancelled = true; };
+  }, [lines]);
 
   const categories = useMemo(() => {
     if (!data) return [];
@@ -139,11 +152,19 @@ export function MenuBrowser() {
             Nothing matches “{search}”. Try another word — we understand “chips” and “fizzy” too.
           </p>
         ) : (
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 pb-28 lg:pb-8">
-            {shown.map((item) => (
-              <ItemCard key={item.slug} item={item} onOpen={() => setOpen({ item })} />
-            ))}
-          </div>
+          <>
+            <ul className="lg:hidden divide-y divide-line border-t border-line mt-4 pb-32">
+              {shown.map((item) => (
+                <ItemRow key={item.slug} item={item} onOpen={() => setOpen({ item })} />
+              ))}
+            </ul>
+
+            <div className="hidden lg:grid sm:grid-cols-2 xl:grid-cols-3 gap-4 pb-8">
+              {shown.map((item) => (
+                <ItemCard key={item.slug} item={item} onOpen={() => setOpen({ item })} />
+              ))}
+            </div>
+          </>
         )}
       </div>
 
@@ -156,15 +177,24 @@ export function MenuBrowser() {
           }} />
       </aside>
 
-      {count > 0 && (
+      <div className="lg:hidden fixed bottom-14 inset-x-0 z-30 bg-page/95 backdrop-blur
+                      border-t border-line px-4 py-3 flex gap-2">
         <button
           onClick={() => setCartOpen(true)}
-          className="lg:hidden fixed bottom-4 inset-x-4 btn-primary justify-between z-30 shadow-lg"
+          disabled={count === 0}
+          className="btn-primary flex-1 justify-between"
         >
-          <span>View cart · {count} item{count === 1 ? "" : "s"}</span>
-          <span aria-hidden>→</span>
+          <span>{count === 0 ? "Your cart is empty" : `View cart · ${count} item${count === 1 ? "" : "s"}`}</span>
+          {cartTotal && <span className="font-medium">{cartTotal}</span>}
         </button>
-      )}
+        <button
+          onClick={() => setAssistantOpen(true)}
+          aria-label="Order by talking"
+          className="w-12 h-11 rounded-lg border border-line-strong grid place-items-center shrink-0 bg-card"
+        >
+          <span aria-hidden className="text-lg">⏺</span>
+        </button>
+      </div>
 
       {cartOpen && (
         <div className="lg:hidden fixed inset-0 z-40 bg-ink/40 flex items-end"
@@ -209,6 +239,42 @@ function CategoryButton({ label, count, active, onClick }: {
       <span>{label}</span>
       <span className="text-xs text-ink-muted">{count}</span>
     </button>
+  );
+}
+
+function ItemRow({ item, onOpen }: { item: MenuItem; onOpen: () => void }) {
+  const sellable = item.available && item.servingNow;
+
+  return (
+    <li>
+      <button
+        onClick={onOpen}
+        disabled={!sellable}
+        className={`w-full flex items-center gap-3 py-3 text-left
+          ${sellable ? "" : "opacity-50 cursor-not-allowed"}`}
+      >
+        <Photo url={item.imageUrl} alt={item.name} className="w-16 h-16 rounded-lg shrink-0" />
+
+        <span className="flex-1 min-w-0">
+          <span className="block text-sm font-medium">{item.name}</span>
+          <span className="block text-xs text-ink-soft mt-0.5 truncate">
+            {sellable
+              ? item.description
+              : item.servingNow
+                ? "Sold out today"
+                : `Served ${item.availableFrom}–${item.availableTo}`}
+          </span>
+          {sellable && (
+            <span className="flex items-center gap-2 mt-1.5">
+              <span className="text-sm font-medium">{money(item.basePrice)}</span>
+              {item.tags.slice(0, 1).map((t) => <Tag key={t} name={t} />)}
+            </span>
+          )}
+        </span>
+
+        {sellable && <span aria-hidden className="text-xl text-ink px-1">+</span>}
+      </button>
+    </li>
   );
 }
 

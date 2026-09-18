@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { BottomNav } from "@/components/BottomNav";
 import { Header } from "@/components/Header";
 import "./globals.css";
 
@@ -19,10 +20,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <Header />
-        <main id="main" className="flex-1">{children}</main>
-        <footer className="border-t border-line px-4 lg:px-8 py-5 text-xs text-ink-muted">
+        <main id="main" className="flex-1 pb-14 lg:pb-0">{children}</main>
+        <footer className="border-t border-line px-4 lg:px-8 py-5 pb-20 lg:pb-5 text-xs text-ink-muted">
           Halal certified · Allergen information on every item · Prices come from the live menu
         </footer>
+        <BottomNav />
       </body>
     </html>
   );

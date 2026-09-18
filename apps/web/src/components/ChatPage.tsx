@@ -24,11 +24,21 @@ export function ChatPage() {
 
   return (
     <div className="lg:grid lg:grid-cols-[1fr,380px] lg:h-[calc(100vh-4rem)]">
-      <div className="h-[70vh] lg:h-full border-b lg:border-b-0 lg:border-r border-line">
+      <div className="h-[calc(100vh-11rem)] lg:h-full border-b lg:border-b-0 lg:border-r border-line">
         <Assistant items={data?.items ?? []} />
       </div>
 
-      <aside className="flex flex-col lg:h-full">
+      {/* On a phone the cart is a strip under the conversation: enough to see it
+          filling, without pushing the thread off the screen. */}
+      <Link href="/cart"
+        className="lg:hidden flex items-center justify-between gap-3 px-4 h-14 border-b border-line">
+        <span className="text-sm">
+          {count === 0 ? "Your cart is empty" : `Cart · ${count} item${count === 1 ? "" : "s"}`}
+        </span>
+        <span className="text-sm text-accent">{count === 0 ? "Browse the menu" : "View"}</span>
+      </Link>
+
+      <aside className="hidden lg:flex flex-col lg:h-full">
         <div className="flex-1 min-h-0">
           <CartPanel items={data?.items ?? []} groups={data?.optionGroups ?? []} />
         </div>

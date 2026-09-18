@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { api, ApiError, type MenuItem, type OptionGroup, type QuoteResponse } from "@/lib/api";
 import { toQuoteLines, useCart, type CartLine } from "@/lib/cart";
 import { money } from "@/lib/format";
@@ -26,6 +26,15 @@ export function CartPanel({
   const [quote, setQuote] = useState<QuoteResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  /** Sides and drinks they have not already got. */
+  const suggestions = useMemo(() => {
+    const inCart = new Set(lines.map((l) => l.slug));
+    return items
+      .filter((i) => ["sides", "drinks", "desserts"].includes(i.category))
+      .filter((i) => i.available && !inCart.has(i.slug))
+      .slice(0, 3);
+  }, [items, lines]);
 
   useEffect(() => {
     if (lines.length === 0) {
@@ -120,6 +129,19 @@ export function CartPanel({
       <p className="sr-only" role="status" aria-live="polite">
         {quote ? `Cart total ${money(quote.total)}, ${quote.complete ? "ready to check out" : "some choices still needed"}` : ""}
       </p>
+
+      {/* Chips for the things people forget, as drawn. Cheap to add, and it is
+          the difference between a burger and an order. */}
+      {suggestions.length > 0 && onEdit === undefined && (
+        <div className="px-4 pt-3 border-t border-line">
+          <p className="text-sm font-medium">Add something else</p>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {suggestions.map((item) => (
+              <Link key={item.slug} href="/menu" className="chip">{item.name}</Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="border-t border-line p-4 space-y-3">
         {error && <p role="alert" className="text-xs text-bad">{error}</p>}
