@@ -34,9 +34,36 @@ export default function RootLayout({
         <main id="main" className="flex-1 pb-14 lg:pb-0">
           {children}
         </main>
-        <footer className="border-t border-line px-4 lg:px-8 py-5 pb-20 lg:pb-5 text-xs text-ink-muted">
-          Halal certified · Allergen information on every item · Prices come
-          from the live menu
+        <footer className="border-t border-line">
+          <div
+            className="max-w-7xl mx-auto px-4 lg:px-8 py-8 pb-24 lg:pb-8
+                          flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+          >
+            <p className="text-xs text-ink-muted">
+              Halal certified · Allergens on every item · Prices come from the
+              live menu
+            </p>
+            <p className="text-xs text-ink-muted">
+              Built by{" "}
+              <a
+                href="https://mdrahi.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-ink-soft hover:text-brand-600"
+              >
+                Md Forhad Hossain Rahi
+              </a>{" "}
+              ·{" "}
+              <a
+                href="https://github.com/MdRahi99/sayserve"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-brand-600"
+              >
+                Code on GitHub
+              </a>
+            </p>
+          </div>
         </footer>
         <BottomNav />
       </body>

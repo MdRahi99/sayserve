@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError, type MenuItem, type MenuResponse, type OptionGroup } from "@/lib/api";
 import { toQuoteLines, useCart, type CartLine } from "@/lib/cart";
-import { CATEGORY_LABELS, money } from "@/lib/format";
+import { CATEGORY_DOTS, CATEGORY_LABELS, money } from "@/lib/format";
 import { Assistant } from "./Assistant";
 import { CartPanel } from "./CartPanel";
 import { ItemModal } from "./ItemModal";
@@ -100,12 +100,12 @@ export function MenuBrowser() {
         <nav className="space-y-0.5">
           <CategoryButton
             label="Popular" count={data.items.filter((i) => i.popular).length}
-            active={category === "popular" && !search}
+            active={category === "popular" && !search} slug="meals"
             onClick={() => { setCategory("popular"); setSearch(""); }}
           />
           {categories.map((c) => (
             <CategoryButton
-              key={c.slug} label={c.label} count={c.count}
+              key={c.slug} label={c.label} count={c.count} slug={c.slug}
               active={category === c.slug && !search}
               onClick={() => { setCategory(c.slug); setSearch(""); }}
             />
@@ -121,11 +121,11 @@ export function MenuBrowser() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder='Search "chips", "nuggs", "fizzy drink"…'
-              className="w-full h-11 rounded-lg border border-line bg-card px-4 text-sm
-                         placeholder:text-ink-muted"
+              className="w-full h-12 rounded-xl border border-line bg-card px-4 text-sm shadow-soft
+                         placeholder:text-ink-muted focus:border-brand"
             />
           </label>
-          <button onClick={() => setAssistantOpen(true)} className="btn-ghost h-11 px-4 shrink-0">
+          <button onClick={() => setAssistantOpen(true)} className="btn-primary h-12 px-5 shrink-0">
             Just tell us
           </button>
         </div>
@@ -143,7 +143,7 @@ export function MenuBrowser() {
           ))}
         </div>
 
-        <h2 className="text-lg font-medium mt-5 mb-3 hidden lg:block">
+        <h2 className="text-2xl font-semibold tracking-tight mt-6 mb-4 hidden lg:block">
           {search ? `Results for “${search}”` : category === "popular" ? "Popular" : CATEGORY_LABELS[category]}
         </h2>
 
@@ -229,15 +229,20 @@ export function MenuBrowser() {
   );
 }
 
-function CategoryButton({ label, count, active, onClick }: {
-  label: string; count: number; active: boolean; onClick: () => void;
+function CategoryButton({ label, count, active, onClick, slug }: {
+  label: string; count: number; active: boolean; onClick: () => void; slug?: string;
 }) {
   return (
     <button onClick={onClick}
-      className={`w-full flex items-center justify-between rounded-lg px-3 h-9 text-sm transition
-        ${active ? "bg-surface text-ink font-medium" : "text-ink-soft hover:bg-surface/60"}`}>
-      <span>{label}</span>
-      <span className="text-xs text-ink-muted">{count}</span>
+      className={`w-full flex items-center gap-2.5 rounded-xl px-3 h-10 text-sm transition-all
+        ${active
+          ? "bg-brand text-white font-medium shadow-soft"
+          : "text-ink-soft hover:bg-surface"}`}>
+      <span aria-hidden
+        className={`w-2 h-2 rounded-full shrink-0
+          ${active ? "bg-white" : CATEGORY_DOTS[slug ?? ""] ?? "bg-line-strong"}`} />
+      <span className="flex-1 text-left">{label}</span>
+      <span className={`text-xs ${active ? "text-white/70" : "text-ink-muted"}`}>{count}</span>
     </button>
   );
 }
@@ -266,13 +271,17 @@ function ItemRow({ item, onOpen }: { item: MenuItem; onOpen: () => void }) {
           </span>
           {sellable && (
             <span className="flex items-center gap-2 mt-1.5">
-              <span className="text-sm font-medium">{money(item.basePrice)}</span>
+              <span className="text-sm font-semibold text-brand-600">{money(item.basePrice)}</span>
               {item.tags.slice(0, 1).map((t) => <Tag key={t} name={t} />)}
             </span>
           )}
         </span>
 
-        {sellable && <span aria-hidden className="text-xl text-ink px-1">+</span>}
+        {sellable && (
+          <span aria-hidden
+            className="w-9 h-9 rounded-xl bg-brand-50 text-brand-600 grid place-items-center
+                       text-lg font-medium shrink-0">+</span>
+        )}
       </button>
     </li>
   );
@@ -282,34 +291,46 @@ function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: () => void }) {
   const sellable = item.available && item.servingNow;
 
   return (
-    <div className={`card overflow-hidden flex flex-col ${sellable ? "" : "opacity-60"}`}>
-      <Photo url={item.imageUrl} alt={item.name} className="h-36 w-full" />
-      <div className="p-4 flex-1 flex flex-col">
-        <h3 className="text-sm font-medium">{item.name}</h3>
-        <p className="text-xs text-ink-soft mt-1 line-clamp-2">{item.description}</p>
+    <div className={`${sellable ? "card-hover" : "card opacity-60"} overflow-hidden flex flex-col group`}>
+      <div className="relative">
+        <Photo url={item.imageUrl} alt={item.name}
+          className="h-40 w-full transition-transform duration-300 group-hover:scale-[1.04]" />
+        {item.popular && sellable && (
+          <span className="absolute top-3 left-3 tag bg-brand text-white shadow-soft">Popular</span>
+        )}
+        {!sellable && (
+          <span className="absolute top-3 left-3 tag bg-ink text-white">
+            {item.servingNow ? "Sold out" : "Breakfast only"}
+          </span>
+        )}
+      </div>
 
-        <div className="flex flex-wrap items-center gap-1.5 mt-2">
+      <div className="p-4 flex-1 flex flex-col">
+        <h3 className="text-sm font-semibold">{item.name}</h3>
+        <p className="text-xs text-ink-soft mt-1 line-clamp-2 leading-relaxed">{item.description}</p>
+
+        <div className="flex flex-wrap items-center gap-1.5 mt-2.5">
           {item.tags.slice(0, 2).map((t) => <Tag key={t} name={t} />)}
         </div>
 
-        <div className="flex items-center justify-between gap-2 mt-auto pt-3">
-          <span className="text-sm font-medium">
-            {item.optionGroups.length > 0 && <span className="text-ink-muted text-xs">from </span>}
+        <div className="flex items-center justify-between gap-2 mt-auto pt-4">
+          <span className="text-base font-semibold text-brand-600">
+            {item.optionGroups.length > 0 && (
+              <span className="text-ink-muted text-xs font-normal">from </span>
+            )}
             {money(item.basePrice)}
           </span>
-        </div>
 
-        {sellable ? (
-          <button onClick={onOpen} className="btn-ghost w-full mt-3 h-10">
-            {item.optionGroups.length > 0 ? "Choose" : "Add"}
-          </button>
-        ) : (
-          <p className="text-xs text-ink-muted mt-3 h-10 flex items-center">
-            {item.servingNow
-              ? "Sold out today"
-              : `Served ${item.availableFrom}–${item.availableTo}`}
-          </p>
-        )}
+          {sellable ? (
+            <button onClick={onOpen} className="btn-primary h-9 px-4 text-xs">
+              {item.optionGroups.length > 0 ? "Choose" : "Add"}
+            </button>
+          ) : (
+            <span className="text-xs text-ink-muted">
+              {item.servingNow ? "Back tomorrow" : `${item.availableFrom}–${item.availableTo}`}
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -42,14 +42,16 @@ export function DemoBanner({ bare = false }: { bare?: boolean }) {
         <p className="text-sm text-ink-soft">Just looking? Try it from either side.</p>
       )}
       <div className={`flex flex-wrap gap-3 ${bare ? "mt-6" : "mt-3"}`}>
-        <button onClick={() => enter("customer")} disabled={busy !== null} className="btn-ghost px-5">
+        <button onClick={() => enter("customer")} disabled={busy !== null}
+          className={bare ? "btn bg-white text-brand-700 px-5 hover:bg-brand-50" : "btn-ghost px-5"}>
           {busy === "customer" ? "Setting up…" : "Try as a customer"}
         </button>
-        <button onClick={() => enter("staff")} disabled={busy !== null} className="btn-ghost px-5">
+        <button onClick={() => enter("staff")} disabled={busy !== null}
+          className={bare ? "btn border border-white/40 text-white px-5 hover:bg-white/10" : "btn-ghost px-5"}>
           {busy === "staff" ? "Filling the kitchen…" : "Try as staff"}
         </button>
       </div>
-      <p className="text-xs text-ink-muted mt-3">
+      <p className={`text-xs mt-4 ${bare ? "text-white/70" : "text-ink-muted"}`}>
         Demo accounts get their own sandbox and delete themselves after 24 hours.
       </p>
       {error && <p role="alert" className="text-xs text-bad mt-2">{error}</p>}

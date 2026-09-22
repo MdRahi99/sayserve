@@ -9,9 +9,16 @@ export const TAG_STYLES: Record<string, string> = {
   vegetarian: "bg-accent-bg text-accent",
   vegan: "bg-accent-bg text-accent",
   spicy: "bg-bad-bg text-bad",
-  healthy: "bg-ok-bg text-ok",
-  bestseller: "bg-warn-bg text-warn",
-  sharing: "bg-surface text-ink-soft",
+  healthy: "bg-accent-bg text-accent",
+  bestseller: "bg-sun-bg text-warn",
+  sharing: "bg-brand-50 text-brand-700",
+};
+
+/** A colour per category, so the menu rail reads at a glance. */
+export const CATEGORY_DOTS: Record<string, string> = {
+  burgers: "bg-brand", chicken: "bg-sun", wraps: "bg-ok",
+  sides: "bg-warn", drinks: "bg-accent", desserts: "bg-brand-400",
+  meals: "bg-brand-600", breakfast: "bg-sun", kids: "bg-ok",
 };
 
 export const TAG_LABELS: Record<string, string> = {

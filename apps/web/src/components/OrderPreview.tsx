@@ -29,13 +29,13 @@ const FRAMES: Frame[] = [
   {
     user: "two cheeseburgers, no onions",
     reply: "Added. Anything else?",
-    note: "Matched directly · 11 ms · no model call",
+    note: "Added straight away",
     cart: [{ line: "2 × Cheeseburger", sub: "No onions", price: "£8.98" }],
   },
   {
     user: "and a large coke",
     reply: "Added. Anything else?",
-    note: "Matched directly · 9 ms · no model call",
+    note: "Added straight away",
     cart: [
       { line: "2 × Cheeseburger", sub: "No onions", price: "£8.98" },
       { line: "1 × Cola", sub: "Large", price: "£2.19" },
@@ -44,7 +44,7 @@ const FRAMES: Frame[] = [
   {
     user: "a cheeseburger meal too",
     reply: "Choose a drink for the Cheeseburger Meal?",
-    note: "Asked · the meal needs one, so it does not guess",
+    note: "The meal needs a drink, so it asks rather than guessing",
     cart: [
       { line: "2 × Cheeseburger", sub: "No onions", price: "£8.98" },
       { line: "1 × Cola", sub: "Large", price: "£2.19" },
@@ -57,10 +57,7 @@ export function OrderPreview() {
   const [frame, setFrame] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(
-      () => setFrame((f) => (f + 1) % FRAMES.length),
-      2600,
-    );
+    const timer = setInterval(() => setFrame((f) => (f + 1) % FRAMES.length), 2600);
     return () => clearInterval(timer);
   }, []);
 
@@ -73,7 +70,7 @@ export function OrderPreview() {
         <span className="text-xs text-ink-muted">live preview</span>
       </div>
 
-      <div className="p-4 min-h-[172px] overflow-hidden space-y-2.5">
+      <div className="p-4 min-h-[172px] space-y-2.5">
         {current.user && (
           <p className="ml-auto max-w-[80%] w-fit bg-ink text-white rounded-2xl px-3.5 py-2 text-sm">
             {current.user}
@@ -84,57 +81,41 @@ export function OrderPreview() {
             {current.reply}
           </p>
         )}
-        {current.note && (
-          <p className="text-[11px] text-ink-muted ml-1">{current.note}</p>
-        )}
+        {current.note && <p className="text-[11px] text-ink-muted ml-1">{current.note}</p>}
         {!current.user && (
-          <p className="text-sm text-ink-muted">
-            Tell me what you&apos;d like…
-          </p>
+          <p className="text-sm text-ink-muted">Tell me what you&apos;d like…</p>
         )}
       </div>
 
       <div className="border-t border-line p-4">
         <p className="text-xs text-ink-muted mb-2">Your cart</p>
-        <div className="min-h-[128px]">
-          {current.cart.length === 0 ? (
-            <p className="text-sm text-ink-muted">Nothing yet.</p>
-          ) : (
-            <ul className="space-y-2">
-              {current.cart.map((line) => (
-                <li
-                  key={line.line}
-                  className="flex justify-between gap-3 text-sm"
-                >
-                  <span className="min-w-0">
-                    {line.line}
-                    {line.sub && (
-                      <span
-                        className={`block text-xs mt-0.5 ${
-                          line.sub === "Needs a drink"
-                            ? "text-warn"
-                            : "text-ink-soft"
-                        }`}
-                      >
-                        {line.sub}
-                      </span>
-                    )}
-                  </span>
-                  <span className={line.price === "—" ? "text-ink-muted" : ""}>
-                    {line.price}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+
+        {current.cart.length === 0 ? (
+          <p className="text-sm text-ink-muted">Nothing yet.</p>
+        ) : (
+          <ul className="space-y-2">
+            {current.cart.map((line) => (
+              <li key={line.line} className="flex justify-between gap-3 text-sm">
+                <span className="min-w-0">
+                  {line.line}
+                  {line.sub && (
+                    <span className={`block text-xs mt-0.5 ${
+                      line.sub === "Needs a drink" ? "text-warn" : "text-ink-soft"}`}>
+                      {line.sub}
+                    </span>
+                  )}
+                </span>
+                <span className={line.price === "—" ? "text-ink-muted" : ""}>{line.price}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
         <div className="flex gap-1.5 mt-4" role="presentation">
           {FRAMES.map((_, i) => (
-            <span
-              key={i}
+            <span key={i}
               className={`h-1 flex-1 rounded-full transition-colors
-                ${i === frame ? "bg-ink" : "bg-line"}`}
-            />
+                ${i === frame ? "bg-ink" : "bg-line"}`} />
           ))}
         </div>
       </div>

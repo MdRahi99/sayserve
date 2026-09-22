@@ -174,7 +174,7 @@ export function ItemModal({
                   <div className="flex items-center justify-between gap-3">
                     <span className="text-sm font-medium">{group.name}</span>
                     <span className={`tag ${group.min > 0
-                      ? missing ? "bg-bad-bg text-bad" : "bg-accent-bg text-accent"
+                      ? missing ? "bg-bad-bg text-bad" : "bg-brand-50 text-brand-600"
                       : "bg-surface text-ink-muted"}`}>
                       {group.min > 0 ? (missing ? "Please choose" : "Required") : "Optional"}
                     </span>
@@ -197,8 +197,8 @@ export function ItemModal({
                             onClick={() => toggle(group, option.name)}
                             className="w-full flex items-center gap-3 py-2 text-left"
                           >
-                            <span className={`w-4 h-4 rounded-full border shrink-0 grid place-items-center
-                              ${on ? "border-ink bg-ink" : "border-line-strong"}`}>
+                            <span className={`w-5 h-5 rounded-full border-2 shrink-0 grid place-items-center
+                              transition-colors ${on ? "border-brand bg-brand" : "border-line-strong"}`}>
                               {on && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
                             </span>
                             <span className={`flex-1 text-sm ${on ? "text-ink" : "text-ink-soft"}`}>

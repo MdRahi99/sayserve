@@ -14,7 +14,7 @@ export function Logo({ className = "w-7 h-7" }: { className?: string }) {
         className="fill-card"
       />
       <circle cx="12.5" cy="14.5" r="1.7" fill="currentColor" />
-      <circle cx="16" cy="14.5" r="1.7" className="fill-accent" />
+      <circle cx="16" cy="14.5" r="1.7" className="fill-brand" />
       <circle cx="19.5" cy="14.5" r="1.7" fill="currentColor" />
     </svg>
   );
