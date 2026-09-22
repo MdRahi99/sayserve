@@ -5,6 +5,7 @@
  * linkedItem or an impossible min/max is caught before it reaches the database
  * rather than surfacing as a mysterious pricing bug later.
  */
+import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -19,8 +20,8 @@ const MENU_PATH = path.resolve(here, "../../../../docs/menu.json");
 
 type Menu = {
   restaurant: string;
+  items: { slug: string; name: string; optionGroups: string[]; imageUrl?: string }[];
   optionGroups: { groupId: string; name: string; min: number; max: number; options: { name: string; priceDelta: number; linkedItem?: string; default?: boolean }[] }[];
-  items: { slug: string; name: string; optionGroups: string[] }[];
 };
 
 function check(menu: Menu) {
@@ -63,6 +64,38 @@ async function seed() {
   }
   console.log("Integrity check passed.");
 
+  /**
+   * Fill in artwork by convention.
+   *
+   * Every item has an illustration at /menu/<slug>.svg, so the menu file does
+   * not have to carry the path. Doing it here means a menu.json written by hand
+   * still gets pictures, and re-running the art generator never leaves the
+   * database pointing at nothing.
+   */
+  const artDir = path.resolve(here, "../../../web/public/menu");
+  let filled = 0;
+  let noArt: string[] = [];
+  for (const item of menu.items) {
+    if (!item.imageUrl) {
+      // Only point at a file that is actually there. Guessing a path leaves a
+      // broken image, which looks worse than the honest placeholder.
+      const found = [".webp", ".jpg", ".png", ".svg"].find((ext) =>
+        existsSync(path.join(artDir, `${item.slug}${ext}`)));
+      if (found) {
+        item.imageUrl = `/menu/${item.slug}${found}`;
+        filled++;
+      }
+    }
+    const hasArt = [".webp", ".jpg", ".png", ".svg"].some((ext) =>
+      existsSync(path.join(artDir, `${item.slug}${ext}`)));
+    if (!hasArt) noArt.push(item.slug);
+  }
+  if (filled) console.log(`Filled in ${filled} image paths by slug.`);
+  if (noArt.length) {
+    console.log(`No picture yet for ${noArt.length} item(s) — they show a placeholder.`);
+    console.log("Draw them with: python3 tools/gen-menu-art.py");
+  }
+
   await connectDB(env.MONGODB_URI);
   await OptionGroup.deleteMany({});
   await MenuItem.deleteMany({});
@@ -70,7 +103,9 @@ async function seed() {
   await MenuItem.insertMany(menu.items);
   await Settings.findOneAndUpdate({ key: "store" }, { key: "store" }, { upsert: true });
 
-  console.log(`Seeded ${await MenuItem.countDocuments()} items, ${await OptionGroup.countDocuments()} groups.`);
+  const withArt = await MenuItem.countDocuments({ imageUrl: { $ne: "" } });
+  console.log(`Seeded ${await MenuItem.countDocuments()} items ` +
+    `(${withArt} with artwork), ${await OptionGroup.countDocuments()} groups.`);
   await disconnectDB();
 }
 

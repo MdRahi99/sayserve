@@ -623,7 +623,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/cheeseburger.svg"
     },
     {
       "slug": "classic-hamburger",
@@ -651,7 +652,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/classic-hamburger.svg"
     },
     {
       "slug": "bbq-stack-burger",
@@ -682,7 +684,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/bbq-stack-burger.svg"
     },
     {
       "slug": "crispy-chicken-burger",
@@ -711,7 +714,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/crispy-chicken-burger.svg"
     },
     {
       "slug": "spicy-chicken-burger",
@@ -741,7 +745,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/spicy-chicken-burger.svg"
     },
     {
       "slug": "veggie-burger",
@@ -767,7 +772,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/veggie-burger.svg"
     },
     {
       "slug": "plant-deluxe-burger",
@@ -796,7 +802,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/plant-deluxe-burger.svg"
     },
     {
       "slug": "fish-burger",
@@ -822,7 +829,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/fish-burger.svg"
     },
     {
       "slug": "halloumi-burger",
@@ -847,7 +855,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/halloumi-burger.svg"
     },
     {
       "slug": "smash-double",
@@ -876,7 +885,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/smash-double.svg"
     },
     {
       "slug": "chicken-nuggets",
@@ -904,7 +914,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/chicken-nuggets.svg"
     },
     {
       "slug": "chicken-wings",
@@ -932,7 +943,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chicken-wings.svg"
     },
     {
       "slug": "chicken-tenders",
@@ -959,7 +971,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chicken-tenders.svg"
     },
     {
       "slug": "popcorn-chicken",
@@ -984,7 +997,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/popcorn-chicken.svg"
     },
     {
       "slug": "grilled-chicken-fillet",
@@ -1007,7 +1021,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/grilled-chicken-fillet.svg"
     },
     {
       "slug": "hot-wings-bucket",
@@ -1035,7 +1050,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/hot-wings-bucket.svg"
     },
     {
       "slug": "chicken-strips-box",
@@ -1061,7 +1077,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chicken-strips-box.svg"
     },
     {
       "slug": "chicken-wrap",
@@ -1088,7 +1105,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chicken-wrap.svg"
     },
     {
       "slug": "spicy-wrap",
@@ -1116,7 +1134,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/spicy-wrap.svg"
     },
     {
       "slug": "grilled-chicken-wrap",
@@ -1141,7 +1160,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/grilled-chicken-wrap.svg"
     },
     {
       "slug": "falafel-wrap",
@@ -1167,7 +1187,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/falafel-wrap.svg"
     },
     {
       "slug": "halloumi-wrap",
@@ -1191,7 +1212,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/halloumi-wrap.svg"
     },
     {
       "slug": "fries",
@@ -1217,7 +1239,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/fries.svg"
     },
     {
       "slug": "curly-fries",
@@ -1242,7 +1265,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/curly-fries.svg"
     },
     {
       "slug": "sweet-potato-fries",
@@ -1267,7 +1291,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/sweet-potato-fries.svg"
     },
     {
       "slug": "onion-rings",
@@ -1290,7 +1315,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/onion-rings.svg"
     },
     {
       "slug": "mozzarella-sticks",
@@ -1315,7 +1341,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/mozzarella-sticks.svg"
     },
     {
       "slug": "side-salad",
@@ -1339,7 +1366,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/side-salad.svg"
     },
     {
       "slug": "coleslaw",
@@ -1361,7 +1389,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/coleslaw.svg"
     },
     {
       "slug": "corn-on-the-cob",
@@ -1382,7 +1411,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/corn-on-the-cob.svg"
     },
     {
       "slug": "loaded-fries",
@@ -1409,7 +1439,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/loaded-fries.svg"
     },
     {
       "slug": "cola",
@@ -1432,7 +1463,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/cola.svg"
     },
     {
       "slug": "diet-cola",
@@ -1455,7 +1487,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/diet-cola.svg"
     },
     {
       "slug": "lemonade",
@@ -1477,7 +1510,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/lemonade.svg"
     },
     {
       "slug": "orange-juice",
@@ -1498,7 +1532,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/orange-juice.svg"
     },
     {
       "slug": "bottled-water",
@@ -1519,7 +1554,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/bottled-water.svg"
     },
     {
       "slug": "sparkling-water",
@@ -1539,7 +1575,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/sparkling-water.svg"
     },
     {
       "slug": "milkshake",
@@ -1565,7 +1602,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/milkshake.svg"
     },
     {
       "slug": "iced-coffee",
@@ -1589,7 +1627,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/iced-coffee.svg"
     },
     {
       "slug": "coffee",
@@ -1613,7 +1652,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/coffee.svg"
     },
     {
       "slug": "tea",
@@ -1637,7 +1677,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/tea.svg"
     },
     {
       "slug": "hot-chocolate",
@@ -1660,7 +1701,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/hot-chocolate.svg"
     },
     {
       "slug": "ice-cream-sundae",
@@ -1684,7 +1726,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/ice-cream-sundae.svg"
     },
     {
       "slug": "apple-pie",
@@ -1706,7 +1749,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/apple-pie.svg"
     },
     {
       "slug": "chocolate-brownie",
@@ -1729,7 +1773,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chocolate-brownie.svg"
     },
     {
       "slug": "cookies",
@@ -1753,7 +1798,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/cookies.svg"
     },
     {
       "slug": "glazed-donut",
@@ -1776,7 +1822,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/glazed-donut.svg"
     },
     {
       "slug": "churros",
@@ -1799,7 +1846,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/churros.svg"
     },
     {
       "slug": "chilli-cheese-burger",
@@ -1830,7 +1878,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chilli-cheese-burger.svg"
     },
     {
       "slug": "garlic-bread",
@@ -1852,7 +1901,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/garlic-bread.svg"
     },
     {
       "slug": "mac-bites",
@@ -1878,7 +1928,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/mac-bites.svg"
     },
     {
       "slug": "apple-juice",
@@ -1898,7 +1949,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/apple-juice.svg"
     },
     {
       "slug": "iced-tea",
@@ -1919,7 +1971,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/iced-tea.svg"
     },
     {
       "slug": "cheesecake",
@@ -1942,7 +1995,8 @@
       "optionGroups": [],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/cheesecake.svg"
     },
     {
       "slug": "cheeseburger-meal",
@@ -1974,7 +2028,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": true
+      "popular": true,
+      "imageUrl": "/menu/cheeseburger-meal.svg"
     },
     {
       "slug": "bbq-stack-meal",
@@ -2005,7 +2060,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/bbq-stack-meal.svg"
     },
     {
       "slug": "chicken-burger-meal",
@@ -2036,7 +2092,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/chicken-burger-meal.svg"
     },
     {
       "slug": "nugget-meal",
@@ -2063,7 +2120,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/nugget-meal.svg"
     },
     {
       "slug": "veggie-meal",
@@ -2091,7 +2149,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/veggie-meal.svg"
     },
     {
       "slug": "wrap-meal",
@@ -2119,7 +2178,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/wrap-meal.svg"
     },
     {
       "slug": "family-bundle",
@@ -2148,7 +2208,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/family-bundle.svg"
     },
     {
       "slug": "breakfast-muffin",
@@ -2178,7 +2239,8 @@
       "maxQuantityPerOrder": 10,
       "popular": false,
       "availableFrom": "06:00",
-      "availableTo": "11:00"
+      "availableTo": "11:00",
+      "imageUrl": "/menu/breakfast-muffin.svg"
     },
     {
       "slug": "breakfast-wrap",
@@ -2206,7 +2268,8 @@
       "maxQuantityPerOrder": 10,
       "popular": false,
       "availableFrom": "06:00",
-      "availableTo": "11:00"
+      "availableTo": "11:00",
+      "imageUrl": "/menu/breakfast-wrap.svg"
     },
     {
       "slug": "veggie-breakfast-muffin",
@@ -2234,7 +2297,8 @@
       "maxQuantityPerOrder": 10,
       "popular": false,
       "availableFrom": "06:00",
-      "availableTo": "11:00"
+      "availableTo": "11:00",
+      "imageUrl": "/menu/veggie-breakfast-muffin.svg"
     },
     {
       "slug": "hash-browns",
@@ -2258,7 +2322,8 @@
       "maxQuantityPerOrder": 10,
       "popular": false,
       "availableFrom": "06:00",
-      "availableTo": "11:00"
+      "availableTo": "11:00",
+      "imageUrl": "/menu/hash-browns.svg"
     },
     {
       "slug": "pancakes",
@@ -2284,7 +2349,8 @@
       "maxQuantityPerOrder": 10,
       "popular": false,
       "availableFrom": "06:00",
-      "availableTo": "11:00"
+      "availableTo": "11:00",
+      "imageUrl": "/menu/pancakes.svg"
     },
     {
       "slug": "porridge",
@@ -2311,7 +2377,8 @@
       "maxQuantityPerOrder": 10,
       "popular": false,
       "availableFrom": "06:00",
-      "availableTo": "11:00"
+      "availableTo": "11:00",
+      "imageUrl": "/menu/porridge.svg"
     },
     {
       "slug": "kids-nugget-meal",
@@ -2338,7 +2405,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/kids-nugget-meal.svg"
     },
     {
       "slug": "kids-burger-meal",
@@ -2363,7 +2431,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/kids-burger-meal.svg"
     },
     {
       "slug": "kids-veggie-meal",
@@ -2389,7 +2458,8 @@
       ],
       "available": true,
       "maxQuantityPerOrder": 10,
-      "popular": false
+      "popular": false,
+      "imageUrl": "/menu/kids-veggie-meal.svg"
     }
   ]
 }

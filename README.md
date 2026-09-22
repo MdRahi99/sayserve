@@ -174,6 +174,8 @@ Option groups are defined once and referenced by id, so "Choose a drink" is edit
 
 One ambiguity is deliberate: "brew" maps to both Coffee and Tea. It stays as a permanent test that the assistant asks rather than guesses.
 
+Every item has an illustration, drawn by [`tools/gen-menu-art.py`](tools/gen-menu-art.py) from shared parts — one burger function with arguments for cheese, a second patty, a chicken fillet, jalapeños. Seventy files, about 550 KB in total, less than one photograph, and consistent by construction. Swapping in real photographs means pointing `imageUrl` at them; nothing else changes.
+
 ---
 
 ## API
