@@ -11,7 +11,21 @@
 
 > Two buttons on the home page put you straight in as a customer or behind the counter, with orders already on the kitchen board. No sign-up. The API sleeps on the free tier, so the first load can take half a minute.
 
-<!-- Screenshots: see docs/SCREENSHOTS.md for the shot list -->
+![The menu, with the cart priced by the server](docs/screenshots/menu.png)
+
+---
+
+## Screenshots
+
+| The assistant | The kitchen board |
+| --- | --- |
+| ![Ordering by typing](docs/screenshots/chat.png) | ![Live kitchen board](docs/screenshots/kitchen.png) |
+| **Customising an item** | **Order tracking** |
+| ![Choosing a side and a drink](docs/screenshots/customiser.png) | ![Live order tracking](docs/screenshots/tracking.png) |
+| **Checkout** | **On a phone** |
+| ![Checkout](docs/screenshots/checkout.png) | ![The menu on a phone](docs/screenshots/menu-mobile.png) |
+
+The dashboard and the landing page are in [docs/screenshots](docs/screenshots).
 
 ---
 

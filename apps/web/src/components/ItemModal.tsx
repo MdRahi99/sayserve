@@ -27,12 +27,15 @@ export function ItemModal({
   const { add, replace } = useCart();
   const dialogRef = useRef<HTMLDivElement>(null);
 
-  const itemGroups = useMemo(
-    () => item.optionGroups
+  const itemGroups = useMemo(() => {
+    const found = item.optionGroups
       .map((id) => groups.find((g) => g.groupId === id))
-      .filter((g): g is OptionGroup => Boolean(g)),
-    [item, groups]
-  );
+      .filter((g): g is OptionGroup => Boolean(g));
+
+    // Required groups first. Asking "remove anything?" before "which drink?"
+    // is backwards: one is optional, the other blocks the Add button.
+    return [...found].sort((a, b) => Number(b.min > 0) - Number(a.min > 0));
+  }, [item, groups]);
 
   const [choices, setChoices] = useState<Record<string, string[]>>(() => {
     if (editing) return editing.choices;
@@ -141,7 +144,8 @@ export function ItemModal({
         className="bg-card w-full sm:max-w-3xl sm:rounded-2xl rounded-t-2xl overflow-hidden
                    max-h-[92vh] sm:max-h-[86vh] flex flex-col sm:flex-row"
       >
-        <Photo url={item.imageUrl} alt={item.name} className="h-40 sm:h-auto sm:w-72 shrink-0" />
+        <Photo url={item.imageUrl} alt={item.name}
+          className="h-40 sm:h-56 sm:w-72 shrink-0 sm:self-start sm:m-4 sm:rounded-xl" />
 
         <div className="flex-1 flex flex-col min-h-0">
           <div className="flex items-start justify-between gap-4 px-5 pt-5">

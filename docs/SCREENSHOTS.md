@@ -1,39 +1,57 @@
-# Screenshots for the README
+# Screenshots
 
-Six images. Take them on the deployed site, not on localhost — a URL bar saying
-`sayserve.vercel.app` is worth more than one saying `localhost:3000`.
+Taken automatically, so they can be regenerated after any change to the UI
+rather than hunted down and retaken by hand.
 
-Seed the demo first so nothing is empty: sign in as staff, press **Simulate a
-rush**, and place one real order so a customer view has something in it.
-
-| File | Shot | Size |
-| --- | --- | --- |
-| `landing.png` | The landing page hero, desktop | 1440 × 900 |
-| `assistant.gif` | Typing "2 cheeseburgers, no onions and a large coke" and the cart filling. **The most important one** | 900 wide |
-| `menu-mobile.png` | The menu on a phone, cart bar visible | 390 × 844 |
-| `customiser.png` | A meal with "Choose a drink" marked Required and Add blocked | desktop modal |
-| `kitchen.png` | The kitchen board with orders in all three columns and a timer gone red | 1194 × 834 |
-| `dashboard.png` | The dashboard, showing the share handled without a model | 1440 × 900 |
-
-## Taking them
-
-**Stills:** Chrome DevTools, `Ctrl/Cmd+Shift+M` for device mode, then
-`Ctrl/Cmd+Shift+P` → "Capture screenshot". Gives a clean shot with no window
-chrome.
-
-**The GIF:** [ScreenToGif](https://www.screentogif.com) on Windows, Kap on Mac.
-Keep it under eight seconds and under 5 MB or GitHub will not play it inline.
-Start with an empty cart, type the sentence, stop once the cart has filled and
-the "no model call" line appears. That line is the point of the whole project —
-make sure it is legible.
-
-## Putting them in
-
-Save to `docs/screenshots/`, then in the README:
-
-```markdown
-![The assistant filling the cart](docs/screenshots/assistant.gif)
+```bash
+node tools/mock-api.mjs &
+NEXT_PUBLIC_API_URL=http://localhost:5055 npm run build:web
+NEXT_PUBLIC_API_URL=http://localhost:5055 npm run start --workspace @sayserve/web &
+node tools/screenshots.mjs
 ```
 
-Put the GIF directly under the opening paragraph. Recruiters look at one image,
-and that is the one that should be it.
+Then shrink them into the repo:
+
+```bash
+python3 -c "
+from PIL import Image; import os
+for f in os.listdir('/tmp/shots'):
+    im = Image.open(f'/tmp/shots/{f}').convert('RGB')
+    im = im.resize((im.width // 2, im.height // 2), Image.LANCZOS)
+    im.quantize(colors=256).save(f'docs/screenshots/{f}', optimize=True)
+"
+```
+
+## Why a mock API
+
+The real API needs MongoDB, a seeded menu and orders in the kitchen. That is a
+lot of setup to photograph a page, and a screenshot of an empty board shows
+nothing. [`tools/mock-api.mjs`](../tools/mock-api.mjs) serves the endpoints the
+web app calls, with data shaped exactly like the real thing — so these are
+photographs of the real components, not a mock-up of them.
+
+The cart is seeded through `localStorage` rather than by clicking through the
+flow. A screenshot script that depends on six interactions breaks every time a
+button moves.
+
+## The shots
+
+| File | What |
+| --- | --- |
+| `landing.png` | The full landing page |
+| `menu.png` | The menu with the cart panel, desktop |
+| `menu-mobile.png` | The menu on a phone |
+| `customiser.png` | A meal with both required groups open |
+| `chat.png` | The assistant beside the cart |
+| `checkout.png` | Collection, details and payment |
+| `tracking.png` | The live order timeline |
+| `kitchen.png` | The board with all three columns busy |
+| `dashboard.png` | Sales, hours, top items, assistant stats |
+
+## Still worth doing by hand
+
+**A GIF of the chat filling the cart.** Nothing beats it for a README, and it
+cannot be captured as a still. [ScreenToGif](https://www.screentogif.com) on
+Windows, Kap on Mac. Under eight seconds and under 5 MB, or GitHub will not play
+it inline. Start with an empty cart, type the sentence, stop once the cart has
+filled.
