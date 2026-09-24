@@ -18,8 +18,8 @@ import { Tag } from "./Tag";
  * assistant trustworthy in Phase 4. On a phone there is no room, so the cart
  * becomes a bar you can pull up.
  */
-export function MenuBrowser() {
-  const [data, setData] = useState<MenuResponse | null>(null);
+export function MenuBrowser({ initial }: { initial?: MenuResponse | null }) {
+  const [data, setData] = useState<MenuResponse | null>(initial ?? null);
   const [error, setError] = useState<string | null>(null);
   const [category, setCategory] = useState<string>("popular");
   const [search, setSearch] = useState("");
@@ -30,11 +30,15 @@ export function MenuBrowser() {
   const count = useCart((s) => s.lines.reduce((n, l) => n + l.quantity, 0));
   const [cartTotal, setCartTotal] = useState<string | null>(null);
 
+  // The page hands the menu in, fetched on the server, so the items are in the
+  // HTML and the grid is never empty. This only runs when the server could not
+  // reach the API.
   useEffect(() => {
+    if (initial) return;
     api.menu()
       .then(setData)
       .catch((e) => setError(e instanceof ApiError ? e.message : "Could not load the menu."));
-  }, []);
+  }, [initial]);
 
   // The bar shows a total, and a total comes from the server like every other
   // price on this site.

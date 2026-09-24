@@ -213,6 +213,14 @@ Auth is a JWT in an httpOnly cookie. Guests get a token at checkout so they can 
 
 ---
 
+## The menu is cached at the edge
+
+The browser used to fetch the menu after the page loaded, which meant a cold API — the free tier sleeps after fifteen minutes — showed a visitor thirty seconds of grey boxes on the first screen they saw.
+
+The menu is now fetched on the server and cached for five minutes, so the items are in the HTML and appear instantly whether or not the API is awake. The API gets those thirty seconds to wake quietly in the background, and by the time anyone adds something to a cart — which does need the live API, for the price — it is up.
+
+The cost is that a sold-out item can be stale for a few minutes. That is the right trade: a stale "available" resolves itself at checkout, where the server checks again and says so. A blank menu loses the customer.
+
 ## Deploying it
 
 Vercel for the web app, Render for the API, MongoDB Atlas for the database, all on free tiers. The API cannot go on Vercel: the kitchen board holds a websocket open, and Vercel's free tier runs short-lived functions.

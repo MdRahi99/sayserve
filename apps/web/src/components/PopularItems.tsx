@@ -7,19 +7,26 @@ import { money } from "@/lib/format";
 import { Photo } from "./Photo";
 
 /**
- * The popular items, as a list on a phone and cards on a desktop — exactly as
- * drawn. Tapping goes to the menu rather than adding blind: the customiser is
- * where a burger becomes an order, and skipping it is how people end up with
- * onions they did not want.
+ * The popular items, as a list on a phone and cards on a desktop.
+ *
+ * The page hands these in, fetched on the server, so they are in the HTML and
+ * appear instantly. The fetch below is only a fallback for when the server
+ * could not reach the API — the page still renders, and fills itself in when
+ * the API wakes up.
+ *
+ * Tapping goes to the menu rather than adding blind: the customiser is where a
+ * burger becomes an order, and skipping it is how people end up with onions
+ * they did not want.
  */
-export function PopularItems() {
-  const [items, setItems] = useState<MenuItem[]>([]);
+export function PopularItems({ initial }: { initial?: MenuItem[] }) {
+  const [items, setItems] = useState<MenuItem[]>(initial ?? []);
 
   useEffect(() => {
+    if (initial?.length) return;
     api.menu()
       .then((r) => setItems(r.items.filter((i) => i.popular && i.available).slice(0, 4)))
       .catch(() => setItems([]));
-  }, []);
+  }, [initial]);
 
   if (items.length === 0) {
     return (
